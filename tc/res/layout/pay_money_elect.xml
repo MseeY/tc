@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/relativeLayout"
+            layout="@layout/acc_titlebar" />
+
+        <TextView
+            android:id="@+id/zwl_more_payment_way_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relativeLayout"
+            android:layout_below="@id/relativeLayout"
+            android:lines="1"
+            android:layout_marginTop="-5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="15dp"
+            android:paddingTop="5dip"
+            android:text="@string/zwl_payment_String_1_5"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/paymoreway_ll_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zwl_more_payment_way_tv"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/selector_acc_me_bg8"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dip"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dip" >
+
+            <TextView
+                android:id="@+id/tv_pay_kuai_jie1"
+                android:layout_width="90dip"
+                android:layout_height="26.01dip"
+                android:background="@drawable/pay_kuai_jie1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝快捷支付"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全快捷,强烈推荐"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- paymoreway_ll_payeco_plugin   2014-6-18 郑岩说 济南会议讨论去掉次支付方式 -->
+
+        <LinearLayout
+            android:id="@+id/paymoreway_ll_payeco_plugin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymoreway_ll_alipay"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/selector_acc_me_bg8"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pay_yin_lian1"
+                android:gravity="right"
+                android:text="@string/paymethod_payeco_plugin"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paymoreway_ll_ali_wap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymoreway_ll_payeco_plugin"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/selector_acc_me_bg8"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="26.01dip"
+                android:background="@drawable/pay_kuai_jie1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝WAP支付"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="触摸屏专用,方便快捷"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paymoreway_ll_payeco_voicepay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymoreway_ll_ali_wap"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/selector_acc_me_bg8"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dip"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dip" >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="26.01dip"
+                android:background="@drawable/pay_yin_lian1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银联语音支付"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="语音确认,安全可靠"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paymoreway_ll_upay_savings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymoreway_ll_payeco_voicepay"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/selector_acc_me_bg8"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dip"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dip" >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="26.01dip"
+                android:background="@drawable/pay_yin_lian2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银联借记卡支付"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银联品质,高额首选"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paymoreway_ll_upay_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymoreway_ll_upay_savings"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/selector_acc_me_bg8"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dip"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dip" >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="26.01dip"
+                android:background="@drawable/pay_yin_lian3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银联信用卡支付"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="借钱买彩票,分期慢慢还"
+                    android:textColor="#007aff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zwl_affirm_payment_btn"
+            style="@style/textaddFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymoreway_ll_upay_credit"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+                            android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+            android:layout_marginTop="27.0dp"
+            android:background="@drawable/btn_bg_red_selector"
+            android:lines="1"
+            android:text="@string/zwl_payment_String_1_7"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zwl_affirm_payment_btn"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="0dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:text="您的账户余额为:   "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/zwl_balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:text="0"
+                android:textColor="@color/text_red"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pay_more_way_tv_recharge"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="10.0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|right"
+                android:text="@string/zwl_payment_String_1_9"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

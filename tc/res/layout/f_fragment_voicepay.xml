@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       <!-- <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="15.0dp"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/zwl_tv_show_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dp"
+                android:layout_marginTop="15.0dp"
+                android:lines="1"
+                android:text="@string/zwl_payment_String_1_1"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/zwl_play_periods_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dp"
+                android:layout_marginTop="15.0dp"
+                android:layout_toRightOf="@id/zwl_tv_show_1"
+                android:gravity="center_horizontal|right"
+                android:lines="1"
+                android:text="@string/zwl_payment_String_1_4"
+                android:textColor="@color/award_info_tv_title_color"
+                android:padding="0dp"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/zwl_show_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zwl_play_periods_tv"
+                android:layout_marginBottom="15.0dp"
+                android:layout_marginLeft="15.0dp"
+                android:layout_marginTop="10.0dp"
+                android:text="@string/zwl_payment_String_1_2"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/zwl_show_phoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zwl_play_periods_tv"
+                android:layout_marginRight="15.0dp"
+                android:layout_marginTop="10.0dp"
+                android:layout_toRightOf="@id/zwl_show_money_tv"
+                android:gravity="center_horizontal|right"
+                android:lines="1"
+                android:text="20"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/complete_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dp"
+                android:layout_marginLeft="15.0dp"
+                android:layout_marginTop="10.0dp"
+                android:text="为了完成支付,需要您完成以下信息"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="15.0sp" />
+        </RelativeLayout> -->
+
+	<include layout="@layout/acc_titlebar"
+		    android:id="@+id/relativeLayout"/>
+
+        <TextView
+            android:id="@+id/zwl_more_payment_way_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/relativeLayout"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="-5dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:gravity="right"
+            android:lines="1"
+            android:text="手动输入其他银行"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/relativeLayout0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zwl_more_payment_way_tv"
+            android:layout_marginLeft="21.0dp"
+            android:layout_marginRight="21.0dp"
+            android:layout_marginTop="5.0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <!-- <LinearLayout
+           android:id="@+id/voicepay_ll_chose_bank"
+                android:layout_width="match_parent"
+                android:layout_height="41dip"
+                
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择银行："
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:clickable="true"
+                    android:id="@+id/voicepay_cb_chose_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ed_bg"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_cb_arrow_black"
+                    android:gravity="left|center_vertical"
+                    android:hint="请选择您的银行卡"
+                    android:paddingBottom="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:textColor="#606060"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout> -->
+
+
+            <!-- 此处的EditText 默认是gone 的  只有在账户中心中个人修改的时候visible -->
+
+            <EditText
+                
+                android:id="@+id/voicepay_et_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/register_show3_text4"
+                android:inputType="text"
+                android:lines="1"
+                android:padding="10dip"
+                android:maxLength="32"
+                android:textColor="#000000"
+                android:textColorHint="@color/award_info_tv_title_second_color"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/voicepay_et_card_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/register_show3_text1"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="10dip"
+                android:maxLength="19"
+                android:paddingBottom="12.0dp"
+                android:paddingTop="12.0dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/award_info_tv_title_second_color"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/voicepay_et_phone_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/register_show3_text2"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="11"
+                android:paddingBottom="12.0dp"
+                android:paddingTop="12.0dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/award_info_tv_title_second_color"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:id="@+id/payeco_voicepay_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <CheckBox
+                    android:id="@+id/voicepay_cb_chose_open_bank_province"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg"
+                    android:button="@null"
+					android:padding="10dip"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_cb_arrow_black"
+                    android:gravity="left|center_vertical"
+                    android:hint="请选择开户省份"
+                    android:textColor="#000000"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/voicepay_cb_chose_open_bank_city"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:padding="10dip"
+                    android:drawableRight="@drawable/selector_cb_arrow_black"
+                    android:gravity="left|center_vertical"
+                    android:hint="请选择开户城市"
+                    android:layout_marginLeft="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:textColor="#000000"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/voicepay_cb_chose_certificate_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:button="@null"
+                android:clickable="true"
+                android:padding="10dip"
+                android:drawableRight="@drawable/selector_cb_arrow_black"
+                android:gravity="left|center_vertical"
+                android:hint="请选择您的开户证件类型"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/voicepay_et_certificate_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/register_show3_text1"
+                android:lines="1"
+                android:maxLength="32"
+				android:padding="10dip"
+                android:textColor="#000000"
+                android:textColorHint="@color/award_info_tv_title_second_color"
+                android:textSize="14.0sp" />
+
+            <CheckBox
+                android:id="@+id/voicepay_cb_chose_open_bank_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:button="@null"
+                android:clickable="true"
+                android:drawableRight="@drawable/selector_cb_arrow_black"
+                android:gravity="left|center_vertical"
+                android:hint="请选择您的银行开户省市"
+                android:paddingBottom="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:paddingLeft="10dip"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/voicepay_et_certificate_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="请输入开户证件地址"
+                android:lines="1"
+                android:maxLength="32"
+                android:padding="10dip"
+                android:textColor="#000000"
+                android:textColorHint="@color/award_info_tv_title_second_color"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/voicepay_et_beneficiary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="请输入受益人"
+                android:lines="1"
+                android:maxLength="32"
+				android:padding="10dip"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/voicepay_et_beneficiary_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/ed_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/register_show3_text1"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="10dip"
+                android:maxLength="32"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/voicepay_confirm_pay"
+                style="@style/textaddFont"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/btn_bg_red_selector"
+                android:padding="10dip"
+                android:gravity="center"
+                android:lines="1"
+                android:text="确 认 付 款"
+                android:textColor="@color/white"
+                android:textSize="16.0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/voicepay_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout0"
+            android:layout_marginLeft="21.0dp"
+            android:layout_marginRight="21.0dp"
+            android:layout_marginTop="20.0dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="1.0dp"
+            android:paddingLeft="1.0dp"
+            android:paddingRight="1.0dp"
+            android:paddingTop="1.0dp"
+            android:text="@string/voicepay_notice"
+            android:textColor="#999999"
+            android:textSize="13.0dp" />
+    </RelativeLayout>
+
+</ScrollView>

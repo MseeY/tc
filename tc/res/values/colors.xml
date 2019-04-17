@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_bar_red">#ffbc2238</color>
+    <color name="dark_red">#ff960019</color>
+    <color name="red">#ffb00f0f</color>
+    <color name="money_red">#ffc01313</color>
+    <color name="black">#ff433a1f</color>
+    <color name="black0">#000d1b</color>
+    <color name="black1">#0c2a43</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#cdcdcd</color>
+    <color name="blue">#007AFF</color>
+    <color name="blue0">#00abfd</color>
+    <color name="blue1">#5E9EC3</color>
+    <color name="blue2">#0C3C70</color>
+    <color name="blue3">#0E4B72</color>
+    <color name="blue4">#05305f</color>
+    <color name="blue5">#185599</color>
+    <color name="blue6">#0e4b72</color>
+    <color name="blue7">#BFE0F8</color>
+    <color name="blue8">#126091</color>
+    <color name="other_color">#DCDCDC</color>
+    <color name="green">#ff6e940e</color>
+    <color name="yellow0">#fbbe01</color>
+    <color name="golden">#ff79672e</color>
+    <!-- <color name="gray">#ff959183</color> -->
+    <color name="yellow">#ffffe584</color>
+    <color name="lighter_gray">#ff786c4a</color>
+    <color name="red_number">#ffc4110c</color>
+    <color name="blue_number">#ff0e57c4</color>
+    <color name="alert_dialog_content">#ff643805</color>
+    <color name="bottom_bar_text_color">#ffb68f5b</color>
+    <color name="rounded_border">#ffc8b67a</color>
+    <color name="alert_message_border">#ffe68a27</color>
+    <color name="prize_color">#ffff0000</color>
+    <color name="text_on_white">#ff4e452a</color>
+    <color name="link">#ff1e50a2</color>
+    <color name="ls_tv_red">#ff590f06</color>
+    <color name="ls_title">#ff7c4631</color>
+    <color name="blue_sina">#ffe7efff</color>
+    <color name="hint_color">#ffc3a56d</color>
+    <color name="tab_text_color">#ffffe8d1</color>
+    <color name="text_color_on_light_bg">#ffb68f5b</color>
+    <color name="dark_text_color_on_light_bg">#ff8d6c42</color>
+    <color name="progress_text">#ffb68f5b</color>
+    <color name="gray_white">#ffd9d6c3</color>
+    <color name="news_title_color">#ff6c5f4f</color>
+    <color name="news_content_color">#ff6c5f4f</color>
+    <color name="news_digest_color">#ffb5a899</color>
+    <color name="news_divider_color">#fff4f2ee</color>
+
+    <item name="transparent" type="color">@android:color/transparent</item>
+
+    <color name="cell_border_color">#ffd7d4c8</color>
+    <color name="cell_bg_color">#fffcfbf6</color>
+    <color name="cell_bg_color_s">#ffebdcc2</color>
+    <color name="cell_text_color">#ff938268</color>
+    <color name="match_lose">#ff0280eb</color>
+    <color name="match_win">#ffb82325</color>
+    <color name="match_draw">#ff47c73d</color>
+    <color name="live_score_team_name">#ff795426</color>
+    <color name="live_score_not_open">#ffddd0a1</color>
+    <color name="live_socre_half_score">#ffb69d7d</color>
+    <color name="live_score_live">#ff76a758</color>
+    <color name="live_score_end">#ffcb1e1d</color>
+    <color name="tc_match_team">#ff3c3f47</color>
+    <color name="tc_default">#ff938268</color>
+    <color name="tc_toggle_off">#ff4e4234</color>
+    <color name="tc_bet_money">#fff3ce6b</color>
+    <color name="tc_match_name">#ff8a765a</color>
+    <color name="match_triangle">#ffbbac99</color>
+    <color name="tc_red">#ffc33f51</color>
+    <color name="tc_green">#ff479e12</color>
+    <color name="tc_gray">#ffd6d7d9</color>
+    <color name="tc_blue">#ff2167bc</color>
+    <color name="tc_match_table">#fffae697</color>
+    <color name="tc_gray_yellow">#ff968b6d</color>
+    <color name="title_btn_pressed">#ff8e1124</color>
+    <color name="coupon_title_white">#fffffadf</color>
+    <color name="trend_period_gray_bg">#ffe5e3de</color>
+    <color name="trend_period_white_bg">#ffefede9</color>
+    <color name="trend_item_gray_bg">#fff2f0eb</color>
+    <color name="trend_item_white_bg">#fff7f6f4</color>
+    <color name="trend_text_gray">#ffaba39c</color>
+    <color name="trend_text_grayish">#ffd8d2cc</color>
+    <color name="trend_line_gray">#ffcfc9c0</color>
+    <color name="trend_award_red">#ffdb5766</color>
+    <color name="k3_ll_game_press">#88000000</color>
+    <color name="k3_tc_yellow">#fff0c930</color>
+    <color name="k3_tc_green">#ff1f402e</color>
+    <color name="k3_hind_tc_yellow">#ffbdd757</color>
+    <color name="k3_period_diliver">#ff053408</color>
+    <color name="k3_period_tc">#ffa1bda6</color>
+    <color name="k3_bet_confirm_tc">#ffc7e2d5</color>
+    <color name="k3_bet_confirm_tc2">#ff94beab</color>
+    <color name="k3_bet_confirm_divider">#ff0c3923</color>
+    <color name="sport_order_title_tv">#ffa1977a</color>
+    <color name="sport_order_blue_tv">#ff0b3ce6</color>
+    <color name="edit_hint_tv">#ffcccccc</color>
+    <color name="reddish_orange_tv">#ffff2f00</color>
+    <color name="order_title_bg">#ffebe9e2</color>
+    <color name="k3_order_title_bg">#ff376d4e</color>
+    <color name="order_item_bg">#fff3f0e8</color>
+    <color name="ls_tv_red_light">#ffa80913</color>
+    <color name="ls_tv_content">#ff4d473b</color>
+    <color name="ls_tv_db">#ff990209</color>
+    <color name="match_live_score_title">#fff3f2ef</color>
+    <color name="match_live_score_title_tv">#ff9b9fa5</color>
+    <color name="match_live_score_item">#fff3f0e9</color>
+    <color name="live_score_cell_title">#ff865f30</color>
+    <color name="smart_follow_list_tv">#ff95d8bb</color>
+    <color name="smart_follow_list_paid_tv">#ffc6cfc6</color>
+    <color name="smart_follow_k3_list_bg">#22000000</color>
+    <color name="title_yellow">#ffd19630</color>
+    <color name="title_green">#ff64bb34</color>
+    <color name="toggle_btn_press">#ffe1d2c9</color>
+    <color name="award_bg">#cf181818</color>
+    <!-- 注册布局中使用到的 resources   colors -->
+    <color name="zwl_register_titlebackground_color">#FF0000</color>
+    <color name="zwl_register_titlered_color">#FF0100</color>
+    <color name="zwl_register_titletext_color">#00FFEC</color>
+    <color name="zwl_register_white_color">#ffffffff</color>
+    <!-- title RadioButton   textselector-->
+    <!-- 竞彩让球 -->
+    
+    <color name="r_orange">#ffae00</color>
+    <color name="r_red">#c70102</color>
+    <color name="r_green">#72c100</color>
+    <color name="red_chbx_text">#ef2d33</color>
+    <color name="green_text">#94c400</color>
+    <color name="gary_text">#a4a4a4</color>
+    <color name="bl_text">#4e4e4e</color>
+    
+    <!--   模拟快三 -->
+    <color name="moni_ks_select_text_color">#f7eb02</color>
+    <!-- ck 大厅主界面 -->
+    <color name="activity_main_title_nav_bg">#ffff0000</color>
+    <color name="register_btn_text_bg">#ff000000</color>
+    <color name="title_nav_tv_color">#ffffffff</color>
+    <color name="bottom_nav_text_checked">#575757</color>
+    <color name="bottom_nav_text_default">#868f94</color>
+    <color name="bottom_nav_divider">#1f1919</color>
+    <color name="bottom_nav_bg">#241d1d</color>
+    <color name="title_nav_tv_shadow_color">#000000</color>
+    <color name="text_phonenumber_color">#0101C7</color>
+    <color name="btn_red_u">#EF2d33</color>
+    <color name="btn_red_d">#C21117</color>
+    <color name="btn_orange_u">#f7b52c</color>
+    <color name="btn_orange_d">#cb7f13</color>
+    <color name="btn_gray_u">#b4b3b3</color>
+    <color name="btn_gray_d">#868686</color>
+    
+
+    <!-- ck dialog -->
+    <color name="dialog_title_tv_color">#efefef</color>
+    <color name="dialog_btn_text_color">#4d4646</color>
+    <color name="dialog_bg">#00000000</color>
+    <color name="pop_menu_tv_textcolor">#ffffff</color>
+    <color name="pop_menu_divider_color">#1f1919</color>
+    <!-- ck award info -->
+    <color name="award_info_tv_title_color">#606060</color>
+     <color name="award_info_yuan">#ff9500</color>
+    <color name="award_info_tv_title_second_color">#999999</color>
+    <color name="net_diagnose_progress_bg">#b7b7b7</color>
+    <color name="net_diagnose_progress">#ff9c00</color>
+    <color name="award_info_tv_title_issue_color">#007aff</color>
+    <color name="award_info_item_content_ball_bg">#efefef</color>
+    <color name="award_info_item_ball_bg">#cecdcd</color>
+    <color name="award_info_ball_text_color">#ffffff</color>
+    <color name="award_info_item_dice_bg">#cecdcd</color>
+    <!-- ck hall info -->
+    <color name="item_hall_bg">#ffffff</color>
+    <color name="item_hall_tv_title_text_color">#000000</color>
+    <color name="item_hall_tv_kaijiang_text_color">#ffffff</color>
+    <color name="item_hall_tv_desc_text_color">#606060</color>
+    <!-- payment’s  colors -->
+    <color name="text_bg_orange_colors">#00BEFF</color>
+
+    <!-- **************ymx   登       陆***************** -->
+    <color name="login_color_1">#606060</color>
+    <color name="login_color_2">#FF0000</color>
+    <color name="login_color_3">#007AFF</color>
+    <color name="login_color_4">#999999</color>
+    <color name="login_color_5">#FFFFFF</color>
+ 	<color name="login_color_6">#F2F2F2</color>
+ 	<color name="login_color_7">#ff545454</color>
+ 	<color name="login_color_8">#d1d1d1</color>
+
+    <!-- *************ymx   网络诊断用到的颜色 ********************* -->
+    <color name="ymx_network_background_color">#EFEFEF</color>
+    <color name="ymx_network_title">#606060</color>
+    <color name="ymx_network_text">#999999</color>
+    <color name="ymx_network_buletext">#007AFF</color>
+    <color name="ymx_network_progressbar1">#FF9C00</color>
+    <color name="ymx_network_progressbar2">#B7B7B7</color>
+    <!-- ck hall fragment -->
+    <color name="bodyfragment2_bg">#efefef</color>
+    <color name="bodyfragment2_lv_divider">#b2b2b2</color>
+    <color name="bodyfragment1_ll_bg">#fee6e6</color>
+    
+    <!-- ymx 开奖信息item用到的色值 -->
+    <color name="ymx_black">#606060</color>
+    <color name="ymx_red">#FF0000</color>
+    <color name="ymx_bg_title">#EFEFEF</color>
+    <color name="ymx_bg_item">#F9F9F9</color>
+    <color name="ymx_fengexian">#EDECEC</color>
+    <!-- 胜负任九场 -->
+    <color name="view_line2">#cecece</color>
+    
+    <!-- 投注  -->
+    <color name="view_line">#dfdfdf</color>
+    <color name="view_line1">#d5d5d5</color>
+    <color name="view_line2">#efefef</color>
+    <color name="view_line3">#eaeaea</color>
+    <!-- 智能追号 -->
+    <color name="znzh_top_bg">#FAFAFA</color>
+    <color name="znzh_coustom_text">#acacac</color>
+ 
+    <!-- ck 主界面添加 -->
+    <color name="title_nav_bg_pressed">#a50000</color>
+    <color name="title_nav_bg">#ae0000</color>
+    <!-- 快三  text color  -->
+    <color name="fast3_text_color">#e72625</color>
+    <color name="fast3_text_color2">#999999</color>
+    <!--  快乐扑克 -->
+    <color name="klpk_text_color">#447489</color>
+    <color name="klpk_bonustext_color">#dbba20</color>
+    
+    
+    <!-- 账户中心的颜色 -->
+    <color name="acc_help_press">#FFF8D9</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    
+    
+    <color name="text_yellow">#f29503</color>
+    <color name="text_red">#EF2d33</color>
+    <color name="line_gray1">#ECECEC</color>
+    <color name="line_gray2">#d6d6d6</color>
+    <color name="match_btn_black">#ff3c3f47</color>
+    
+</resources>

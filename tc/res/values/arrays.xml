@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="login_required_cmds">
+        <item>1002</item>
+        <item>1003</item>
+        <item>1004</item>
+        <item>1006</item>
+        <item>1007</item>
+        <item>1008</item>
+        <item>1010</item>
+        <item>1100</item>
+        <item>1101</item>
+        <item>1102</item>
+        <item>1103</item>
+        <item>1105</item>
+        <item>1106</item>
+        <item>1107</item>
+        <item>1205</item>
+        <item>1206</item>
+        <item>1207</item>
+        <item>1208</item>
+        <item>1210</item>
+        <item>1211</item>
+        <item>1301</item>
+        <item>1302</item>
+        <item>1303</item>
+        <item>1304</item>
+        <item>1305</item>
+    </integer-array>
+    <!-- pop menu  ids array -->
+    <!-- pop menu hall icon ids -->
+    <array name="pop_menu_ivs_hall">
+        <item>@drawable/pop_award</item>
+        <item>@drawable/pop_play_method</item>
+        <item>@drawable/pop_custom</item>
+    </array>
+    <!-- pop menu hall text ids -->
+    <array name="pop_menu_tvs_hall">
+        <item>@string/pop_menu_tv_award</item>
+        <item>@string/pop_menu_tv_play_method</item>
+        <item>@string/pop_menu_tv_custom</item>
+    </array>
+    <!-- pop menu hall onClick functions -->
+    <!-- 0: 收录到我的定制, 1: 替换当前activity的 中间Fragment, 2: 跳转到另一个Activity替换中间容器的Fragment -->
+    <string-array name="pop_menu_onClicks_hall">
+        <item>1com.mitenotc.ui.BodyFragment3</item>
+        <item>2玩法介绍Fragment</item>
+        <item>01001</item>
+ <!-- 0代表收录到我的定制,1001为购彩大厅的界面id -->
+    </string-array>
+    <!-- pop menu 对一个模块的 iconarrays, textarrays, 和 onClick functions arrays 进行整合,该数组主要是简化 showPopMenu的参数的书写 -->
+    <array name="pop_menu_mode_hall">
+        <item>@array/pop_menu_ivs_hall</item>
+        <item>@array/pop_menu_tvs_hall</item>
+        <item>@array/pop_menu_onClicks_hall</item>
+    </array>
+
+    <!-- pop menu award info ids -->
+    <!-- pop menu award info icon ids -->
+    <array name="pop_menu_ivs_award_info">
+        <item>@drawable/pop_hall</item>
+        <item>@drawable/pop_custom</item>
+    </array>
+    <array name="pop_menu_tvs_award_info">
+        <item>@string/title_nav_tv_text</item>
+        <item>@string/pop_menu_tv_custom</item>
+    </array>
+
+    <string-array name="pop_menu_onclicks_award_info">
+        <item>1com.mitenotc.ui.BodyFragment2</item>
+        <item>0</item>
+    </string-array>
+
+    <array name="pop_menu_mode_award_info">
+        <item>@array/pop_menu_ivs_award_info</item>
+        <item>@array/pop_menu_tvs_award_info</item>
+        <item>@array/pop_menu_onclicks_award_info</item>
+    </array>
+
+    <!-- pop menu custom ids -->
+    <!-- pop menu custom icon ids -->
+    <array name="pop_menu_ivs_custom">
+        <item>@drawable/pop_hall</item>
+        <item>@drawable/pop_custom</item>
+        <item>@drawable/pop_user</item>
+        <item>@drawable/pop_help</item>
+    </array>
+    <array name="pop_menu_tvs_custom">
+        <item>@string/bottom_nav_tv_award_text</item>
+        <item>@string/title_nav_tv_text</item>
+        <item>@string/pop_menu_tv_user</item>
+        <item>@string/pop_menu_tv_help</item>
+    </array>
+
+    <string-array name="pop_menu_onclicks_custom">
+        <item>1com.mitenotc.ui.BodyFragment3</item>
+        <item>1com.mitenotc.ui.BodyFragment2</item>
+        <item>1com.mitenotc.ui.BodyFragment4</item>
+        <item>2需要帮助</item>
+    </string-array>
+
+    <array name="pop_menu_mode_custom">
+        <item>@array/pop_menu_ivs_custom</item>
+        <item>@array/pop_menu_tvs_custom</item>
+        <item>@array/pop_menu_onclicks_custom</item>
+    </array>
+
+    <!-- 彩种的归类 -->
+    <!-- 彩种球类 -->
+    <string-array name="codes_ball_lottery">
+        <item>118</item>
+ <!-- ssq -->
+        <item>100</item>
+ <!-- pl3 -->
+        <item>102</item>
+ <!-- pl5 -->
+        <item>106</item>
+ <!--  福彩3D -->
+        <item>116</item>
+ <!-- dlt,快3 未添加 -->
+        <item>112</item>
+        <item>113</item> <!-- 多乐彩 -->
+ <!-- 十一运,十一选5 -->
+        <item>119</item>
+ <!-- SSC, 具体号码待确定 -->
+        <item>117</item>
+ <!-- 七乐彩 -->
+        <item>103</item>
+ <!-- 模拟十一运 -->
+       <item>130</item>
+    </string-array>
+    <!-- 彩种筛子类 -->
+    <string-array name="codes_dice_lottery">
+        <item>120</item>
+        <item>122</item>
+        <item>123</item>
+ <!-- 快3 未添加 -->
+    </string-array>
+    <!-- 彩种足球类 -->
+    <string-array name="codes_shengfu_lottery">
+        <item>125</item>
+        <item>109</item> <!-- 胜负彩 -->
+    </string-array>
+    <string-array name="codes_poker_lottery">
+        <item >121</item> <!-- 快乐扑克 -->
+    </string-array>
+    
+    <!-- 高频彩 -->
+    <string-array name="codes_frequentry_lottery">
+        <item>112</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>113</item>
+        <item>123</item>
+        <item>130</item>
+    </string-array>
+   <!--  竞彩足球 -->
+ <string-array name="jczq_lottery">
+       <item>218</item><!-- 218	足球_胜平负  -->
+       <item>210</item><!-- 210	足球_让球胜平负  -->
+       <item>209</item><!-- 209	足球_混合过关   -->
+       <item>211</item><!-- 211 足球_比分 -->
+       <item>212</item><!-- 212	足球_总进球 -->
+       <item>213</item><!-- 213 足球_半全场 -->
+ </string-array>
+ <string-array name="jclq_lottery">
+       <item>216</item><!-- 216	篮彩_胜负 -->
+       <item>214</item><!-- 214	篮彩_让分胜负 -->
+	   <item>215</item><!-- 215	篮彩_大小分 -->
+	   <item>217</item><!-- 217	篮彩_胜分差 -->
+	   <item>219</item><!-- 219  篮球_混合过关   -->
+ </string-array>
+ <!--  投注订单展示划分id 只包含足球 和篮球的混关 -->
+ <string-array name="lottery_hunguan">
+       <item>209</item><!-- 209	足球_混合过关   -->
+       <item>219</item><!-- 219	篮彩_混合-->
+ </string-array>
+<!-- 	   <item>219</item>219	篮球_混合过关   -->
+<!--  投注订单展示划分id 不包含足球 和篮球的混关 -->
+ <string-array name="lottery_allzq">
+       <item>218</item><!-- 218	足球_胜平负  -->
+       <item>210</item><!-- 210	足球_让球胜平负  -->
+       <item>211</item><!-- 211	足球_比分 -->
+       <item>212</item><!-- 212	足球_总进球 -->
+       <item>213</item><!-- 213 足球_半全场 -->
+       <item>209</item><!-- 209	足球_混合过关   -->
+ </string-array>
+ 
+ <string-array name="lottery_alllq">     
+	   <item>216</item><!-- 216	篮彩_胜负 -->
+       <item>214</item><!-- 214	篮彩_让分胜负 -->
+	   <item>215</item><!-- 215	篮彩_大小分 -->
+	   <item>217</item><!-- 217	篮彩_胜分差 -->
+	   <item>219</item><!-- 219	篮彩_混合-->
+ </string-array>
+    <!-- 所有的玩法id 该id 和相应的界面id相同,并且还包含一些 界面的id,不是玩法,主要用于图片和item的对应 -->
+    <string-array name="codes_lottery">
+        <item>118</item><!-- ssq -->
+        <item>100</item> <!-- pl3 -->
+        <item>102</item><!-- pl5 -->
+        <item>106</item> <!-- dlt,快3 未添加 -->
+        <item>112</item> <!-- 十一运  -->
+        <item>113</item> <!-- 江西十一选5 -->
+        <item>119</item><!-- SSC, 具体号码待确定 -->
+        <item>108</item><!-- SfC -->
+        <item>109</item> <!-- 任9场 -->
+        <item>117</item> <!-- 快乐 -->
+        <item>121</item> <!-- 七乐彩 -->
+        <item>103</item> <!-- 七星彩 -->
+        <item>1001</item><!-- 购彩界面id -->
+        <item>1002</item> <!-- 开奖信息界面id -->
+        <item>1003</item> <!-- 用户中心 界面id -->
+        <item>1004</item><!-- 消息中心 界面id -->
+    </string-array>
+
+    <array name="logo_drawables">
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_dlt1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_k31</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+        <item>@drawable/logo_ssq1</item>
+    </array>
+    <array name="dice_drawables">
+        <item>@drawable/dice_1</item>
+        <item>@drawable/dice_2</item>
+        <item>@drawable/dice_3</item>
+        <item>@drawable/dice_4</item>
+        <item>@drawable/dice_5</item>
+        <item>@drawable/dice_6</item>
+    </array>
+
+    <string-array name="award_level">
+        <item>一等奖</item>
+        <item>二等奖</item>
+        <item>三等奖</item>
+        <item>四等奖</item>
+        <item>五等奖</item>
+        <item>六等奖</item>
+        <item>七等奖</item>
+        <item>八等奖</item>
+        <item>九等奖</item>
+        <item>十等奖</item>
+        <item>十一等奖</item>
+        <item>十二等奖</item>
+        <item>十三等奖</item>
+        <item>十四等奖</item>
+        <item>十五等奖</item>
+        <item>十六等奖</item>
+        <item>十七等奖</item>
+        <item>十八等奖</item>
+        <item>十九等奖</item>
+        <item>二十等奖</item>
+    </string-array>
+
+    <!-- 账户中心的标题 -->
+    <string-array name="acc_me_title">
+        <item>账户充值</item>
+        <item>资金转出</item>
+        <item>投注记录</item>
+        <item>账户明细</item>
+        <!-- <item>消息中心</item> -->
+        <item>邀请好友</item>
+        <!-- <item>在线咨询</item> -->
+        <item>安全隐私</item>
+        <item>系统设置</item>
+    </string-array>
+    
+     <!-- 账户中心的图标 -->
+    <array name="acc_me_title_img">
+        <item>@drawable/logo_recharge1</item>
+        <item>@drawable/acc_logo2</item>
+        <item>@drawable/logo_betting_record1</item>
+        <item>@drawable/acc_logo4</item>
+        <!-- <item>@drawable/logo_message_center1</item> -->
+        <item>@drawable/acc_logo6</item>
+        <!-- <item>@drawable/logo_consultation1</item> -->
+        <item>@drawable/acc_logo8</item>
+        <item>@drawable/logo_setting1</item>
+    </array>
+
+    <!-- 账户中心设置中的帮助列表 String -->
+    <string-array name="acc_setting_help_title">
+        <item>如何领奖</item>
+        <item>如何充值</item>
+        <item>如何提现</item>
+        <item>如何购彩</item>
+        <item>如何连续多期买同一注号码</item>
+        <item>如何跟别人合资买彩票</item>
+        <item>如何快速支付</item>
+        <item>模拟购快3玩法说明</item>
+        <item>双色球玩法说明</item>
+        <item>大乐透玩法说明</item>
+        <item>11选5玩法说明</item>
+        <item>时时彩玩法说明</item>
+        <item>七乐彩玩法说明</item>
+        <item>七星彩玩法说明</item>
+        <item>排列3玩法说明</item>
+        <item>排列5玩法说明</item>
+        <item>快3玩法说明</item>
+        <item>快乐扑克玩法说明</item>
+        <item>福彩3D玩法说明</item>
+        <item>11运夺金玩法说明</item>
+    </string-array>
+    <string-array name="acc_setting_help_title_ticai">
+        <item>如何领奖</item>
+        <item>如何充值</item>
+        <item>如何提现</item>
+        <item>如何购彩</item>
+        <item>如何连续多期买同一注号码</item>
+        <item>如何跟别人合资买彩票</item>
+        <item>如何快速支付</item>
+        <item>大乐透玩法说明</item>
+        <item>11选5玩法说明</item>
+        <item>七乐彩玩法说明</item>
+        <item>七星彩玩法说明</item>
+        <item>排列3玩法说明</item>
+        <item>排列5玩法说明</item>
+        <item>11运夺金玩法说明</item>
+        <item>模拟11运夺金玩法说明</item>
+    </string-array>
+   <string-array name="acc_setting_help_url_ticai">
+        <item>file:///android_asset/help/help.html#howtoprize</item>
+        <item>file:///android_asset/help/help.html#howtorecharge</item>
+        <item>file:///android_asset/help/help.html#howtowithdraw</item>
+        <item>file:///android_asset/help/help.html#howtobuy</item>
+        <item>file:///android_asset/help/help.html#whatisfollowandtimes</item>
+        <item>file:///android_asset/help/help.html#howtogroupbuy</item>
+        <item>file:///android_asset/help/help.html#howtoquickpay</item>
+        <item>file:///android_asset/help/pl106.html</item>
+        <item>file:///android_asset/help/pl112.html</item>
+        <item>file:///android_asset/help/pl117.html</item>
+        <item>file:///android_asset/help/pl103.html</item>
+        <item>file:///android_asset/help/pl100.html</item>
+        <item>file:///android_asset/help/pl102.html</item>
+        <item>file:///android_asset/help/pl112.html</item>
+        <item>file:///android_asset/help/pl130.html</item>
+    </string-array>
+   <string-array name="acc_setting_help_url">
+        <item>file:///android_asset/help/help.html#howtoprize</item>
+        <item>file:///android_asset/help/help.html#howtorecharge</item>
+        <item>file:///android_asset/help/help.html#howtowithdraw</item>
+        <item>file:///android_asset/help/help.html#howtobuy</item>
+        <item>file:///android_asset/help/help.html#whatisfollowandtimes</item>
+        <item>file:///android_asset/help/help.html#howtogroupbuy</item>
+        <item>file:///android_asset/help/help.html#howtoquickpay</item>
+        <item>file:///android_asset/help/pl122.html</item>
+        <item>file:///android_asset/help/pl118.html</item>
+        <item>file:///android_asset/help/pl106.html</item>
+        <item>file:///android_asset/help/pl112.html</item>
+        <item>file:///android_asset/help/pl119.html</item>
+        <item>file:///android_asset/help/pl117.html</item>
+        <item>file:///android_asset/help/pl103.html</item>
+        <item>file:///android_asset/help/pl100.html</item>
+        <item>file:///android_asset/help/pl102.html</item>
+        <item>file:///android_asset/help/pl120.html</item>
+        <item>file:///android_asset/help/pl121.html</item>
+        <item>file:///android_asset/help/pl116.html</item>
+        <item>file:///android_asset/help/pl112.html</item>
+    </string-array>
+    
+    
+    <!-- 账户中心设置中的 添加银行卡 String -->
+    <string-array name="acc_bank_card">
+        <item>招商银行</item>
+        <item>工商银行</item>
+        <item>建设银行</item>
+        <item>中国银行</item>
+        <item>交通银行</item>
+        <item>中信银行</item>
+        <item>兴业银行</item>
+        <item>光大银行</item>
+        <item>华夏银行</item>
+        <item>民生银行</item>
+        <item>农业银行</item>
+        <item>农村信用合作社</item>
+        <item>广东发展银行</item>
+        <item>恒丰银行</item>
+        <item>东亚银行</item>
+        <item>平安银行</item>
+        <item>深圳发展银行</item>
+        <item>北京银行</item>
+        <item>上海浦东发展银行</item>
+        <item>广州市商业银行</item>
+        <item>珠海南通银行</item>
+        <item>上海银行</item>
+        <item>浙江商业银行</item>
+        <item>宁波国际银行</item>
+        <item>南京银行</item>
+        <item>福建亚洲银行</item>
+        <item>徽商银行</item>
+        <item>中国邮政储蓄</item>
+        
+    </string-array>
+    <!--  银行卡图标 -->
+    <array name="acc_bank_logo">
+        <item>@drawable/acc_bank_logo1</item>
+        <item>@drawable/acc_bank_logo2</item>
+        <item>@drawable/acc_bank_logo3</item>
+        <item>@drawable/acc_bank_logo4</item>
+        <item>@drawable/acc_bank_logo5</item>
+        <item>@drawable/acc_bank_logo6</item>
+        <item>@drawable/acc_bank_logo7</item>
+        <item>@drawable/acc_bank_logo8</item>
+        <item>@drawable/acc_bank_logo9</item>
+        <item>@drawable/acc_bank_logo10</item>
+        <item>@drawable/acc_bank_logo11</item>
+        <item>@drawable/acc_bank_logo12</item>
+        <item>@drawable/acc_bank_logo13</item>
+        <item>@drawable/acc_bank_logo14</item>
+        <item>@drawable/acc_bank_logo15</item>
+        <item>@drawable/acc_bank_logo16</item>
+        <item>@drawable/acc_bank_logo17</item>
+        <item>@drawable/acc_bank_logo18</item>
+        <item>@drawable/acc_bank_logo19</item>
+        <item>@drawable/acc_bank_logo20</item>
+        <item>@drawable/acc_bank_logo21</item>
+        <item>@drawable/acc_bank_logo22</item>
+        <item>@drawable/acc_bank_logo23</item>
+        <item>@drawable/acc_bank_logo24</item>
+        <item>@drawable/acc_bank_logo25</item>
+        <item>@drawable/acc_bank_logo26</item>
+        <item>@drawable/acc_bank_logo27</item>
+        <item>@drawable/acc_bank_logo28</item>
+    </array>
+    
+     <!--  用户头像 -->
+    <array name="acc_user_photos">
+        <item>@drawable/user_icon_00</item>
+        <item>@drawable/user_icon_01</item>
+        <item>@drawable/user_icon_02</item>
+        <item>@drawable/user_icon_03</item>
+        <item>@drawable/user_icon_04</item>
+        <item>@drawable/user_icon_05</item>
+        <item>@drawable/user_icon_06</item>
+        <item>@drawable/user_icon_07</item>
+        <item>@drawable/user_icon_08</item>
+        <item>@drawable/user_icon_09</item>
+        <item>@drawable/user_icon_10</item>
+        <item>@drawable/user_icon_11</item>
+        <item>@drawable/user_icon_12</item>
+        <item>@drawable/user_icon_13</item>
+        <item>@drawable/user_icon_14</item>
+        <item>@drawable/user_icon_15</item>
+        
+    </array>
+    
+    
+         <!-- 快三 和值的选号容器  1 需要显示的文本-->
+     <string-array name="fast3_hz_bonus_text">
+          <item>3\r\n奖金240元</item><!--3 -->
+          <item>4\r\n奖金80元</item><!--4 -->
+          <item>5\r\n奖金40元</item><!--5 -->
+          <item>6\r\n奖金25元</item><!--6 -->
+          <item>7\r\n奖金16元</item><!--7-->
+          <item>8\r\n奖金12元</item><!--8 -->
+          <item>9\r\n奖金10元</item><!--9 -->
+          <item>10\r\n奖金9元</item><!--10-->
+          <item>11\r\n奖金9元</item><!--11 -->
+          <item>12\r\n奖金10元</item><!--12-->
+          <item>13\r\n奖金12元</item><!--13--> 
+          <item>14\r\n奖金16元</item><!--14-->
+          <item>15\r\n奖金25元</item><!--15-->
+          <item>16\r\n奖金40元</item><!--16-->
+          <item>17\r\n奖金80元</item><!--17-->
+          <item>18\r\n奖金240元</item><!--18-->
+      </string-array>
+         <!-- 快三 和值的选号容器  1 需要显示的奖金描述        需求变动-->
+     <string-array name="fast3_hz_bonus_text1">
+          <item>奖金240元</item><!--3 -->
+          <item>奖金80元</item><!--4 -->
+          <item>奖金40元</item><!--5 -->
+          <item>奖金25元</item><!--6 -->
+          <item>奖金16元</item><!--7-->
+          <item>奖金12元</item><!--8 -->
+          <item>奖金10元</item><!--9 -->
+          <item>奖金9元</item><!--10-->
+          <item>奖金9元</item><!--11 -->
+          <item>奖金10元</item><!--12-->
+          <item>奖金12元</item><!--13--> 
+          <item>奖金16元</item><!--14-->
+          <item>奖金25元</item><!--15-->
+          <item>奖金40元</item><!--16-->
+          <item>奖金80元</item><!--17-->
+          <item>奖金240元</item><!--18-->
+      </string-array>
+    
+         <!-- 模拟快三 和值的选号容器  1 需要显示的文本-->
+     <string-array name="moni_fast3_hz_bonus_text">
+          <item>3\r\n奖金240分</item><!--3 -->
+          <item>4\r\n奖金80分</item><!--4 -->
+          <item>5\r\n奖金40分</item><!--5 -->
+          <item>6\r\n奖金25分</item><!--6 -->
+          <item>7\r\n奖金16分</item><!--7-->
+          <item>8\r\n奖金12分</item><!--8 -->
+          <item>9\r\n奖金10分</item><!--9 -->
+          <item>10\r\n奖金9分</item><!--10-->
+          <item>11\r\n奖金9分</item><!--11 -->
+          <item>12\r\n奖金10分</item><!--12-->
+          <item>13\r\n奖金12分</item><!--13--> 
+          <item>14\r\n奖金16分</item><!--14-->
+          <item>15\r\n奖金25分</item><!--15-->
+          <item>16\r\n奖金40分</item><!--16-->
+          <item>17\r\n奖金80分</item><!--17-->
+          <item>18\r\n奖金240分</item><!--18-->
+      </string-array>
+      <string-array name="fast3_sth_bonus_text">
+          <item>111\r\n奖金240元</item><!--1-->
+          <item>222\r\n奖金240元</item><!--2-->
+          <item>333\r\n奖金240元</item><!--3-->
+          <item>444\r\n奖金240元</item><!--4-->
+          <item>555\r\n奖金240元</item><!--5-->
+          <item>666\r\n奖金240元</item><!--6-->
+      </string-array>
+      <string-array name="fast3_sth_bonus_text1">
+          <item>奖金240元</item><!--111-->
+          <item>奖金240元</item><!--222-->
+          <item>奖金240元</item><!--333-->
+          <item>奖金240元</item><!--444-->
+          <item>奖金240元</item><!--555-->
+          <item>奖金240元</item><!--666-->
+      </string-array>
+      <string-array name="moni_fast3_sth_bonus_text">
+          <item>111\r\n奖金240分</item><!--1-->
+          <item>222\r\n奖金240分</item><!--2-->
+          <item>333\r\n奖金240分</item><!--3-->
+          <item>444\r\n奖金240分</item><!--4-->
+          <item>555\r\n奖金240分</item><!--5-->
+          <item>666\r\n奖金240分</item><!--6-->
+      </string-array>
+      <string-array name="fast3_sth_tbonus_text">
+          <item>@string/fast3_ebth_text2</item><!--0-->
+      </string-array>
+      <string-array name="moni_fast3_sth_tbonus_text">
+          <item>@string/moni_fast3_ebth_text2</item><!--0-->
+      </string-array>
+       <string-array name="fast3_slh_tbonus_text">
+          <item>@string/sbth_text</item><!--0-->
+      </string-array>
+       <string-array name="fast3_slh_tbonus_text">
+          <item>@string/sbth_text</item><!--0-->
+      </string-array>
+         <!--  <item >02银联无卡支付</item> -->
+      <string-array name="pay_methods">
+          <item >03支付宝快捷支付</item>
+          <item >04支付宝WAP支付</item>
+          <item >01银联语音支付</item>
+          <item >07银联借记卡支付</item>
+          <item >08银联信用卡支付</item>
+      </string-array>
+      
+      <string-array name="pay_methods_ex">
+          <item >安全快捷,强烈推荐</item>
+          <item >触摸屏专用,方便快捷</item>
+          <item >语音确认,安全可靠</item>
+          <item >银联品质,高额首选</item>
+          <item >借钱买彩票,分期慢慢还</item>
+      </string-array>
+            
+      <!-- 支付方式图片 -->
+    <array name="pay_methods_drawable">
+        <item>@drawable/pay_kuai_jie1</item>
+        <item>@drawable/pay_kuai_jie1</item>
+        <item>@drawable/pay_yin_lian1</item>
+        <item>@drawable/pay_yin_lian2</item>
+        <item>@drawable/pay_yin_lian3</item>
+    </array>
+      
+      <string-array name="certificate_type">
+          <item >身份证</item>
+          <item >护照</item>
+          <item >军人证</item>
+          <item >台胞证</item>
+      </string-array>
+      <!-- 快三 和值的单注奖金   3-18 -->
+      <integer-array name="hz_bonus_Str">
+          <item>240</item><!--3 -->
+          <item>80</item><!--4 -->
+          <item>40</item><!--5 -->
+          <item>25</item><!--6 -->
+          <item>16</item><!--7-->
+          <item>12</item><!--8 -->
+          <item>10</item><!--9 -->
+          <item>9</item><!--10-->
+          <item>9</item><!--11 -->
+          <item>10</item><!--12-->
+          <item>12</item><!--13--> 
+          <item>16</item><!--14-->
+          <item>25</item><!--15-->
+          <item>40</item><!--16-->
+          <item>80</item><!--17-->
+          <item>240</item><!--18-->
+      </integer-array>
+      <!-- 十一选五  子玩法单注奖金 -->
+      <integer-array name="syxw_bonus_Str">
+          <item>6</item><!--2  子玩法划分tag-->
+          <item>19</item><!--3 -->
+          <item>78</item><!--4 -->
+          <item>540</item><!--5 -->
+          <item>90</item><!--6-->
+          <item>26</item><!--7 -->
+          <item>9</item><!--8-->
+          <item>13</item><!--1-->
+          <item>130</item><!--39 -->
+          <item>65</item><!--11-->
+          <item>1170</item><!--310--> 
+          <item>195</item><!--12-->
+          <item>6</item><!--22-->
+          <item>19</item><!--23-->
+          <item>78</item><!--24-->
+          <item>540</item><!--25-->
+          <item>90</item><!--26-->
+          <item>26</item><!--27-->
+          <item>65</item><!--211-->
+          <item>195</item><!--212-->
+      </integer-array>
+      
+    <string-array name="other_money">
+        <item>3元</item>
+        <item>6元</item>
+        <item>9元</item>
+        <item>60元</item>
+        <item>99元</item>
+    </string-array>
+      <!-- 增加模拟彩种必须在此处加以内部id -->
+    <string-array name="mi_lottery">
+        <item>122</item>
+        <item>130</item>
+    </string-array>
+    
+      <!-- 账户中心的图标 -->
+    <array name="find_logo">
+        <item>@drawable/find_red_pac</item>
+        <item>@drawable/find_recommend</item>
+        <item>@drawable/find_consultation</item>
+        <item>@drawable/find_msg_center</item>
+        <item>@drawable/find_11x5</item>
+        <item>@drawable/find_kuai3</item>
+        <item>@drawable/find_luck_wheel</item>
+    </array>
+    
+      <!-- 账户中心的图标 -->
+    <array name="find_logo1">
+        <item>@drawable/find_red_pac</item>
+        <item>@drawable/find_recommend</item>
+        <item>@drawable/find_consultation</item>
+        <item>@drawable/find_11x5</item>
+        <item>@drawable/find_msg_center</item>
+        <item>@drawable/find_luck_wheel</item>
+    </array>
+        <!-- 开奖信息中不显示开奖明细   8-21 此处增加屏蔽 -->
+    <string-array name="dont_extend_lotteryId">
+        <item>112</item>
+        <item>113</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>123</item>
+        <item>130</item>
+    </string-array>
+    <string-array name="jclq_playid">
+        <item>214</item>	<!-- 篮彩_让分胜负 -->
+		<item>215</item>	<!-- 篮彩_大小分 -->
+		<item>216</item>	<!-- 篮彩_胜负 -->
+		<item>217</item>	<!-- 篮彩_胜分差 -->
+		<item>219</item>	<!-- 篮彩_混合过关 -->
+    </string-array>
+    <string-array name="jczq_playid">
+        <item>209</item>	<!-- 足球_混合过关 -->
+		<item>210</item>	<!-- 足球_让球胜平负 -->
+		<item>211</item>	<!-- 足球_比分 -->
+		<item>212</item>	<!-- 足球_总进球 -->
+		<item>213</item>	<!-- 足球_半全场 -->
+		<item>218</item>	<!-- 足球_胜平负 -->
+    </string-array>
+    <string-array name="split_lottery_id">
+         <item>116</item>
+         <item>100</item>
+         <item>121</item>
+         <item>120</item>
+         <item>123</item>
+         <item>122</item>
+    </string-array>
+    <string-array name="result_code_a">
+         <item>0</item><!-- 成功 -->
+         <item>10045</item><!-- 表示未登录 -->
+         <item>11004</item><!-- 为语音支付时要求第二次信息 -->
+         <item>14004</item><!-- 高频期结 -->
+         <item>10003</item><!-- 注册时需要前台提处理 -->
+         <item>15001</item>
+    </string-array>
+</resources>

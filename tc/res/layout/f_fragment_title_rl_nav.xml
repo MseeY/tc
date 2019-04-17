@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/f_fragment_title_rl"
+    android:background="#ffbc2238"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true" >
+
+    <TextView
+        android:id="@id/f_fragment_title_tv_left"
+        style="@style/f_style_title_tv_left"
+        />
+
+    <TextView
+        android:id="@id/f_fragment_title_tv_right"
+        style="@style/f_style_title_tv_right"
+       />
+    <TextView
+        android:id="@id/f_fragment_title_tv_middle"
+        style="@style/f_style_title_tv_middle"
+        android:layout_toRightOf="@id/f_fragment_title_tv_left"
+        android:layout_toLeftOf="@id/f_fragment_title_tv_right"
+       />
+
+</RelativeLayout>

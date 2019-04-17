@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.mitenotc.ui.ui_utils.GridRadioGroup 
+        android:id="@+id/saleType_grg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton 
+                android:background="#00000000"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:button="@null"
+                android:text="普通投注"
+                android:tag="1"
+                android:id="@+id/saleType_rb1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <RadioButton 
+                android:background="#00000000"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="胆拖投注"
+                android:tag="2"
+                android:button="@null"
+                android:id="@+id/saleType_rb2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </com.mitenotc.ui.ui_utils.GridRadioGroup>
+
+</LinearLayout>

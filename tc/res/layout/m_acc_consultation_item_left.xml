@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efefef" >
+
+    <LinearLayout
+        android:paddingBottom="10dip"
+        android:id="@+id/ll_consultation_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="3dip"
+            android:src="@drawable/acc_online_sevice" />
+
+        <TextView
+            android:paddingRight="9dip"
+            android:paddingTop="8dip"
+            android:paddingBottom="4dip"
+            android:paddingLeft="18dip"
+            android:id="@+id/tv_acc_consultation_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dip"
+            android:background="@drawable/acc_consultation_item_left"
+            android:gravity="center_vertical"
+            android:text="safas"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

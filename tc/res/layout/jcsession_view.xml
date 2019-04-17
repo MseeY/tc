@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/jc_btn_white_m"
+        android:button="@null"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/rbtn_text_color_selector"
+        android:text="2串1"
+        android:tag="102"
+        android:textSize="14.0sp" />
+    <!--  android:background="@drawable/zq_spf_rbtn_middle_selector" -->
+</LinearLayout>

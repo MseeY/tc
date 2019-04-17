@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_title_tv_color">
+   
+ <RelativeLayout 
+     android:id="@+id/relativeLayout"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="#FFFFFF">
+       
+   <TextView
+        android:id="@+id/zwl_felicitate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="5.0dp"
+        android:text="@string/register_show4_text1"
+        android:textColor="@color/text_yellow" 
+        android:textSize="14sp"
+        android:lines="1"/>
+   <TextView
+        android:id="@+id/zwl_show_phoneNumber"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp" 
+        android:paddingBottom="10dp"
+        android:layout_alignLeft="@id/zwl_felicitate_tv"
+        android:layout_below="@id/zwl_felicitate_tv"
+        android:text="@string/register_show4_text8"
+        android:lines="1"
+        android:textSize="14sp"
+        android:textColor="@color/text_yellow" />
+                 
+  </RelativeLayout>
+
+   
+    <RelativeLayout
+        android:id="@+id/relativeLayout0"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10.0dp" 
+         android:layout_marginLeft="21.0dp"
+         android:layout_marginRight="21.0dip"
+         android:layout_below="@id/relativeLayout">
+  
+    <Button
+       
+        android:id="@+id/zwl_goon_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        
+        android:background="@drawable/btn_bg_gray_selector"
+        android:text="@string/register_show4_text3" 
+        android:textColor="#000000" 
+        android:textSize="16.0dp" 
+        android:lines="1"/>
+   <Button
+          android:id="@+id/zwl_immediately_btn"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          
+          android:layout_marginTop="10.0dp"
+		  android:padding="10dip"
+          android:gravity="center_horizontal"
+          
+          android:text="@string/register_show4_text2"
+          android:layout_below="@id/zwl_goon_btn"
+          android:background="@drawable/btn_bg_gray_selector"
+          android:textColor="#000000"
+        
+          android:lines="1"
+          android:textSize="16.0dp" 
+          style="@style/textaddFont"/>
+   <Button
+        android:id="@+id/zwl_affirm_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="10.0dp"
+        android:paddingBottom="10.0dp"
+        android:paddingTop="10.0dp"
+        android:gravity="center_horizontal"
+        
+        android:background="@drawable/btn_bg_gray_selector"
+        android:layout_below="@id/zwl_immediately_btn"
+        android:text="@string/register_show3_text4_4" 
+        android:textColor="#000000"
+       
+        android:lines="1"
+        android:textSize="16.0sp" 
+        style="@style/textaddFont"/>
+
+        
+    </RelativeLayout>
+
+
+    
+    
+      <RelativeLayout
+          android:id="@+id/relativeLayout1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          
+          android:layout_marginTop="27.0dp" 
+          android:layout_marginLeft="21.0dp"
+          
+          android:layout_below="@id/relativeLayout0"
+          android:layout_alignRight="@id/relativeLayout0" >
+   <TextView
+        android:id="@+id/zwl_tv_gogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+ 		android:paddingTop="12dip"
+ 		android:paddingBottom="12dip"
+        android:text="@string/register_show4_text5"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/text_red"
+        android:background="@drawable/btn_bg_white_selector"
+        android:textSize="13.0dp"
+        android:lines="1"/>
+
+  <Button
+      android:id="@+id/zwl_goto_btn"
+      style="@style/textaddFont"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+		android:padding="10dip"
+      android:layout_toRightOf="@id/zwl_tv_gogo"
+      android:background="@drawable/btn_bg_orange_selector"
+      android:text="@string/register_show4_text6"
+      android:lines="1"
+      android:textColor="@color/white"
+      android:textSize="16.0dp" />
+
+     </RelativeLayout>
+   
+        <TextView
+            android:id="@+id/zwl_show_inform_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="21.0dp"
+            
+            android:layout_below="@id/relativeLayout1"
+            android:layout_alignLeft="@id/relativeLayout1"
+            android:text="@string/register_show4_text7"
+            android:lines="1"
+            android:textColor="@color/award_info_tv_title_second_color"
+            android:textSize="13.0sp" />
+
+  
+    
+</RelativeLayout>

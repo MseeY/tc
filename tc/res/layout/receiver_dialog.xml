@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dialog_margin_left"
+    android:layout_marginRight="@dimen/dialog_margin_right"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/dg_title"
+            style="@style/text_20_ffffff_bold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:background="@drawable/activity_main_title_nav_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="8dp"
+            android:shadowColor="@color/title_nav_tv_shadow_color"
+            android:text="@string/dg_title_text" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            style="@style/title_nav_iv_style"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/pop_close" />
+
+        <TextView
+            android:id="@+id/dg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dg_text"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/lift_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="center"
+                android:text="立即查看"
+                style="@style/dialog_btn_style"
+                android:textSize="16.0dp" />
+
+            <Button
+                android:id="@+id/reight_btn"
+                style="@style/dialog_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="center"
+                android:tag="0"
+                android:text="取    消"
+                android:textSize="16.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

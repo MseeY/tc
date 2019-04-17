@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/login_color_6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ymx_ll_second_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="21dip"
+            android:layout_marginRight="21dip"
+            android:layout_marginTop="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.5dip"
+                    android:text="@string/you_account"
+                    android:textColor="@color/login_color_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ymx_tv_sec_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13522211211"
+                    android:textColor="@color/login_color_2"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ymx_tv_change_account"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:paddingRight="15dip"
+                android:text="@string/change_account"
+                android:textColor="#0190d6"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_login_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dip"
+                android:layout_marginRight="21dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/ed_bg"
+                android:gravity="center_vertical"
+                android:padding="0dip"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_change_input_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginTop="12dip"
+                    android:paddingLeft="8dip"
+                    android:text="用户名:"
+                    android:textColor="#ff545454"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/ymx_et_phonename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/ed_bg2"
+                    android:hint="@string/login_hint"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="12dip"
+                    android:textColor="#ff545454"
+                    android:textColorHint="#999999"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dip"
+                android:layout_marginRight="21dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/ed_bg"
+                android:gravity="center_vertical"
+                android:padding="0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginTop="12dip"
+                    android:paddingLeft="8dip"
+                    android:text="密"
+                    android:textColor="#ff545454"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginTop="12dip"
+                    android:text="密"
+                    android:textColor="#ff545454"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginTop="12dip"
+                    android:text="码:"
+                    android:textColor="#ff545454"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/ymx_et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/ed_bg2"
+                    android:hint="@string/login_pwd_hint"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="12dip"
+                    android:textColor="#ff545454"
+                    android:textColorHint="#999999"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="21dip"
+            android:layout_marginRight="21dip"
+            android:layout_marginTop="18dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/cb_login_remember_pwd"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="2.5dip"
+                    android:background="@drawable/checkbox_bg1"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dip"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="5.0dp"
+                    android:lines="1"
+                    android:text="记住密码"
+                    android:textColor="#545454"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ymx_tv_foget_pwd"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:paddingRight="15dip"
+                android:text="找回密码"
+                android:textColor="#0190d6"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ymx_bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_3"
+            android:layout_marginRight="@dimen/margin_3"
+            android:background="@drawable/btn_bg_red_selector"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:padding="10dip"
+            android:text="@string/login_text1"
+            android:textColor="@color/login_color_5"
+            android:textSize="@dimen/login_buletext"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ymx_tv_free_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_3"
+            android:layout_marginRight="@dimen/margin_3"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/btn_bg_orange_selector"
+            android:gravity="center|center_vertical|center_horizontal"
+			android:padding="10dip"
+            android:text="免 费 注 册"
+            android:textColor="@color/login_color_5"
+            android:textSize="@dimen/login_buletext"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_title_tv_color" >
+
+    <RelativeLayout
+        android:id="@+id/reLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <Button
+            android:id="@+id/common_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_circular"
+            android:drawableLeft="@drawable/shake"
+            android:paddingBottom="3.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="3.0dip"
+            android:text="@string/zwl_dballcommon_tv_1"
+            android:textColor="@color/white"
+            android:textSize="13.0dip" />
+
+        <TextView
+            android:id="@+id/drag_code_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/common_btn"
+            android:layout_toRightOf="@id/common_btn"
+            android:gravity="center_vertical|right"
+            android:text="@string/ssc_shakenotice_text7"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/elevenC5_show_bonus_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reLayout"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="left|center_vertical"
+        android:text="@string/elevenC5_show_bonus_tv"
+        android:textColor="@color/award_info_tv_title_color"
+        android:textSize="14.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/reLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elevenC5_show_bonus_tv" >
+
+        <!-- 一   万位 -->
+
+        <RelativeLayout
+            android:id="@+id/elevenC5_one_RL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/elevenC5_one_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/choose_tv_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="3.0dip"
+                android:text="@string/arrange_four_tv"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12.0dip" />
+
+            <LinearLayout
+                android:id="@+id/notice_linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_toRightOf="@id/elevenC5_one_tv"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/elevenC5_Iguess_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elevenC5_Iguess_tv"
+                    android:textColor="@color/award_info_tv_title_color"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/elevenC5_Iguess1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/elevenC5_Iguess1_tv"
+                    android:textColor="@color/award_info_tv_title_second_color"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/elevenC5_one_omit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/elevenC5_one_tv"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/choose_tv_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dip"
+                android:text="@string/arrange_omit_tv"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="12.0dip" />
+
+            <com.mitenotc.ui.ui_utils.MGridView
+                android:id="@+id/wan_mgv"
+                android:layout_width="235dip"
+                android:layout_height="130dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/notice_linearLayout"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/elevenC5_one_omit_tv"
+                android:columnWidth="40dip"
+                android:horizontalSpacing="0dip"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="2dip" />
+        </RelativeLayout>
+
+        <!-- 二   千位 -->
+
+        <RelativeLayout
+            android:id="@+id/elevenC5_two_RL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/elevenC5_one_RL"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <View
+                android:id="@+id/imgv2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/parting_line" />
+
+            <TextView
+                android:id="@+id/elevenC5_two_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imgv2"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/choose_tv_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dip"
+                android:text="@string/arrange_qian_tv"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12.0dip" />
+
+            <LinearLayout
+                android:id="@+id/notice_linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/imgv2"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_toRightOf="@id/elevenC5_two_tv"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/elevenC5_Iguess_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elevenC5_Iguess_tv"
+                    android:textColor="@color/award_info_tv_title_color"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/elevenC5_Iguess1_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/elevenC5_Iguess1_tv"
+                    android:textColor="@color/award_info_tv_title_second_color"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/elevenC5_two_omint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/elevenC5_two_tv"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/choose_tv_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dip"
+                android:text="@string/arrange_omit_tv"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="12.0dip" />
+
+            <com.mitenotc.ui.ui_utils.MGridView
+                android:id="@+id/qian_mgv"
+                android:layout_width="235dip"
+                android:layout_height="130dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/notice_linearLayout1"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/elevenC5_two_omint_tv"
+                android:columnWidth="40dip"
+                android:horizontalSpacing="0dip"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="2dip" />
+        </RelativeLayout>
+
+        <!-- 三   百位 -->
+
+        <RelativeLayout
+            android:id="@+id/elevenC5_three_RL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/elevenC5_two_RL"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <View
+                android:id="@+id/imgv3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/parting_line" />
+
+            <TextView
+                android:id="@+id/elevenC5_three_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imgv3"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/choose_tv_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dip"
+                android:text="@string/arrange_num_tv"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12.0dip" />
+
+            <LinearLayout
+                android:id="@+id/notice_linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/imgv3"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_toRightOf="@id/elevenC5_three_tv"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/elevenC5_Iguess_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elevenC5_Iguess_tv"
+                    android:textColor="@color/award_info_tv_title_color"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/elevenC5_Iguess1_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/elevenC5_Iguess1_tv"
+                    android:textColor="@color/award_info_tv_title_second_color"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/elevenC5_three_omint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/elevenC5_three_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/choose_tv_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dip"
+                android:text="@string/arrange_omit_tv"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="12.0dip" />
+
+            <com.mitenotc.ui.ui_utils.MGridView
+                android:id="@+id/bai_mgv"
+                android:layout_width="235dip"
+                android:layout_height="130dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/notice_linearLayout2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toRightOf="@id/elevenC5_three_omint_tv"
+                android:columnWidth="40dip"
+                android:horizontalSpacing="1.7dip"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="2.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

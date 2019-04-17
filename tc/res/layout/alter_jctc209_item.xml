@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!--  竞彩足球混关列表弹出修改提示布局 -->
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/zhu"
+                    style="@style/text_13_606060"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="----" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.55"
+                    android:gravity="center"
+                    android:text="vs"
+                    android:textColor="@color/btn_gray_u"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ke"
+                    style="@style/text_13_606060"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="----" />
+            </LinearLayout>
+	       <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@color/view_line" />
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="让球"
+                    android:textColor="@color/btn_gray_u"
+                    android:textSize="10.0sp" />
+			    <TextView
+			        android:id="@+id/T2"
+			        style="@style/text_13_606060"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:text="" />
+	    </LinearLayout>
+            <!-- <com.mitenotc.ui.ui_utils.TextViewGroup -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+	                <TextView
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:background="@drawable/jc_r_gray"
+	                    android:gravity="center"
+	                    android:layout_weight="1"
+	                    android:layout_marginBottom="2.5dp"
+	                    android:text="0"
+	                    android:textColor="@color/white"
+	                    android:textSize="10.0sp" />
+                     <TextView
+                        android:id="@+id/r_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+	                    android:layout_weight="1"
+	                    android:layout_marginTop="2.5dp"
+                        android:background="@drawable/jc_r_red"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="10.0sp" />
+               </LinearLayout>
+        
+                <com.mitenotc.ui.ui_utils.TextViewGroup
+                    android:id="@+id/dialog_item_chgp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="0dp" >
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:padding="0dp" >
+                    <TextView
+                        android:id="@+id/cb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag=""
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+                    <!-- android:background="@drawable/jc_bqc_bg_selector" -->
+
+                    <TextView
+                        android:id="@+id/cb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag=""
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/cb0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:tag="0_0.00"
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2.5dp"
+                    android:orientation="horizontal"
+                    android:padding="0dp" >
+                    <TextView
+                        android:id="@+id/r_ch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag="3_0.00"
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/r_ch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag=""
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/r_ch0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:tag=""
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+                </com.mitenotc.ui.ui_utils.TextViewGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 比分区 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="10"
+                    android:text="1:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="20"
+                    android:text="2:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="21"
+                    android:text="2:1\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="30"
+                    android:text="3:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="31"
+                    android:text="3:1\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="32"
+                    android:text="3:2\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="40"
+                    android:text="4:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/view_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:paddingBottom="0.0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0.0dp" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center"
+                    android:text="比"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="41"
+                    android:text="4:1\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="42"
+                    android:text="4:2\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="50"
+                    android:text="5:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="51"
+                    android:text="5:1\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="52"
+                    android:text="5:2\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.83"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="90"
+                    android:text="胜其他\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center"
+                    android:text="分"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="00"
+                    android:text="0:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="11"
+                    android:text="1:1\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="22"
+                    android:text="2:2\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="33"
+                    android:text="3:3\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.66"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="00"
+                    android:text="平其他\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center"
+                    android:text="区"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="01"
+                    android:text="0:1\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="02"
+                    android:text="0:2\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="12"
+                    android:text="1:2\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="03"
+                    android:text="0:3\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="13"
+                    android:text="1:3\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="23"
+                    android:text="2:3\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="40"
+                    android:text="4:0\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/view_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:paddingBottom="0.0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0.0dp" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="14"
+                    android:text="1:4\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="24"
+                    android:text="2:4\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="05"
+                    android:text="0:5\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="15"
+                    android:text="1:5\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="25"
+                    android:text="2:5\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.83"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="09"
+                    android:text="负其他\n--:--"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 总进球区 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="总 进"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="33"
+                    android:text="0球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="31"
+                    android:text="1球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="30"
+                    android:text="2球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="30"
+                    android:text="3球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:paddingBottom="0.0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0.0dp" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center_horizontal|top"
+                    android:text="球"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="13"
+                    android:text="4球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="11"
+                    android:text="5球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="10"
+                    android:text="6球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="10"
+                    android:text="7+球"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 半全场区 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="半"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="33"
+                    android:text="胜胜"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="31"
+                    android:text="@string/bqc_sp"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="30"
+                    android:text="@string/bqc_sf"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:paddingBottom="0.0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0.0dp" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center"
+                    android:text="全"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="13"
+                    android:text="@string/bqc_ps"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="11"
+                    android:text="@string/bqc_pp"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="10"
+                    android:text="@string/bqc_pf"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:paddingBottom="0.0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0.0dp" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_orange_u"
+                    android:gravity="center_horizontal|top"
+                    android:text="场"
+                    android:textSize="10.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="13"
+                    android:text="@string/bqc_fs"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="11"
+                    android:text="@string/bqc_fp"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:tag="10"
+                    android:text="@string/bqc_ff"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:visibility="visible"
+                
+                android:id="@+id/cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_gray_selector"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/bqc_c_cancel"
+                android:textColor="@color/award_info_tv_title_color" />
+
+            <Button
+                android:id="@+id/affirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_red_selector"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/bqc_c_affirm"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+       
+</LinearLayout>

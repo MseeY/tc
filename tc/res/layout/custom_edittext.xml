@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:gravity="center"
+    android:orientation="vertical">
+        
+
+   
+<LinearLayout 
+    android:id="@+id/diy_ed_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    
+    android:orientation="horizontal" >
+      <Button android:id="@+id/subtract_btn"  
+      android:layout_height="wrap_content"
+	  android:layout_width="wrap_content" 
+      
+       android:textColor="@color/custom_control_text_color_selector"
+       android:gravity="center_vertical|center_horizontal"
+       android:textSize="24sp"
+       android:background="@drawable/coustom_btn_sub_selector"
+       /> 
+       
+      <EditText 
+        android:id="@+id/mEdit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" 
+        android:gravity="center"
+        
+        android:textSize="14sp"
+        android:hint="1"
+        android:text="1"
+        android:maxLength="4"
+		android:inputType="number"
+        android:textColor="@color/award_info_tv_title_color"
+		android:textColorHint="@color/znzh_coustom_text"
+		android:focusable="true"
+		 android:background="@drawable/custom_ed"
+		android:cursorVisible="true"
+         />
+	  <Button 
+	      android:id="@+id/add_btn"  
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content" 
+	       
+	       android:textColor="@color/custom_control_text_color_selector"
+	       android:gravity="center_vertical|center_horizontal" 
+	       
+	       android:background="@drawable/coustom_btn_add_selector"
+	       android:textSize="24sp"/> 
+       
+
+</LinearLayout>
+</LinearLayout>

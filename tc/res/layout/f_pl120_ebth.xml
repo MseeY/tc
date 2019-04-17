@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <!--  普通投注 二不同号布局   --> 
+
+      <LinearLayout
+				        
+				      android:id="@+id/fast3_show_two_Layout"
+				      android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  
+					  
+					  android:layout_marginTop="10.0dp"
+				      android:layout_marginLeft="10.0dp"
+				      android:layout_marginRight="10.0dp"
+				      
+					  android:layout_below="@id/reLayout"
+					  android:orientation="vertical">
+				      
+				       
+                    <TextView 
+					          android:id="@+id/fast3_top_tv"
+					          android:layout_width="fill_parent"
+					          android:layout_height="fill_parent"
+					          android:layout_gravity="center_vertical|right"
+					          android:layout_weight="1"
+					          
+					          android:layout_marginBottom="10dp"
+					          
+					          android:gravity="center_vertical|left"
+					       
+					          android:textSize="14.0dp"
+					          android:textColor="@color/award_info_tv_title_color"
+					          android:text="@string/fast3_top_tv"/>
+				    
+				    <com.mitenotc.ui.ui_utils.MGridView
+	                       
+	                        android:id="@+id/ebth_mgv"
+			                android:layout_height="106dp"
+			                android:layout_width="fill_parent"
+			                
+			                
+			                android:verticalSpacing="5.0dp"
+			                android:horizontalSpacing="5.0dp"
+			                
+			                android:numColumns="3"
+			                />
+				    
+				     </LinearLayout>
+  
+  
+   
+
+</LinearLayout>

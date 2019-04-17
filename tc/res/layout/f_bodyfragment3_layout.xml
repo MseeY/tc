@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/bodyfragment3_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyfragment2_bg"
+    android:orientation="vertical" >
+<!--         <com.mitenotc.ui.ui_utils.JCListView
+        android:id="@+id/jc_Lottery_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@color/white"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:groupIndicator="@null"
+        android:childDivider="@color/login_color_7"
+        android:scrollbars="vertical" /> -->
+</LinearLayout>

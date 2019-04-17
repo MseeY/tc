@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/award_info_item_pk_ll_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/award_info_bg_pk1"
+        android:layout_marginRight="7dip">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/award_info_item_pk_tv"
+        android:gravity="center"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="A" />
+    </LinearLayout>
+</LinearLayout>

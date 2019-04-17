@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_color_6"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/login_color_8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+
+  <RelativeLayout
+            android:id="@+id/jc_c_openbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:background="@color/dialog_title_tv_color"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:paddingTop="2dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/session"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/name"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:background="@drawable/bg_shape_jccc"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/session"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ratio_show_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time"
+                android:drawableTop="@drawable/d1"
+                android:paddingTop="2dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:id="@+id/ke"
+                    style="@style/text_13_606060"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="----" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.55"
+                    android:gravity="center"
+                    android:text="vs"
+                    android:textColor="@color/btn_gray_u"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/zhu"
+                    style="@style/text_13_606060"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="----" />
+            </LinearLayout>
+
+            <!-- <com.mitenotc.ui.ui_utils.TextViewGroup -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+	                <TextView
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:background="@drawable/jc_r_gray"
+	                    android:gravity="center"
+	                    android:layout_weight="1"
+	                    android:layout_marginBottom="2.5dp"
+	                    android:text="胜负"
+	                    android:textColor="@color/white"
+	                    android:textSize="10.0sp" />
+                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+	                    android:layout_weight="1"
+	                    android:layout_marginTop="2.5dp"
+                        android:background="@drawable/jc_r_green"
+                        android:gravity="center"
+                        android:text="让分"
+                        android:textColor="@color/white"
+                        android:textSize="10.0sp" />
+               </LinearLayout>
+        
+                <com.mitenotc.ui.ui_utils.TextViewGroup
+                    android:id="@+id/item_chgp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="0dp" >
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:padding="0dp" >
+                    <TextView
+                        android:id="@+id/cb0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag=""
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+                    <!-- android:background="@drawable/jc_bqc_bg_selector" -->
+
+
+                    <TextView
+                        android:id="@+id/cb3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:tag="0_0.00"
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2.5dp"
+                    android:orientation="horizontal"
+                    android:padding="0dp" >
+                    <TextView
+                        android:id="@+id/r_ch0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag="3_0.00"
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+
+
+                    <TextView
+                        android:id="@+id/r_ch3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_jc_chboxbg_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:tag=""
+                        android:text=""
+                        android:textColor="@color/jc_chboxtext_color_selector"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+                </com.mitenotc.ui.ui_utils.TextViewGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_all_check_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.95"
+                android:background="@drawable/jc_btn_white_m1"
+                android:button="@null"
+                android:gravity="left|center_vertical"
+                android:padding="3dp"
+                android:tag="6"
+                android:text="全部展开"
+                android:textColor="@color/rbtn_text_color_selector"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+<View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/login_color_8" />
+   <LinearLayout
+        android:visibility="gone"
+       
+        android:id="@+id/item_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.09"
+            android:gravity="center"
+            android:background="@color/znzh_coustom_text"
+            android:text="投注比例"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+<!--    android:background="@drawable/jc_bl_l" -->
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/xa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/bl_text"
+            android:background="@color/gray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+<!--             android:background="@drawable/jc_bl_r" -->
+
+        <TextView
+            android:id="@+id/xb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/bl_text"
+            android:background="@color/gray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

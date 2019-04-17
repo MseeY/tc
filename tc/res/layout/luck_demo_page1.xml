@@ -1,0 +1,687 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:layout_width="130dip"
+        android:layout_height="130dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-10dip"
+        android:src="@drawable/luck_cloud_right" />
+
+    <ImageView
+        android:layout_width="130dip"
+        android:layout_height="130dip"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/luck_cloud_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip" >
+
+        <FrameLayout
+            android:id="@+id/fl_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/iv_luckanim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/luckanim" />
+
+            <ImageView
+                android:id="@+id/plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/luck_table" />
+
+            <ImageView
+                android:id="@+id/iv_pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/luck_pointer" />
+
+            <ImageView
+                android:id="@+id/iv_btn_lucky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/selecter_luck_btn" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_luck_mid"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_above="@+id/rl_wheel_text"
+        android:background="@drawable/luck_mid_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wheel_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe8bd" >
+        
+        <com.mitenotc.ui.account.view.MyAutoCycleRollingListView
+            android:layout_alignParentTop="true"
+            android:scrollbars="none"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/shape_acc_white_btn"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+        android:id="@+id/luck_auto_scroll_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_world" />
+
+        <!-- <com.mitenotc.ui.account.view.AutoScrollView
+            android:id="@+id/auto_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/shape_acc_white_btn"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了一等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了三等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了七等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了四等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了七等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了一等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了零等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了特等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="恭喜中了二等奖" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:text="2013-10-21" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginBottom="7dip"
+                    android:background="@color/line_gray1"/>
+                
+            </LinearLayout>
+        </com.mitenotc.ui.account.view.AutoScrollView> -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--  selected  -->
+    <item android:state_checked="true" android:color="@color/red_chbx_text"/>  
+
+    <!-- not selected -->  
+    <item android:color="@color/item_hall_tv_title_text_color"/>  
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 帮助中心的选择器   -->
+    <item android:drawable="@color/acc_help_press" android:state_pressed="true"/>
+    <item android:drawable="@color/login_color_5"/>
+</selector>

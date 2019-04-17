@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <!--  胆拖投注  三不同号布局      和 二不同号     布局共用--> 
+	<LinearLayout
+	      android:id="@+id/fast3_show_one_Layout"
+	      
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical">
+		  
+	               <TextView 
+				          android:id="@+id/pk3_tv_one"
+				          android:layout_width="wrap_content"
+				          android:layout_height="wrap_content"
+				          android:layout_weight="0.9"
+				          android:paddingRight="10dp"
+				          android:paddingLeft="4dp"
+				          android:paddingTop="4dp"
+				          android:paddingBottom="4dp"
+				          android:textSize="13sp"
+				          android:textColor="@color/blue7"
+				          android:text="@string/f_pk_rx0_text"
+				          /> 
+				         <!--  android:background="@drawable/shape_blueshake_reightbg" -->
+				     
+				     <com.mitenotc.ui.ui_utils.MGridView
+	                        android:id="@+id/pk3_mgv_one"
+			                android:layout_height="305dip"
+			                android:layout_width="match_parent"
+			                
+			                android:layout_weight="0.2"
+			                android:layout_marginTop="10dip"
+			                android:layout_marginLeft="10dip"
+			                android:layout_marginRight="10dip"
+			                 
+			                 
+			                 android:gravity="center_vertical|center_horizontal"
+			                 
+			                android:verticalSpacing="10.0dip"
+			                android:horizontalSpacing="10.0dip"
+			                
+			                android:numColumns="3"/>
+				     
+				     
+				          
+	        </LinearLayout>
+
+</LinearLayout>

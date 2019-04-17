@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <!--  普通投注 三同号布局   -->  
+
+ 
+	<LinearLayout
+	      android:id="@+id/fast3_show_one_Layout"
+	      
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  
+		  
+		  android:layout_marginTop="10dp"
+	      android:layout_marginLeft="10.0dp"
+	      android:layout_marginRight="10.0dp"
+		  android:orientation="vertical">
+	  	    		     <com.mitenotc.ui.ui_utils.MGridView
+	                       
+	                        android:id="@+id/sth_mgv"
+			                android:layout_height="130dp"
+			                android:layout_width="fill_parent"
+			                android:layout_weight="0.2"
+			                
+			                android:verticalSpacing="5.0dp"
+			                android:horizontalSpacing="5.0dp"
+			                
+			                android:numColumns="3"
+			                
+			                />
+				
+			    <com.mitenotc.ui.ui_utils.MGridView
+			              android:id="@+id/sth_tmgv"
+			              android:gravity="center"
+			              android:layout_gravity="center_horizontal|center_vertical"
+			                
+			                android:layout_width="fill_parent"
+					        android:layout_height="fill_parent"
+					        android:layout_weight="0.8"
+			                android:verticalSpacing="15.0dip"
+			                android:horizontalSpacing="5.0dip"
+			                
+			                android:numColumns="1"
+			                
+			                />
+					  
+
+	  	    	    
+	  	    	  	    	    
+	  	    	    
+	  	    	    
+	  	    	    
+	  	</LinearLayout>
+
+</LinearLayout>

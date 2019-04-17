@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000">
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scrollbarFadeDuration="1000"
+	        android:scrollbarSize="1.0dip"
+	        android:soundEffectsEnabled="true"
+	        android:scrollbars="none"
+	        >
+   <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linearLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:orientation="vertical"
+		      android:padding="0dp"
+		      android:background="@drawable/btn_bg_white_selector"
+		      >   
+          <TextView 
+		          android:layout_width="match_parent"
+			      android:layout_height="38.5dip"
+			      android:paddingLeft="12dip"
+			      android:text="@string/bet_Ssp_towed_tv_3"
+			      
+			      android:gravity="left|center_vertical"
+			      android:background="@color/white"
+			      
+		          android:textColor="@color/item_hall_tv_title_text_color"
+		          android:textStyle="bold"
+		          android:textSize="15sp"
+		          />
+	    <com.mitenotc.ui.ui_utils.GridRadioGroup 
+              android:id="@+id/saleType_grg"
+		      android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              
+              android:paddingTop="0.0dip"
+              android:paddingBottom="0.0dip"
+              android:paddingLeft="0dip"
+              android:paddingRight="0dip"
+              
+              android:layout_marginTop="0.5dp" 
+              android:layout_marginBottom="5dp"
+              android:layout_marginLeft="2dp"
+			  android:layout_marginRight="2dp"
+		      android:orientation="vertical">
+	
+		    
+			  <LinearLayout 
+			            android:id="@+id/linearLayout0"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center">
+						 <RadioButton 
+						      android:id="@+id/rbtn0"
+				              android:tag="0,2"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          android:checked="true"
+						      
+				              android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+						      
+				              android:text="@string/anychoose_rbtn_text_1"
+				              android:textSize="14.0sp" />
+						 	  <!--  android:background="@drawable/zq_spf_rbtn_middle_selector" -->
+						  <RadioButton 
+						      android:id="@+id/rbtn1"
+				              android:tag="0,3"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              android:layout_marginLeft="2dp"
+				              android:layout_marginRight="2dp"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:gravity="center_vertical|center_horizontal"
+						      
+						      android:button="@null"
+						      
+				              android:text="@string/anychoose_rbtn_text_2"
+				              android:textSize="14.0sp" />
+						  <RadioButton 
+						      android:id="@+id/rbtn2"
+				              android:tag="0,4"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+				              
+					           android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+						       
+				              android:text="@string/anychoose_rbtn_text_3"
+				              android:textSize="14.0sp" />
+		        </LinearLayout>
+		         <LinearLayout
+		                android:id="@+id/linearLayout1"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center"
+			            android:layout_marginTop="2dp"
+			            android:orientation="horizontal">
+		     
+
+		               
+		                <RadioButton 
+						      android:id="@+id/rbtn3"
+				              android:tag="0,5"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+						      android:button="@null"
+				        
+				              android:gravity="center_vertical|center_horizontal"
+				              android:text="@string/anychoose_rbtn_text_4"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:id="@+id/rbtn4"
+					         android:tag="0,6"
+					         
+					         android:layout_width="fill_parent"
+					         android:layout_height="30dip"
+					         android:layout_weight="1"
+					         
+					         android:button="@null"
+					          android:layout_marginLeft="2dp"
+				              android:layout_marginRight="2dp"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+					         android:gravity="center_vertical|center_horizontal"
+					         android:text="@string/anychoose_rbtn_text_5"
+					         android:textSize="14.0sp" />
+						  <RadioButton 
+						      android:id="@+id/rbtn5"
+						       android:tag="0,7"
+						      android:layout_width="fill_parent"
+				              android:layout_height="30dip"
+				              android:layout_weight="1"
+						      android:button="@null"
+				              
+						      android:gravity="center_vertical|center_horizontal"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+				              android:text="@string/anychoose_rbtn_text_6"
+				              android:textSize="14.0sp" />  
+		                    </LinearLayout>
+		            <LinearLayout
+		                android:id="@+id/linearLayout2"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center"
+			             android:layout_marginTop="2dp"
+			            android:orientation="horizontal">
+		               
+		                <RadioButton 
+						      android:id="@+id/rbtn6"
+				              android:tag="0,8"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:button="@null"
+				              android:gravity="center_vertical|center_horizontal"
+				              android:text="@string/anychoose_rbtn_text_7"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:id="@+id/rbtn7"
+					         android:tag="0,1"
+					          
+					         android:layout_width="fill_parent"
+					         android:layout_height="30dip"
+					         android:layout_weight="1"
+					         
+					          android:layout_marginLeft="2dp"
+				              android:layout_marginRight="2dp"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+					         android:button="@null"
+					         android:gravity="center_vertical|center_horizontal"
+				              
+					         android:text="@string/anychoose_rbtn_text_8"
+					         android:textSize="14.0sp" />
+
+						  <RadioButton 
+						      android:id="@+id/rbtn8"
+						      android:tag="3,9"
+						       
+						      android:layout_width="fill_parent"
+				              android:layout_height="30dip"
+				              android:layout_weight="1"
+						      android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+						       
+						      android:text="@string/anychoose_rbtn_text_9"
+				              android:textSize="14.0sp" />  
+		                    </LinearLayout>
+		            <LinearLayout
+		                android:id="@+id/linearLayout3"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center"
+			             android:layout_marginTop="2dp"
+			            android:orientation="horizontal">
+		     
+
+		               
+		                <RadioButton 
+						      android:id="@+id/rbtn9"
+				              android:tag="0,11"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:button="@null"
+				              android:gravity="center_vertical|center_horizontal"
+						      
+				              android:text="@string/anychoose_rbtn_text0_1"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:id="@+id/rbtn10"
+					         android:tag="3,10"
+					         
+					         android:layout_width="fill_parent"
+					         android:layout_height="30dip"
+					         android:layout_weight="1"
+					        
+					         android:button="@null"
+					         android:gravity="center_vertical|center_horizontal"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          android:layout_marginLeft="2dp"
+				              android:layout_marginRight="2dp"
+					         
+					         android:text="@string/anychoose_rbtn_text0_2"
+					         android:textSize="14.0sp" />
+						  <RadioButton 
+						      android:id="@+id/rbtn11"
+						      android:tag="0,12"
+						      
+						      android:layout_width="fill_parent"
+				              android:layout_height="30dip"
+				              android:layout_weight="1"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+				              
+				              android:text="@string/anychoose_rbtn_text0_3"
+				              android:textSize="14.0sp" />  
+				              
+
+		         </LinearLayout>
+		         
+		            
+ <!-- 胆拖   rbtn 区 -->
+				   	 <TextView 
+				          android:layout_width="match_parent"
+					      android:layout_height="38.5dip"
+					      android:paddingLeft="12dip"
+					      android:text="@string/bet_Ssp_towed_tv_4"
+					      
+					      android:gravity="left|center_vertical"
+					      android:background="@color/white"
+				          
+				          android:textColor="@color/item_hall_tv_title_text_color"
+		                  android:textStyle="bold"
+				          android:textSize="15sp"
+				          />
+				   	    
+			     <LinearLayout
+			           android:id="@+id/linearLayout4"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center"
+			            android:orientation="horizontal">
+		               
+		                <RadioButton 
+						      android:id="@+id/rbtn12"
+				              android:tag="2,2"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+						      
+				              android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+				              android:text="@string/anychoose_rbtn_text_1"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:id="@+id/rbtn13"
+					         android:tag="2,3"
+					         
+					         android:layout_width="fill_parent"
+					         android:layout_height="fill_parent"
+					         android:layout_weight="1"
+					         
+					         android:button="@null"
+					         android:gravity="center_vertical|center_horizontal"
+					          android:layout_marginLeft="2dp"
+			                 android:layout_marginRight="2dp"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					         
+					         android:text="@string/anychoose_rbtn_text_2"
+					         android:textSize="14.0sp" />
+					 <RadioButton 
+						      android:id="@+id/rbtn14"
+						      android:tag="2,4"
+						      
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+						      android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+				              
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+				              
+				              android:text="@string/anychoose_rbtn_text_3"
+				              android:textSize="14.0sp" />  
+				              
+
+		         </LinearLayout>
+			     <LinearLayout
+			           android:id="@+id/linearLayout5"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center"
+			             android:layout_marginTop="2dp"
+			            android:orientation="horizontal">
+		     
+                   <RadioButton 
+						      android:id="@+id/rbtn15"
+				              android:tag="2,5"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:button="@null"
+				              android:gravity="center_vertical|center_horizontal"
+						      
+				              android:text="@string/anychoose_rbtn_text_4"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:id="@+id/rbtn16"
+					         android:tag="2,6"
+					         android:layout_width="fill_parent"
+					         android:layout_height="fill_parent"
+					         android:layout_weight="1"
+					         android:layout_marginLeft="2dp"
+			                 android:layout_marginRight="2dp"
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+					         android:gravity="center_vertical|center_horizontal"
+					         android:button="@null"
+					         android:text="@string/anychoose_rbtn_text_5"
+					         android:textSize="14.0sp" />
+					 <RadioButton 
+						      android:id="@+id/rbtn17"
+						      android:tag="2,7"
+						      
+						      android:layout_width="fill_parent"
+				              android:layout_height="30dip"
+				              android:layout_weight="1"
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:gravity="center"
+						      android:button="@null"
+						   
+				              android:text="@string/anychoose_rbtn_text_6"
+				              android:textSize="14.0sp" />  
+				              
+
+		         </LinearLayout>
+		         	
+			     <LinearLayout
+			            android:id="@+id/linearLayout6"
+			            android:layout_width="match_parent"
+			            android:layout_height="30dip"
+			            android:gravity="center"
+			             android:layout_marginTop="2dp"
+			            android:orientation="horizontal">
+		     
+                   <RadioButton 
+						      android:id="@+id/rbtn18"
+				              android:tag="2,11"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+					          
+					          android:background="@drawable/choose_rbtn_selector"
+					          android:textColor="@color/rbtn_text_color_selector"
+					          
+						      android:button="@null"
+				              android:gravity="center_vertical|center_horizontal"
+						      
+				              android:text="@string/anychoose_rbtn_text0_1"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:id="@+id/rbtn19"
+					         android:tag="2,12"
+					         
+					         android:layout_width="fill_parent"
+					         android:layout_height="fill_parent"
+					         android:layout_weight="1"
+					         android:layout_marginLeft="2dp"
+			                 android:layout_marginRight="2dp"
+					         android:button="@null"
+					         android:gravity="center_vertical|center_horizontal"
+					         android:textColor="@color/rbtn_text_color_selector"
+					         android:background="@drawable/choose_rbtn_selector"
+					         android:text="@string/anychoose_rbtn_text0_3"
+					         android:textSize="14.0sp" />
+					 <RadioButton 
+					          android:enabled="false"
+					          
+						      android:id="@+id/rbtn20"
+						      android:tag="20"
+						      
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+					          
+						      android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+						      android:background="@color/white"
+						      
+				              android:textSize="14.0sp" />  
+				              
+
+		         </LinearLayout>
+		      </com.mitenotc.ui.ui_utils.GridRadioGroup>
+       </LinearLayout> 
+</ScrollView>
+</RelativeLayout>

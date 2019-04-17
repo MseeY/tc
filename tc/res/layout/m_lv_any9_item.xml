@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+ 	 <LinearLayout 
+ 	        android:id="@+id/llt1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:orientation="horizontal" >
+		    <TextView 
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_weight="0.85"
+		     android:gravity="center|left"
+		     android:paddingLeft="10dp"
+		     android:text="@string/any9_sharek_reight_text4"
+		      android:textColor="@color/award_info_tv_title_color"
+		     android:background="@drawable/choose_tv_bg"
+		        
+		        />
+		     <TextView 
+		     android:id="@+id/vs_left_tv"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="5dp"
+		     android:paddingTop="5dp"
+		     
+		     android:layout_weight="0.8"  
+		     android:gravity="center"
+		     android:text="@string/any9_sharek_reight_text1"
+		     android:textColor="@color/title_nav_tv_shadow_color"
+		        />
+		      <TextView 
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_weight="1"  
+		     android:paddingTop="5dp"
+		     
+		     android:gravity="center"
+		     android:textColor="@color/award_info_tv_title_second_color"
+		     android:text="@string/any9_sharek_reight_text2" />
+		     <TextView 
+		     android:id="@+id/vs_right_tv"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_weight="0.8" 
+		     android:layout_marginRight="5dp"
+		     android:paddingTop="5dp"
+		     
+		     android:gravity="center"
+		     android:text="@string/any9_sharek_reight_text3"
+		     android:textColor="@color/title_nav_tv_shadow_color"  
+		        />
+		     <TextView 
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_weight="0.85"
+		     android:gravity="center|right"
+		     android:paddingRight="10dp"
+		     android:text="@string/any9_sharek_reight_text5"
+		     android:textColor="@color/award_info_tv_title_color"
+		     android:background="@drawable/choose_tv_bg2"
+		        
+		        />
+		
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/llt2" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	   
+	    android:layout_marginTop="15dp"
+	    android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		
+		android:paddingTop="0dp"
+		android:paddingBottom="0dp"
+		android:paddingLeft="0dp"
+		android:paddingRight="0dp"
+		
+	   
+	    android:orientation="horizontal" >
+	    <com.mitenotc.ui.ui_utils.CustomButton
+	         android:id="@+id/cb_three"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	        />
+	 
+	    <com.mitenotc.ui.ui_utils.CustomButton
+	         android:id="@+id/cb_one"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	        />
+	  
+	    <com.mitenotc.ui.ui_utils.CustomButton
+	         android:id="@+id/cb_zero"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	        />
+	
+	</LinearLayout>
+</LinearLayout>

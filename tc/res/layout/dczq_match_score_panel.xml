@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip"
+        android:text="asdfasdfa "
+        android:textColor="@color/tc_default"
+        android:textSize="12.0sp" />
+
+    <!-- <com.mitenotc.ui.play.ToggleButtonGroup
+        android:id="@+id/tbg_jc_zq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" > -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip" >
+
+            <TextView
+                android:layout_width="14.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ffe71919"
+                android:gravity="center"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="5.0dip"
+                android:text="胜"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/tc_gray" />
+
+                <com.mitenotc.ui.play.ToggleButtonGroup
+                    android:id="@id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip" >
+
+                    <ToggleButton
+                        android:id="@id/dc_score1"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score2"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score3"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score4"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score5"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score26"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" /> -->
+
+                     <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" /> -->
+
+                    <ToggleButton
+                        android:id="@id/dc_score27"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+                </com.mitenotc.ui.play.ToggleButtonGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/tc_gray" />
+
+                <com.mitenotc.ui.play.ToggleButtonGroup
+                    android:id="@id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip" >
+
+                    <ToggleButton
+                        android:id="@id/dc_score6"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score7"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score8"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score9"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score10"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score28"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2.01"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+                </com.mitenotc.ui.play.ToggleButtonGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/tc_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@color/tc_gray" />
+
+        <com.mitenotc.ui.play.ToggleButtonGroup
+            android:id="@id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip" >
+
+            <TextView
+                android:layout_width="14.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ff1d76d2"
+                android:gravity="center"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="5.0dip"
+                android:text="平"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp" />
+
+            <ToggleButton
+                android:id="@id/dc_score11"
+                style="@style/score_setting_toggle_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:textSize="12.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:background="@color/tc_gray" />
+
+            <ToggleButton
+                android:id="@id/dc_score12"
+                style="@style/score_setting_toggle_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:textSize="12.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:background="@color/tc_gray" />
+
+            <ToggleButton
+                android:id="@id/dc_score13"
+                style="@style/score_setting_toggle_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:textSize="12.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:background="@color/tc_gray" />
+
+            <ToggleButton
+                android:id="@id/dc_score14"
+                style="@style/score_setting_toggle_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:textSize="12.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:background="@color/tc_gray" />
+
+            <ToggleButton
+                android:id="@id/dc_score15"
+                style="@style/score_setting_toggle_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.02"
+                android:textSize="12.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:background="@color/tc_gray" />
+        </com.mitenotc.ui.play.ToggleButtonGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:background="@color/tc_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="14.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ff47bc0e"
+                android:gravity="center"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="5.0dip"
+                android:text="负"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/tc_gray" />
+
+                <com.mitenotc.ui.play.ToggleButtonGroup
+                    android:id="@id/linearLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip" >
+
+                    <ToggleButton
+                        android:id="@id/dc_score16"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score17"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score18"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score19"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score20"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score29"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score30"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+                </com.mitenotc.ui.play.ToggleButtonGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/tc_gray" />
+
+                <com.mitenotc.ui.play.ToggleButtonGroup
+                    android:id="@id/linearLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip" >
+
+                    <ToggleButton
+                        android:id="@id/dc_score21"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score22"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score23"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score24"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score25"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+
+                    <ToggleButton
+                        android:id="@id/dc_score31"
+                        style="@style/score_setting_toggle_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2.01"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/tc_gray" />
+                </com.mitenotc.ui.play.ToggleButtonGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/tc_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    <!-- </com.mitenotc.ui.play.ToggleButtonGroup> -->
+
+</LinearLayout>

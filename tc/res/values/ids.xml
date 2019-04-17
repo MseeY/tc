@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bg_panel" type="id" />
+    <!-- titleFragment -->
+    <item name="f_fragment_title_rl" type="id" />
+    <item name="f_fragment_title_tv_left" type="id" />  
+    <item name="f_fragment_title_tv_right" type="id" />
+    <item name="f_fragment_title_tv_middle" type="id" />
+    <!-- ck 主界面 -->
+    <item name="title_nav_ll" type="id" />  
+    <item name="title_nav_tv" type="id" />  
+    <item name="title_nav_iv_left" type="id" />  
+    <item name="title_nav_iv_right" type="id" />
+    <item name="bottom_nav_ll_custom" type="id" />
+    <item name="bottom_nav_iv_custom" type="id" />
+    <item name="bottom_nav_tv_custom" type="id" />
+    <item name="bottom_nav_ll_hall" type="id" />
+    <item name="bottom_nav_iv_hall" type="id" />
+    <item name="bottom_nav_tv_hall" type="id" />
+    <item name="bottom_nav_ll_award" type="id" />
+    <item name="bottom_nav_iv_award" type="id" />
+    <item name="bottom_nav_tv_award" type="id" />
+    <item name="bottom_nav_ll_user" type="id" />
+    <item name="bottom_nav_iv_user" type="id" />
+    <item name="bottom_nav_tv_user" type="id" />
+    <item name="bottom_nav_iv_bg_custom" type="id" />
+    <item name="bottom_nav_iv_bg_hall" type="id" />
+    <item name="bottom_nav_iv_bg_award" type="id" />
+    <item name="bottom_nav_iv_bg_user" type="id" />
+    
+    <!-- ck dialog -->
+    <item name="dialog_title_ll" type="id" />
+    <item name="dialog_title_iv_right" type="id" />
+    <item name="dialog_title_tv" type="id" />
+    <item name="dialog_title_iv_left" type="id" />
+    <item name="dialog_btn_first" type="id" />
+    <item name="dialog_btn_left" type="id" />
+    <item name="dialog_btn_right" type="id" />
+    <item name="dialog_btn_third_line" type="id" />
+    <item name="dialog_tv_content" type="id" />
+    <item name="dialog_tv_confirm" type="id" />
+    <item name="dialog_btn_last" type="id" />
+    <!-- ck pop menu -->
+    <item name="pop_menu_iv" type="id" />
+    <item name="pop_menu_tv" type="id" />
+    <!-- ck award info -->
+    <item name="award_info_ball_content_ll" type="id" />
+    <item name="award_info_content" type="id" />
+    <item name="award_info_ball_content" type="id" />
+    <item name="award_info_dice_content" type="id" />
+    <item name="award_info_shengfu_content" type="id" />
+    <item name="award_info_item_ball_tv_bg" type="id" />
+    <item name="award_info_item_ball_tv_last_bg" type="id" />
+    <item name="award_info_dice_iv" type="id" />
+    <item name="award_info_dice_last_iv" type="id" />
+    <item name="award_info_item_dice_ll" type="id" />
+    <item name="award_info_item_dice_ll_last" type="id" />
+    <item name="award_info_shengfu_second_content" type="id" />
+    <item name="award_info_shengfu_tv_last" type="id" />
+    <item name="award_info_shengfu_tv" type="id" />
+     <item name="award_info_tv_title" type="id" />
+     <item name="award_info_tv_issue" type="id" />
+     <item name="award_info_tv_time" type="id" />
+    <!-- ck item hall -->
+    <item name="item_hall_iv_logo" type="id" />
+    <item name="item_hall_tv_title" type="id" />
+    <item name="item_hall_tv_kaijiang" type="id" />
+    <item name="item_hall_tv_jiajiang" type="id" />
+    <item name="item_hall_tv_desc" type="id" />
+    <item name="item_hall_tv_issue" type="id" />
+    <!-- ck bodyfragment2 -->
+    <item name="bodyfragment2_ll" type="id" />
+    <!-- ck bodyfragment3 -->
+    <item name="bodyfragment3_ll" type="id" />
+    <item name="award_info_shengfu_bg" type="id" />
+    <!-- ck bodyfragment1 -->
+    <item name="bodyfragment1_btn" type="id" />
+    <item name="bodyfragment1_ll_net_info" type="id" />
+    
+    <!-- ymx  sao_code  -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="quit" type="id"/>
+    
+    <item type="id" name="linearLayout1">false</item>
+    <item type="id" name="linearLayout2">false</item>
+    <item type="id" name="linearLayout3">false</item>
+    <item type="id" name="linearLayout4">false</item>
+    <item type="id" name="linearLayout5">false</item>
+    <item type="id" name="dc_score1">false</item>
+    <item type="id" name="dc_score2">false</item>
+    <item type="id" name="dc_score3">false</item>
+    <item type="id" name="dc_score4">false</item>
+    <item type="id" name="dc_score5">false</item>
+    <item type="id" name="dc_score6">false</item>
+    <item type="id" name="dc_score7">false</item>
+    <item type="id" name="dc_score8">false</item>
+    <item type="id" name="dc_score9">false</item>
+    <item type="id" name="dc_score10">false</item>
+    <item type="id" name="dc_score11">false</item>
+    <item type="id" name="dc_score12">false</item>
+    <item type="id" name="dc_score13">false</item>
+    <item type="id" name="dc_score14">false</item>
+    <item type="id" name="dc_score15">false</item>
+    <item type="id" name="dc_score16">false</item>
+    <item type="id" name="dc_score17">false</item>
+    <item type="id" name="dc_score18">false</item>
+    <item type="id" name="dc_score19">false</item>
+    <item type="id" name="dc_score20">false</item>
+    <item type="id" name="dc_score21">false</item>
+    <item type="id" name="dc_score22">false</item>
+    <item type="id" name="dc_score23">false</item>
+    <item type="id" name="dc_score24">false</item>
+    <item type="id" name="dc_score25">false</item>
+    <item type="id" name="dc_score26">false</item>
+    <item type="id" name="dc_score27">false</item>
+    <item type="id" name="dc_score28">false</item>
+    <item type="id" name="dc_score29">false</item>
+    <item type="id" name="dc_score30">false</item>
+    <item type="id" name="dc_score31">false</item>
+</resources>

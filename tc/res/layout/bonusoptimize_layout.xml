@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_title_tv_color"
+    android:filterTouchesWhenObscured="true" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view_line"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="计划购买"
+                android:textSize="13sp" />
+
+            <com.mitenotc.ui.ui_utils.AddSelfEditText
+                android:id="@+id/plan_buy_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/tv1" />
+
+            <CheckBox
+                android:id="@+id/explain_chbox"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/plan_buy_edit"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/help_large_bonus"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="元"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.mitenotc.ui.ui_utils.GridRadioGroup
+                android:id="@+id/condition_rgp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/zq_spf_rbtn_left_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="平均优化"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/zq_spf_rbtn_middle_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="风险最小"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/zq_spf_rbtn_reight_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="奖金最多"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </com.mitenotc.ui.ui_utils.GridRadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="0dp" >
+
+            <!-- 期号 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="@string/ob_gg"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/textaddFont"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/ob_dzzh"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12sp" />
+            <!-- android:textColor="@color/login_color_2" -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ob_zsfb"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/textaddFont"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/ob_yzcj"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="12sp" />
+            <!-- android:textColor="@color/login_color_2" -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/view_line" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bop_content_layout"
+        android:layout_below="@id/l1"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- 最底部    TextView  Button -->
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dialog_title_tv_color"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/bet_tv_castText"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/multiple_number_ed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:hint="1"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:paddingTop="3.0dip"
+                android:text="1"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textColorHint="@color/znzh_coustom_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv55"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/bet_tv_againText"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:background="@drawable/fragment_bottom_rl_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/bonus_optimize_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/yh"
+                android:drawablePadding="0dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/bet_optimize_text"
+                android:textColor="@color/award_info_yuan"
+                android:textSize="16.0dip"/>
+
+            <TextView
+                android:id="@+id/show_bet_result_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="1dp"
+                android:text="@string/bet_tv_resultText"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/payment_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                
+                android:text="@string/bet_tv_payText"
+                android:drawableLeft="@drawable/next"
+                android:background="@color/white"
+                 android:textColor="@color/red"
+                android:textSize="16.0dip" />
+<!--                 android:background="@drawable/btn_bg_red_selector" -->
+        </LinearLayout>
+       <!--  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_bg_white_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:background="@color/white"
+                android:textColor="@color/white"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/show_bet_result_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:maxLines="3"
+                android:padding="1dp"
+                android:text="@string/bet_tv_resultText"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/payment_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.35"
+                android:drawableLeft="@drawable/next"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/bet_tv_payText"
+                android:textColor="@color/red"
+                android:textSize="16.0dip" />
+        </LinearLayout> -->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_acc_bottom_gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginTop="15dip"
+                android:layout_marginBottom="5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名："
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/tv_acc_safe_true_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ed_bg"
+                    android:gravity="left|center_vertical"
+					android:padding="10dip"
+                    android:maxLength="7"
+                    android:hint="请输入您的真实姓名"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="证件类型："
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_acc_safe_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ed_bg"
+                    android:drawableRight="@drawable/arrow_down_black"
+                    android:gravity="left|center_vertical"
+                    android:padding="10dip"
+                    android:hint="点击选择证件"
+                    android:textColorHint="#999999"
+                    android:button="@null"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="证件号码："
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/tv_acc_safe_card_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ed_bg"
+                    android:gravity="left|center_vertical"
+                    android:padding="10dip"
+                    android:hint="请输入您的证件号码"
+					android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_save_true_name_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_7"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/btn_bg_red_selector"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:text="保存我的实名信息"
+                android:textColor="@color/login_color_5"
+                android:textSize="@dimen/login_buletext"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注："
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dip"
+                    android:text="请正确填写您的购彩实名相关信息，一经填写，不能修改！"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

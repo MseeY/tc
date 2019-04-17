@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/ymx_rl_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:background="@drawable/kjinfo_item_title"
+        android:paddingBottom="25dp"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="16dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sfcinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sale_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="本期销量 : 3.46亿"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/award_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="奖池累计 : 99.99亿"
+                android:textColor="#606060"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ymx_sfcinfo_bt"
+                android:layout_width="90dip"
+                android:layout_height="23dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_bg_red_selector"
+                android:gravity="center"
+                android:padding="0dip"
+                android:text="对阵详情"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_sfcinfo"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_below="@id/rl_sfcinfo_title"
+            android:layout_marginTop="7dip"
+            android:background="#EFEFEF"
+            android:gravity="center_vertical" >
+
+<!--             <LinearLayout
+                android:id="@+id/ll_wenzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" > -->
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="奖项"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="中奖注数"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="奖金"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+        <!--     </LinearLayout> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/award_detail_ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_sfcinfo"
+            android:layout_marginTop="2dip"
+            android:background="#F9F9F9"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/award_info_detail_paper_bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_repeat"
+         />
+
+</LinearLayout>

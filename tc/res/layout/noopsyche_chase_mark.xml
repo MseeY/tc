@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/hall_item_bg_selected">
+	<LinearLayout
+	    android:id="@+id/Rl1" 
+	    android:layout_width="match_parent"
+	    android:layout_height="34dip"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:background="@drawable/btn_bg_white_selector"
+	    android:orientation="horizontal">
+	<TextView 
+	    android:id="@+id/time_tv1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="34dip"
+	    android:layout_weight="0.4"
+	    android:padding="2dp"
+	    
+	    android:gravity="center_vertical|right"
+	    android:text="@string/item_hall_tv_issue_text"
+	    />
+	
+		<TextView 
+	    android:id="@+id/time_tv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="34dip"
+	    android:layout_weight="0.6"
+	    android:padding="2dp"
+	    
+	    android:gravity="center_vertical|left"
+	    android:text="00:00"
+	    android:textColor="@color/zwl_register_titlebackground_color" 
+        style="@style/textaddFont"
+	    />
+	 
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/LL2" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/Rl1"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_gravity="center_vertical"
+	    android:background="@color/white"
+	    android:orientation="horizontal">
+	<TextView
+	    android:id="@+id/znzh_table_top_tv" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.4"
+	    android:paddingLeft="10dip"
+	    android:paddingTop="10dip"
+	    android:paddingBottom="10dip"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center_vertical|left"
+	    android:text="@string/znzh_tv2_text"
+	    android:singleLine="false"
+	    android:textSize="16sp"
+	    />
+	<Button 
+	    android:id="@+id/amendScheme_btn"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dip"
+	    android:layout_weight="1"
+	    android:layout_marginRight="3dp"
+	    android:layout_gravity="center"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:background="@drawable/btn_bg_red_selector"
+	    android:text="@string/znzh_btn_text"
+	    android:textColor="@color/white"
+	    android:textSize="14sp"
+	    
+	    />
+	 
+	</LinearLayout>
+	 	
+	 		   <!-- 最底部    TextView  Button -->
+	 	<LinearLayout
+	 	      android:id="@+id/pay_linear"
+	 	      android:layout_width="fill_parent"
+              android:layout_height="35dip" 
+              android:layout_margin="10dp"
+              android:orientation="horizontal"
+              android:background="@color/white"
+              android:layout_alignParentBottom="true">
+	   
+	 	    <Button 
+		      
+		      android:id="@+id/initialize_huifu_btn"
+		      android:layout_width="fill_parent"
+              android:layout_height="44dip" 
+              android:layout_weight="1.5"
+              android:padding="5dp"
+                
+              android:layout_gravity="center"  
+              android:gravity="center_horizontal|center_vertical"
+              
+              android:text="@string/bet_tv_huifu"
+              android:textColor="@color/red"
+		      android:background="@drawable/btn_white_or_gray_selector"
+              android:textSize="16.0dip" />
+	 	    <TextView 
+		      android:id="@+id/show_bet_result_tv"
+		      android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              android:layout_weight="1"
+              
+              android:paddingTop="4dip"
+              android:paddingBottom="4dip"
+	          android:paddingLeft="5dip"
+	          android:paddingRight="5dip"
+          
+              android:gravity="center"
+              android:text="@string/bet_tv_resultText"
+              android:textSize="14sp"
+              android:maxLines="3"/>
+		   <Button 
+		      android:id="@+id/payment_btn"
+		      android:layout_width="fill_parent"
+              android:layout_height="44dip" 
+              android:layout_weight="1.5"
+               android:padding="5dp"
+                
+              android:layout_gravity="center"
+              android:gravity="center_horizontal|center_vertical"
+              
+              android:text="@string/bet_tv_payText"
+		      android:textColor="@color/red"
+		      android:background="@drawable/btn_white_or_gray_selector"
+              android:textSize="16.0dip" />
+	 	</LinearLayout>
+	 	
+  <!--  中间方案列表部分   -->	 	
+  <RelativeLayout 
+		    android:id="@+id/r_L3" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/LL2"
+		    android:layout_above="@id/pay_linear"
+		    
+		    android:layout_marginLeft="5dip"
+		    android:layout_marginRight="5dip"
+		    android:layout_marginBottom="5dip">
+		   
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			      <View 
+					    android:layout_width="match_parent"
+					    android:layout_height="0.5dp"
+					    android:background="@color/view_line"
+					    />
+					 <LinearLayout 
+						    android:id="@+id/LL_item1" 
+						    android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+						    android:gravity="center"
+						    
+						     android:background="@drawable/hall_item_bg_selected"
+						    android:orientation="horizontal">
+						    <View 
+							    android:layout_width="0.5dip"
+							    android:layout_height="fill_parent"
+							    android:background="@color/view_line"
+							    />
+								<TextView
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content" 
+								    android:gravity="center"
+								    android:layout_weight="1.5"
+								    android:textSize="14sp"
+								    android:text="@string/table_title_text1"/>
+								<View 
+								    android:layout_width="0.5dip"
+								    android:layout_height="fill_parent"
+								    android:background="@color/view_line"
+								    
+								    />
+								
+							   <TextView
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content" 
+								    android:gravity="center"
+								    android:textSize="14sp"
+								    android:layout_weight="1.5"
+								    android:text="@string/table_title_text2"/>
+							   	<View 
+								    android:layout_width="0.5dip"
+								    android:layout_height="fill_parent"
+								    android:background="@color/view_line"
+								    
+								    />
+							   	<TextView
+							   	    
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content" 
+								    android:gravity="center_vertical|center_horizontal"
+								    
+								    android:paddingTop="10dip"
+								    android:paddingBottom="10dip"
+								    android:layout_weight="1"
+								    android:textSize="14sp"
+								    android:text="@string/table_title_text3"/>
+						
+							   <View 
+								    android:layout_width="0.5dip"
+								    android:layout_height="fill_parent"
+								    android:background="@color/view_line"
+								    
+								    />
+							   <TextView
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content" 
+								     android:gravity="center"
+								    android:layout_weight="1.4"
+								    android:textSize="14sp"
+								    android:text="@string/table_title_text4"/>
+							   	<View 
+								    android:layout_width="0.5dip"
+								    android:layout_height="fill_parent"
+								    android:background="@color/view_line"
+								    
+								    />
+							   	<TextView
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content" 
+								    android:layout_weight="1.4"
+								    android:gravity="center"
+								    android:textSize="14sp"
+								    android:text="@string/table_title_text5"/> 
+								 <View 
+								    android:layout_width="0.5dip"
+								    android:layout_height="fill_parent"
+								    android:background="@color/view_line"
+								    
+								    /> 
+								<TextView
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content"
+								    android:gravity="center"
+								    android:layout_weight="1.4"
+								    android:textSize="14sp"
+								    android:text="@string/table_title_text6"/>    
+								    <View 
+									    android:layout_width="0.5dip"
+									    android:layout_height="fill_parent"
+									    android:background="@color/view_line"
+									    />
+					   </LinearLayout>
+					   	<View
+					   	    android:id="@+id/v_L1"
+						    android:layout_width="fill_parent"
+						    android:layout_height="0.5dip"
+						    android:background="@color/view_line"
+						    
+				 		    />
+				  	 <ListView 
+					        android:id="@+id/bet_scheme_lv" 
+					        android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+						     android:layout_marginLeft="1dip"
+		                     android:layout_marginRight="1dip"
+						    android:background="@color/zwl_register_white_color"/>
+		  	 </LinearLayout>
+  	 
+  	</RelativeLayout>
+
+	
+ 
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 资金管理圆角背景 -->
+    <solid android:color="#FFcd1a" />
+
+    <corners
+        android:bottomLeftRadius="1dip"
+        android:bottomRightRadius="1dip"
+        android:topLeftRadius="1dip"
+        android:topRightRadius="1dip" />
+
+</shape>

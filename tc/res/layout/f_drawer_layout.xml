@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="@color/dialog_title_tv_color" 
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:hint="测试用的textview,实际用的时候请把该textview 移除掉"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:background="@color/award_info_item_dice_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ccc"
+                android:hint="测试用的textview,实际用的时候请把该textview 移除掉"
+                android:textColor="@android:color/primary_text_light_nodisable"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

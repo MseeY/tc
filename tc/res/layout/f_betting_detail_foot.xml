@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:layout_marginTop="10dip"
+        android:id="@+id/betting_detail_btn_award_intro"
+        style="@style/text_12_606060"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_btn_height"
+        android:background="@drawable/selector_acc_me_bg8"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/betting_detail_btn_padding_left"
+        android:paddingRight="@dimen/betting_detail_btn_padding_left"
+        android:text="中奖怎么算" />
+
+    <LinearLayout
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/text_12_606060"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7.5dp"
+                android:text="下单时间" />
+
+            <TextView
+                android:id="@+id/betting_detail_tv_order_time"
+                style="@style/text_12_606060"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2013.12.31 15:15:15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/text_12_606060"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7.5dp"
+                android:text="订单编号" />
+
+            <TextView
+                android:id="@+id/betting_detail_tv_order_num"
+                style="@style/text_12_606060"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20131234567890" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/text_12_606060"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7.5dp"
+                android:text="温馨提示" />
+
+            <TextView
+                android:id="@+id/betting_detail_notice_tv"
+                style="@style/text_12_606060"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/betting_detail_tv_notice" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/betting_detail_tv_verify"
+            style="@style/text_11_999999"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp" />
+    </LinearLayout>
+
+</LinearLayout>

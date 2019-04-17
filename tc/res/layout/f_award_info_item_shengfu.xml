@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@id/award_info_shengfu_tv"
+        style="@style/text_15_ffffff_bold"
+        android:layout_width="@dimen/award_info_shengfu_width"
+        android:layout_height="@dimen/award_info_dice_iv_height"
+        android:layout_marginLeft="@dimen/award_info_shengfu_margin_left"
+        android:background="@drawable/award_info_shengfu_bg"
+        android:gravity="center"
+        android:text="3" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2" >
+
+        <RelativeLayout 
+            android:id="@+id/title_nav_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_title_nav_height"
+            android:gravity="center_vertical"
+        	android:padding="0dp"
+        	android:background="@drawable/activity_main_title_nav_bg"
+            >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@id/title_nav_iv_left"
+            android:background="@drawable/selector_title_clicked_bg"
+            style="@style/title_nav_iv_style"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:src="@drawable/title_nav_back" />
+
+        <CheckBox
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:button="@null"
+            style="@style/text_20_ffffff_bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:shadowColor="@color/title_nav_tv_shadow_color"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="0.5"
+            android:id="@id/title_nav_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="竞彩主页"
+            android:background="@drawable/selector_title_clicked_bg"
+            android:enabled="false"
+            />
+       
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+           android:orientation="horizontal"
+           >
+           <CheckBox
+            android:button="@null"
+            android:id="@+id/title_nav_iv_right2"
+            android:background="@drawable/selector_title_nav_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+             />
+        <ImageView
+            android:id="@id/title_nav_iv_right"
+            android:background="@drawable/selector_title_iv_right_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:src="@drawable/title_nav_menu" />
+         </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/jc_main_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_nav_ll"
+        android:background="@color/white" >
+    </RelativeLayout>
+
+</RelativeLayout>

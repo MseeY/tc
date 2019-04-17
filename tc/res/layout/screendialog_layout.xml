@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+        <TextView
+            android:id="@+id/T2"
+            style="@style/text_15_000000_bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="@dimen/dialog_margin_left"
+		    android:layout_marginRight="@dimen/dialog_margin_right"
+            android:text="对阵筛选" />
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+		   android:layout_marginLeft="@dimen/dialog_margin_left"
+		   android:layout_marginRight="@dimen/dialog_margin_right"
+	        android:background="@color/view_line" />
+
+	    <TextView
+	        android:id="@+id/T2"
+	        style="@style/text_13_606060"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:text="赔率筛选(默认所有赔率):" />
+	 <com.mitenotc.ui.ui_utils.GridRadioGroup
+           android:id="@+id/sprg"
+           android:layout_width="fill_parent"
+           android:layout_height="30dp"
+           android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/sp0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/jc_bqc_bg_selector"
+                android:textColor="@color/rbtn_text_color_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:tag="0"
+                android:text="所有赔率"
+                android:textSize="14.0sp" />
+
+            <RadioButton
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/jc_bqc_bg_selector"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:tag="1.5"
+                android:checked="false"
+                android:text="1.5以下"
+                android:textColor="@color/rbtn_text_color_selector"
+                android:textSize="14.0sp" />
+            <RadioButton
+                android:id="@+id/sp2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/jc_bqc_bg_selector"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="2.0"
+                android:checked="false"
+                android:text="2.0以上"
+                android:textColor="@color/rbtn_text_color_selector"
+                android:textSize="14.0sp" />
+        </com.mitenotc.ui.ui_utils.GridRadioGroup>
+     
+       <TextView
+	        android:id="@+id/T2"
+	        style="@style/text_13_606060"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:text="赛事筛选(默认全选):" />  
+
+        <com.mitenotc.ui.ui_utils.GridRadioGroup
+            android:id="@+id/grp"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/btn_bg_white_selector"
+            android:orientation="horizontal"
+            android:padding="0dp" >
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    
+                      android:background="@drawable/jc_bqc_bg_selector"
+                    android:textColor="@color/rbtn_text_color_selector"
+			         
+                    android:button="@null"
+                    android:focusable="false"
+                    android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="全选"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:button="@null"
+                    android:focusable="false"
+                     android:checked="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="反选"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                     android:focusable="false"
+                     android:checked="false"
+                     
+                    android:background="@drawable/jc_bqc_bg_selector"
+                    android:textColor="@color/rbtn_text_color_selector"
+			         
+                     android:text="五大联赛"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="14.0sp" />
+         
+        </com.mitenotc.ui.ui_utils.GridRadioGroup>  
+      
+<com.mitenotc.ui.ui_utils.MGridView
+	        android:id="@+id/game_mv"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        
+	        android:verticalSpacing="5dip"
+	        android:horizontalSpacing="5dip"
+	        android:numColumns="3" 
+	        android:columnWidth="60dip"/>
+  
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_bg_gray_selector"
+            android:text="@string/bqc_c_cancel"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/award_info_tv_title_color"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/affirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_bg_red_selector"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="@string/bqc_c_affirm"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

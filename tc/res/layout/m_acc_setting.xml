@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_setting_push_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_help_item"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox_bg3"
+   		android:paddingTop="13dip"
+   		android:paddingBottom="13dip"
+   		android:paddingLeft="15dip"
+   		android:paddingRight="15dip"
+        android:text="推送信息时提醒"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2" />
+
+    <CheckBox
+        android:id="@+id/cb_setting_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_help_item"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox_bg3"
+   		android:paddingTop="13dip"
+   		android:paddingBottom="13dip"
+   		android:paddingLeft="15dip"
+   		android:paddingRight="15dip"
+        android:text="摇摇机选震动效果"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2" />
+
+    <CheckBox
+        android:id="@+id/cb_setting_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_help_item"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox_bg3"
+   		android:paddingTop="13dip"
+   		android:paddingBottom="13dip"
+   		android:paddingLeft="15dip"
+   		android:paddingRight="15dip"
+        android:text="声音效果"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2" />
+
+
+    <TextView
+        android:id="@+id/tv_acc_setting_check_verson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_help_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+   		android:paddingTop="13dip"
+   		android:paddingBottom="13dip"
+   		android:paddingLeft="15dip"
+   		android:paddingRight="15dip"
+        android:text="检测新版本"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2" />
+
+
+    <TextView
+        android:id="@+id/acc_setting_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_help_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+   		android:paddingTop="13dip"
+   		android:paddingBottom="13dip"
+   		android:paddingLeft="15dip"
+   		android:paddingRight="15dip"
+        android:text="帮助中心"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2" />
+
+
+    <TextView
+        android:id="@+id/tv_acc_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_help_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+   		android:paddingTop="13dip"
+   		android:paddingBottom="13dip"
+   		android:paddingLeft="15dip"
+   		android:paddingRight="15dip"
+        android:text="关于"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2" />
+
+</LinearLayout>
+</ScrollView>

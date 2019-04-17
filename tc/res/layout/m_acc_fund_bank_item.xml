@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_acc_me_bg8"
+    android:padding="10dip" >
+    
+    <ImageView
+        android:id="@+id/iv_acc_fund_extraction_logo" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_marginLeft="5dip"
+        android:id="@+id/tv_acc_fund_extraction_bankname"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:text="上海浦东发展银行"
+        android:textColor="#606060"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡尾号："
+            android:textColor="#606060"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_acc_fund_bank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7789"
+            android:textColor="#606060"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

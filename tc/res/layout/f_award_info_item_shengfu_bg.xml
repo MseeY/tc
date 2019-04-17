@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:id="@id/award_info_shengfu_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/award_info_dice_bg_height"
+        android:layout_marginLeft="@dimen/award_info_ball_margin_right"
+        android:paddingRight="@dimen/award_info_shengfu_margin_left"
+        android:paddingTop="@dimen/award_info_shengfu_margin_left"
+        android:paddingBottom="@dimen/award_info_shengfu_margin_left"
+        android:background="@drawable/award_info_item_dice_bg"
+        android:gravity="center_vertical"
+        ></LinearLayout>
+
+</LinearLayout>

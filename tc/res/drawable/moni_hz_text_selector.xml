@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+        <!--  selected  -->
+    <item android:state_checked="true" android:color="@color/moni_ks_select_text_color"/>  
+
+    <!-- not selected -->  
+
+    <item android:color="@color/white"/>  
+
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+      
+
+    <solid android:color="#9f0202"  /><!-- 实心 背景的填充颜色 -->  
+    <stroke android:width="4dp" android:color="#DCDCDC" /><!-- 描边，width是边的宽度，color是颜色 -->  
+    <size android:width="20dp" android:height="20dp"/>
+    <corners android:radius="20dp"/><!-- 边角圆弧的半径 -->  
+    <padding   
+        android:left="3dp"  
+        android:top="3dp"   
+        android:right="3dp"  
+        android:bottom="3dp" /><!-- 四周留出来的空白 -->  
+    
+
+
+
+</shape>

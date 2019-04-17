@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2" 
+    android:orientation="vertical">
+<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/set_dan_bg_true"/>
+<ImageView 
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/set_dan_bg_untouch"/>
+
+<ImageView 
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/pktitle_rbtn_true"/>
+<ImageView 
+    android:layout_width="50dp"
+    android:layout_height="20dp"
+    android:background="@drawable/pktitle_leftbg"/>
+<ImageView 
+    android:layout_width="50dp"
+    android:layout_height="20dp"
+    android:background="@drawable/pktitle_reightbg"/>
+<ImageView 
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/pktitle_rbtn_false"/>
+<ImageView 
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/jc_tv_true"/>
+<TextView 
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:text="jc_false"
+    android:gravity="center"
+    android:background="@drawable/jc_cb_false"/>
+<TextView 
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:text="jc_true"
+    android:gravity="center"
+    android:background="@drawable/jc_cb_true"/>
+
+<TextView 
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:text="TEST"
+    android:textColor="@color/acc_help_press"
+    android:gravity="center"
+    android:background="@drawable/jc_btn_red_r"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="11dip"
+    android:background="@drawable/background_repeat_green"
+    android:orientation="vertical" >
+</LinearLayout>
+
+</LinearLayout>
+

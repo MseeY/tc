@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/alter_scheme"
+        android:textColor="@color/award_info_tv_title_color"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv1"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:id="@+id/LL0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/continuous_expect"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14sp" />
+
+        <com.mitenotc.ui.ui_utils.AddSelfEditText
+            android:id="@+id/expect_asEdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/bet_tv_expectText"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL0"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/continuous_multiple"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14sp" />
+
+        <com.mitenotc.ui.ui_utils.AddSelfEditText
+            android:id="@+id/double_asEdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/bet_tv_againText"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/anticipate_profit"
+        android:textColor="@color/award_info_tv_title_color"
+        android:textSize="14sp" />
+
+    <com.mitenotc.ui.ui_utils.GridRadioGroup
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL1"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/anticipate_one_RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/rbtn_shape_selector"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="@string/earnings_interest"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/FangAn_one_ed"
+                android:layout_width="39dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/ed_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:text="30"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5.0dp"
+                android:text="%"
+                android:textColor="@color/award_info_tv_title_second_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/anticipate_two_RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/rbtn_shape_selector"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:text="@string/front"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/FangAn_two_ed1"
+                android:layout_width="49dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ed_bg"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:text="5"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="@string/bet_tv_expectText"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/FangAn_two_ed2"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_bg_gray_selector"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:text="50"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5.0dp"
+                android:text="%"
+                android:textColor="@color/award_info_tv_title_second_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:text="@string/earnings_later"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/FangAn_two_ed3"
+                android:layout_width="70dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_bg_gray_selector"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:text="20"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5.0dp"
+                android:text="%"
+                android:textColor="@color/award_info_tv_title_second_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/anticipate_three_RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/rbtn_shape_selector"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:text="@string/earnings_interest2"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/FangAn_three_ed"
+                android:layout_width="55dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_bg_gray_selector"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:text="30"
+                android:textColor="@color/award_info_tv_title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5.0dp"
+                android:text="元"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.mitenotc.ui.ui_utils.GridRadioGroup>
+
+    <CheckBox
+        android:id="@+id/FangAn_stop_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/checkbox_bg2"
+        android:drawablePadding="5.0dp"
+        android:lines="1"
+        android:text="@string/bet_gain_reward_stop_checkBox"
+        android:textColor="@color/award_info_tv_title_second_color"
+        android:textSize="14.0sp" />
+    <TextView 
+        android:id="@+id/explain_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/help_large_bonus"
+        android:layout_toRightOf="@id/FangAn_stop_cb"
+        android:layout_alignBaseline="@id/FangAn_stop_cb"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/LL7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FangAn_stop_cb"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/abolish_btn"
+            style="@style/textaddFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_gray_selector"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/dialog_btn_cancel"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/create_scheme_btn"
+            style="@style/textaddFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_red_selector"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/create_scheme"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

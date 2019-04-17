@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_pass_selector"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="@drawable/item_pass_selector"
+        android:gravity="center" 
+        android:orientation="horizontal">
+
+      
+ <LinearLayout
+     android:id="@+id/dele_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1.9">
+        <TextView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jc_betleft_btn" />
+     
+ </LinearLayout>
+
+       
+ <!-- 篮彩专用  非混关专用 -->
+        <LinearLayout
+            android:id="@+id/lan_llayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lan_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ke"
+                    style="@style/text_13_606060"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:text="--" />
+
+                <TextView
+                    android:id="@+id/tv_jclq_dxf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.33"
+                    android:gravity="center"
+                    android:text="vs"
+                    android:textColor="@color/btn_gray_u"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/zhu"
+                    style="@style/text_13_606060"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:gravity="center"
+                    android:text="--" />
+            </LinearLayout>
+
+
+            <TextView
+                
+                android:id="@+id/select_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|left"
+                android:drawableRight="@drawable/table_arrow"
+                android:background="@color/dialog_title_tv_color"
+                android:padding="2dp"
+                android:text="" />
+        <com.mitenotc.ui.ui_utils.TextViewGroup
+            android:visibility="gone"
+            android:id="@+id/lan_item_chgp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lan_cb0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/zq_jc_chboxbg_selector"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:tag="0"
+                android:text=""
+                android:textColor="@color/jc_chboxtext_color_selector"
+                android:textSize="14.0sp" />
+
+
+            <TextView
+                android:id="@+id/lan_cb3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/zq_jc_chboxbg_selector"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:tag="3"
+                android:text=""
+                android:textColor="@color/jc_chboxtext_color_selector"
+                android:textSize="14.0sp" />
+        </com.mitenotc.ui.ui_utils.TextViewGroup>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/dan_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:layout_weight="1.8">
+          <Button
+            android:id="@+id/invariant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/set_dan_bg_false"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="胆"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14.0sp" />
+        <!-- android:background="@drawable/zq_spf_rbtn_middle_selector" -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

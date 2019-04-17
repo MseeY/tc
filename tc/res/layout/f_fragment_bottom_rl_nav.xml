@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_ui_bottom"
+    android:background="@drawable/fragment_bottom_rl_bg"
+    android:layout_alignParentBottom="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        />
+    <RadioButton
+        style="@style/rb_ui_bottom"
+        android:drawableTop="@drawable/selector_bottom_nav_custom"
+        android:id="@+id/rb_ui_bottom1"
+        android:text="我的定制" />
+     <View 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        />
+    <RadioButton
+        style="@style/rb_ui_bottom"
+        android:id="@+id/rb_ui_bottom2"
+        android:drawableTop="@drawable/selector_bottom_nav_hall"
+        android:text="购彩大厅" />
+     <View 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+           android:background="@color/white"
+        />
+     <!-- 2014-7-9 修改需求   8-18 再次修改为模拟投注
+        android:drawableTop="@drawable/selector_bottom_nav_award"
+        android:text="模拟投注"  -->
+    <RadioButton
+        style="@style/rb_ui_bottom"
+        android:id="@+id/rb_ui_bottom3"
+        android:drawableTop="@drawable/selector_bottom_nav_find"
+        android:text="发现" 
+        />
+     <View 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        />
+    <RadioButton
+        style="@style/rb_ui_bottom"
+        android:id="@+id/rb_ui_bottom4"
+        android:drawableTop="@drawable/selector_bottom_nav_user"
+        android:text="我" />
+</RadioGroup>

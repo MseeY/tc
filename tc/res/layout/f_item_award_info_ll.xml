@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="@dimen/award_info_text_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="------"
+            android:layout_marginRight="15dip"
+            android:textColor="@color/text_yellow"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@id/award_info_tv_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载"
+            android:textColor="#007aff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@id/award_info_tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:layout_marginRight="@dimen/award_info_text_margin"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/award_info_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+    
+    <View 
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="5dip"
+                    android:layout_width="wrap_content"
+            android:layout_height="0.2dip"
+            android:background="@color/line_gray1"
+        />
+
+<!--     <LinearLayout
+        android:id="@id/award_info_content_common"
+        style="@style/award_info_item_content_ball_style"
+        android:orientation="horizontal" >
+    </LinearLayout> -->
+
+  <!--   <LinearLayout
+        android:id="@id/award_info_ball_content"
+        style="@style/award_info_item_content_ball_style"
+        android:background="@drawable/award_info_item_content_ball_bg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@id/award_info_content"
+        style="@style/award_info_item_content_ball_style"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="15dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+<!-- 
+    <LinearLayout
+        android:id="@id/award_info_shengfu_content"
+        style="@style/award_info_item_content_ball_style"
+        android:background="@drawable/award_info_item_content_dice_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:gravity="center_vertical"
+            android:id="@id/award_info_shengfu_second_content"
+            android:padding="@dimen/award_info_shengfu_margin_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/award_info_dice_bg_height"
+            android:background="@drawable/award_info_item_dice_bg"
+            android:orientation="horizontal"
+            ></LinearLayout>
+    </LinearLayout>
+ -->
+ </LinearLayout>
+ 
+	<View 
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_gray2"/>
+
+  <LinearLayout 
+      android:visibility="gone"
+        android:id="@+id/award_info_detail_contianer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        ></LinearLayout>
+</LinearLayout>

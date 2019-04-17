@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/view_line">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" 
+             android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:textSize="13sp"
+            android:text="计划购买"/>
+
+       <com.mitenotc.ui.ui_utils.AddSelfEditText
+            android:id="@+id/plan_buy_edit"
+            android:layout_toRightOf="@id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+        <CheckBox
+           android:id="@+id/explain_chbox"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+            android:layout_centerVertical="true"
+           android:layout_toRightOf="@id/plan_buy_edit"
+           android:text="元" 
+           android:textSize="13sp"
+           android:focusable="false"
+           android:button="@null"
+           android:gravity="center"
+           android:paddingLeft="5dp"
+           android:drawablePadding="5dp"
+           android:drawableRight="@drawable/help_large_bonus"/>
+
+    </RelativeLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+     <com.mitenotc.ui.ui_utils.GridRadioGroup
+         android:id="@+id/condition_rgp"
+	    android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center">
+		            
+						 <RadioButton 
+						      android:id="@+id/rb0"
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              android:background="@drawable/zq_spf_rbtn_left_selector"
+			                  android:textColor="@color/rbtn_text_color_selector"
+			                    
+				              android:gravity="center_vertical|center_horizontal"
+				              android:layout_gravity="center_vertical"
+				              android:checked="true"
+						      android:button="@null"
+				              android:text="平均优化"
+				              android:textSize="14.0sp" />
+						  <RadioButton 
+						      android:id="@+id/rb1"
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              android:checked="false"
+				              android:background="@drawable/zq_spf_rbtn_middle_selector"
+			                  android:textColor="@color/rbtn_text_color_selector"
+						      android:button="@null"
+						       
+						      android:gravity="center_vertical|center_horizontal"
+						      android:layout_gravity="center_vertical"
+				              android:text="风险最小"
+				              android:textSize="14.0sp" />
+						  <RadioButton 
+						      android:id="@+id/rb2"
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              android:checked="false"
+				              android:background="@drawable/zq_spf_rbtn_reight_selector"
+			                  android:textColor="@color/rbtn_text_color_selector"
+						      android:button="@null"
+						      
+						      android:gravity="center_vertical|center_horizontal"
+						      android:layout_gravity="center_vertical"
+				              android:text="奖金最多"
+				              android:textSize="14.0sp" />
+	 </com.mitenotc.ui.ui_utils.GridRadioGroup>
+     </LinearLayout>
+	  <View 
+	   android:layout_width="fill_parent"
+	   android:layout_height="0.5dip"
+	   android:background="@color/view_line"
+	   />  
+     <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:padding="0dp"
+		android:gravity="center_vertical|center_horizontal"
+	    android:orientation="horizontal" 
+	    android:background="@color/white">
+	<!-- 期号  -->
+	   <TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:gravity="center"
+		    android:textSize="13sp"
+		    android:layout_weight="1.2"
+		    android:text="@string/ob_gg"
+		    android:textColor="@color/award_info_tv_title_color"/>
+	   <TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:layout_weight="1.2"
+		    android:gravity="center"
+		    android:padding="0dp"
+		    android:textSize="12sp"
+		    style="@style/textaddFont"
+		    android:text="@string/ob_dzzh"
+		     android:textColor="@color/award_info_tv_title_color"
+		    />
+	   <!-- android:textColor="@color/login_color_2" -->
+	   	   <TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:gravity="center"
+		    android:textSize="13sp"
+		    android:layout_weight="1"
+		    android:text="@string/ob_zsfb"
+		    android:textColor="@color/award_info_tv_title_color"/>
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:gravity="center"
+		    android:padding="0dp"
+		    android:layout_weight="1.2"
+		    android:textSize="12sp"
+		    style="@style/textaddFont"
+		    android:text="@string/ob_yzcj"
+		    android:textColor="@color/award_info_tv_title_color"
+		   />
+		    <!-- android:textColor="@color/login_color_2" -->  
+</LinearLayout>
+ <View 
+    android:layout_width="fill_parent"
+    android:layout_height="0.1dip"
+    android:background="@color/view_line"
+    />
+</LinearLayout>

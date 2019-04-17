@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ymx_rl_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kjinfo_item_title"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="16dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sfcinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="本期销量："
+                android:textColor="#606060"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text1"
+                android:text="3.46"
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text2"
+                android:text="亿"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/ymx_sfcinfo_bt"
+                android:layout_width="90dip"
+                android:layout_height="23dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_bg_red_selector"
+                android:gravity="center"
+                android:padding="0dip"
+                android:text="对阵详情"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_sfcinfo"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_below="@id/rl_sfcinfo_title"
+            android:layout_marginTop="7dip"
+            android:background="#EFEFEF"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_wenzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="奖项"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="中奖注数"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="奖金"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                
+                android:id="@+id/rl_sfcinfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_sfcinfo"
+                android:layout_marginTop="2dip"
+                android:background="#F9F9F9"
+                android:gravity="center_vertical|center"
+                android:orientation="vertical" >
+
+                <!--
+            <LinearLayout
+                android:id="@+id/buju"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dip"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:text="一等奖"
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="23dip"
+                    android:layout_marginLeft="15dip"
+                    android:background="#EDECEC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="23dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="#EDECEC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5769230"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                
+            </LinearLayout>
+                -->
+            </LinearLayout>
+
+
+        <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="23dip"
+            android:layout_below="@id/rl_sfcinfo1"
+            android:background="#F9F9F9"
+            android:gravity="center_vertical|center" >
+            
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#EDECEC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dip"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:text="二等奖"
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="23dip"
+                    android:layout_marginLeft="15dip"
+                    android:background="#EDECEC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="23dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="#EDECEC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5769230"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ymx_rl_test"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_repeat" />
+
+</RelativeLayout>

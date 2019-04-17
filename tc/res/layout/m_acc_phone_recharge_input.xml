@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- ymx 电话充值 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dip"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <LinearLayout
+                android:id="@+id/ll_acc_phone_recharge_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_chose_new_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginTop="25dip"
+                    android:text="请选择您要充值的方式"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:background="@color/line_gray2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_phone_recharge_me"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/recharge_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:text="用本机充值"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/phone_pay_circle_bg"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/iv_phone_recharge_me"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_phone_recharge_other"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/recharge_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:text="其他手机充值"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/phone_pay_circle_bg"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/iv_phone_recharge_other"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_phone_recharge_guhua"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/recharge_text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:text="固话充值"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/phone_pay_circle_bg"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/iv_phone_recharge_guhua"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:background="@color/line_gray2" />
+            </LinearLayout>
+
+            <!-- ================================ -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_recharge_phonenumber0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dip"
+                    android:layout_marginLeft="34dip"
+                    android:layout_marginRight="34dip"
+                    android:layout_marginTop="20dip"
+                    android:background="#eeeeee"
+                    android:hint="请输入您的手机/区号+固定电话"
+                    android:inputType="phone"
+                    android:maxLength="11"
+					android:padding="10dip"
+                    android:textColor="#606060"
+                    android:textColorHint="#bcbcbc"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/tv_has_recharge_telephone1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dip"
+                    android:layout_marginLeft="34dip"
+                    android:layout_marginRight="34dip"
+                    android:layout_marginTop="14dip"
+                    android:background="#eeeeee"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_down_black"
+                    android:enabled="true"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="8dip"
+                    android:text="13522211211"
+                    android:textColor="#FF0000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_send_telephone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dip"
+                    android:layout_marginLeft="34dip"
+                    android:layout_marginRight="34dip"
+                    android:layout_marginTop="14dip"
+                    android:lineSpacingExtra="4dip"
+                    android:text="请您拨打888888完成最终的充值，拨打电话免费"
+                    android:textColor="@color/text_red"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_phone_recharge_next2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_bg_red_selector"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:padding="10dip"
+            android:text="确    定"
+            android:textColor="@color/login_color_5"
+            android:textSize="@dimen/login_buletext"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_right_now_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_bg_red_selector"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:padding="10dip"
+            android:text="立即拨打"
+            android:textColor="@color/login_color_5"
+            android:textSize="@dimen/login_buletext"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

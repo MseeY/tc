@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_cash_bank_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_acc_me_bg8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_marginLeft="10dip"
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/small_icon_money_out" />
+
+        <TextView
+            android:layout_marginLeft="5dip"
+            android:id="@+id/tv_bank_card_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="银行卡管理"
+            android:textColor="#007aff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/small_icon_right" />
+    </LinearLayout>
+
+</LinearLayout>

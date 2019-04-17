@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/dialog_title_tv_color">
+ 
+      <!-- 注册第三步 获取验证码 -->
+   
+ <RelativeLayout 
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:paddingBottom="10dip"
+      android:paddingTop="14.0dp"
+     android:paddingLeft="18.0dp"
+     android:background="#FFFFFF">
+       
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_show2_text1"
+        android:textSize="15.0sp"
+        android:textColor="#000000" />
+      
+    <TextView
+        android:id="@+id/zwl_show_phoneNumber2"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:paddingLeft="104.0dp"
+        android:paddingBottom="5.0dp"
+        
+        android:text="@string/register_show2_text2"
+        android:textColor="@color/text_red" 
+        android:layout_below="@id/tv_1"
+        android:textSize="20sp"
+        style="@style/textaddFont"/>
+                 
+    </RelativeLayout>
+ 
+ 
+ <RelativeLayout 
+    android:id="@+id/relativeLayout0"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relativeLayout"
+    
+    android:layout_marginTop="5.0dp"
+    android:layout_marginLeft="21.0dp"
+    android:layout_marginRight="21.0dp"
+    
+    android:focusable="true" 
+    android:focusableInTouchMode="true">
+    
+   <!--   此处的EditText 默认是gone 的  只有在账户中心中个人修改的时候visible -->
+        <EditText
+            android:visibility="gone"
+            android:layout_marginTop="20dip"
+            android:id="@+id/zwl_pwd_ed0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_bg"
+            android:padding="10dip"
+            android:gravity="left|center_vertical"
+            
+            android:hint="@string/register_show3_text4"
+            android:textColorHint="@color/award_info_tv_title_second_color"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="14.0sp" />
+        
+    <EditText
+            android:id="@+id/zwl_pwd_ed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zwl_pwd_ed0"
+            android:padding="10dip"
+            android:background="@drawable/ed_bg"
+            
+            android:layout_marginTop="10dip"
+            android:gravity="left|center_vertical"
+            
+            android:hint="@string/register_show3_text1"
+            android:textColorHint="@color/award_info_tv_title_second_color"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:minLines="6"
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="14.0sp" />
+
+ 
+
+        <EditText
+            android:id="@+id/zwl_againpwd_ed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zwl_pwd_ed"
+            
+			android:padding="10dip"
+            android:gravity="left|center_vertical"
+            
+            android:layout_marginTop="10dip"
+            android:background="@drawable/ed_bg"
+            android:hint="@string/register_show3_text2"
+            android:textColorHint="@color/award_info_tv_title_second_color"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:minLines="6"
+            
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="14.0sp" />
+ 
+
+    <Button
+        android:id="@+id/zwl_bt_oKsubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+		android:padding="10dip"
+        android:gravity="center"
+        android:layout_below="@id/zwl_againpwd_ed"
+        android:background="@drawable/btn_bg_orange_selector"
+        android:text="@string/register_show3_text3"
+        android:textColor="@color/white"
+        style="@style/textaddFont" 
+        android:textSize="16.0dp"
+        android:lines="1"
+        />
+</RelativeLayout>
+    
+
+<TextView 
+        android:layout_below="@id/relativeLayout0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:layout_marginLeft="21.0dp"
+        android:layout_marginRight="21.0dp"
+     
+        android:paddingTop="1.0dp"
+        android:paddingLeft="1.0dp"
+        android:paddingRight="1.0dp"
+        android:paddingBottom="1.0dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="13.0sp"
+        android:textColor="@color/award_info_tv_title_second_color"
+        android:text="@string/register_next3_text"/>
+</RelativeLayout>
+

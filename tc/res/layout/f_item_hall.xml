@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+           android:background="@drawable/selector_item_hall_bg">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_item_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" >
+
+                    <ImageView
+                        android:id="@+id/item_hall_iv_logo"
+                        android:layout_width="55dip"
+                        android:layout_height="55dip"
+                        />
+<!--                         android:background="@drawable/logo_ssq1"  -->
+
+                    <ImageView
+                        android:id="@+id/item_hall_awardDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/item_hall_iv_logo"
+                        android:layout_alignRight="@id/item_hall_iv_logo"
+                        android:background="@drawable/logo_awardinfo_detail"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/item_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/rl_item_hall"
+                    android:layout_alignTop="@id/rl_item_hall"
+                    android:background="@drawable/logo_message_center_tag"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="30dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item_hall_tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="双色球"
+                        android:layout_marginBottom="1dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/item_hint_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hint_tag2"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_hall_tv_kaijiang"
+                        style="@style/hall_kaijiang_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/hall_kaijiang"
+                        android:text="@string/item_hall_kaijiang"
+                        android:textColor="#ff9c00"
+                        android:textSize="11sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_hall_tv_jiajiang"
+                        style="@style/hall_kaijiang_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/hall_jiajiang"
+                        android:text="@string/item_hall_jiajiang"
+                        android:textColor="@color/login_color_2"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_hall_tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@id/item_hall_tv_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载.."
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/item_hall_iv_arrow"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_margin="@dimen/item_hall_iv_margin_right"
+            android:src="@drawable/small_icon_right1" />
+    </RelativeLayout>
+</RelativeLayout>

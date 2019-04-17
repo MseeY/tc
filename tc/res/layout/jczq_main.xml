@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:gravity="center"
+        />
+    <com.mitenotc.ui.ui_utils.JCListView
+        android:id="@+id/zq_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@color/white"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:groupIndicator="@null"
+        android:soundEffectsEnabled="true"
+        android:childDivider="@color/login_color_7"
+        android:scrollbars="vertical" />
+</RelativeLayout>

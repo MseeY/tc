@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#EFEFEF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/iv_find_logos"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:background="@drawable/find_kuai3" >
+    </LinearLayout>
+
+</LinearLayout>

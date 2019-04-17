@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_splash2"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+   <!--  <FrameLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/welcome_bg_fu" >
+        </ImageView>
+        
+        
+        <LinearLayout
+            android:gravity="center_horizontal" 
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_bg_text4" />
+
+        <ImageView
+            android:layout_marginTop="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="310dip"
+            android:src="@drawable/wel_ceter1" />
+
+        <ImageView
+            android:layout_marginTop="25dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_bg_text5" />
+        
+       	<ImageView
+            android:layout_marginTop="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_bg_text6" />
+        
+        </LinearLayout>
+    </FrameLayout>
+ -->
+</LinearLayout>

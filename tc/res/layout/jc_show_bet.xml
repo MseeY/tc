@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true"
+    android:background="@color/dialog_title_tv_color" >
+
+    <LinearLayout
+        android:id="@+id/title_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/oneselfchoose_btn"
+            android:layout_width="97.0dip"
+            android:layout_height="28.0dip"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/bet_btn_addcompetition"
+            android:background="@drawable/btn_white_or_gray_selector"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14.0sp" />
+
+
+        <Button
+            android:id="@+id/clearchoose_btn"
+            android:layout_width="97.0dip"
+            android:layout_height="28.0dip"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/bet_btn_cleartext"
+            android:textColor="@color/award_info_tv_title_color"
+            android:background="@drawable/btn_white_or_gray_selector"
+            android:textSize="14.0sp" />
+<!--        android:background="@drawable/btn_bg_white_selector" -->
+    </LinearLayout>
+
+    <!-- 底部最外层布局 -->
+
+    <RelativeLayout
+        
+        android:id="@+id/pursue_expect_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/zwl_agreeEntrust_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/checkbox_checked"
+                android:lines="1"
+                android:text="@string/bet_tv_text2"
+                android:textColor="@color/award_info_tv_title_second_color"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:id="@+id/group_set_layout"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/set_group_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="1dp"
+                        
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="串关必选*"
+                        android:drawableRight="@drawable/drop_down_d"
+                        android:background="@color/white"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+<!--              android:drawableRight="@drawable/h_d"
+                  android:textColor="@color/award_info_tv_title_second_color" -->
+
+
+                <LinearLayout
+                    android:id="@+id/relativeLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv54"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.9"
+                        android:padding="1dp"
+                        android:gravity="center"
+                        android:text="@string/bet_tv_castText"
+                        android:textColor="@color/award_info_tv_title_second_color"
+                        android:textSize="14sp" />
+                 <EditText
+                        android:id="@+id/multiple_number_ed"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/edit_bg"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:hint="1"
+                        android:text=""
+                        android:paddingBottom="2dp"
+                        android:paddingTop="1dp"
+                        android:gravity="center"
+                        android:textColor="@color/award_info_tv_title_color"
+                        android:textColorHint="@color/znzh_coustom_text"
+                        android:textSize="12sp" />
+                    <!-- <com.mitenotc.ui.ui_utils.custom_ui.LineEditText
+                        android:id="@+id/multiple_number_ed"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/ed_bg"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:hint="10"
+                        android:text="10"
+                        android:paddingBottom="0.5dp"
+                        android:textColor="@color/award_info_tv_title_color"
+                        android:textColorHint="@color/znzh_coustom_text"
+                        android:textSize="12sp" /> -->
+
+                    <TextView
+                        android:id="@+id/tv55"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.9"
+                        android:padding="1dp"
+                        android:gravity="center"
+                        android:text="@string/bet_tv_againText"
+                        android:textColor="@color/award_info_tv_title_second_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 最底部    TextView  Button -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:layout_below="@id/linearLayout1"
+            android:background="@drawable/fragment_bottom_rl_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:visibility="invisible"
+                
+                android:id="@+id/bonus_optimize_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.09"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/yh"
+                android:drawablePadding="0dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:text="@string/bet_optimize_text"
+                android:textColor="@color/award_info_yuan"
+                android:textSize="16.0dip"/>
+
+            <TextView
+                android:id="@+id/show_bet_result_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxLines="3"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingRight="9dp"
+                android:paddingLeft="9dp"
+                android:text="@string/bet_tv_resultText"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/payment_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="2dp"
+                android:drawablePadding="2dp"
+                android:text="@string/bet_tv_payText"
+                android:drawableLeft="@drawable/next"
+                android:background="@color/white"
+                 android:textColor="@color/red"
+                android:textSize="16.0dip" />
+<!--                 android:background="@drawable/btn_bg_red_selector" -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- listView -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pursue_expect_relativeLayout"
+        android:layout_below="@id/title_btn_layout" >
+
+        <ListView
+            android:id="@+id/bet_indent_listview"
+            style="@drawable/lv_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/kjinfo_item_title"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="true" />
+
+        <LinearLayout
+            android:id="@+id/lv_down_line_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bet_indent_listview"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/background_repeat"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/no_selection_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv_down_line_bg"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ts"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/bet_tv_fstext1"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+</RelativeLayout>

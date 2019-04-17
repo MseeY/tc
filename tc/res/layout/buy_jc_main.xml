@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/dialog_title_tv_color">
+      
+ <!-- <com.mitenotc.ui.ui_utils.GridRadioGroup
+               android:visibility="gone"
+               android:id="@+id/sort_layout" 
+			   android:layout_width="match_parent"
+			   android:layout_height="40dp"
+			   android:layout_alignParentTop="true" 
+			   android:gravity="center"
+			   android:padding="0dp"
+			   android:orientation="horizontal">
+
+               <RadioButton
+                   android:id="@+id/cg_rbtn"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:button="@null"
+                   android:checked="false"
+                   android:focusable="false"
+                   android:gravity="center"
+                   android:background="@drawable/btn_white_m"
+                   android:text="@string/zq_cg"
+                   android:textColor="@color/zqrbtn_textcolor_selector"
+                   android:textSize="14.0sp" />
+
+               <RadioButton
+                   android:id="@+id/dg_rbtn"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"
+                   android:button="@null"
+                   android:checked="false"
+                   android:focusable="false"
+                   android:gravity="center"
+                    android:background="@drawable/btn_white_m"
+                   android:text="@string/zq_dg"
+                   android:textColor="@color/zqrbtn_textcolor_selector"
+                   android:textSize="14.0sp" />
+</com.mitenotc.ui.ui_utils.GridRadioGroup> -->
+<!-- 底部    清空  确定 -->
+   <LinearLayout
+       android:id="@+id/bottom_btn_ll"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:padding="2dp"
+       android:background="@drawable/fragment_bottom_rl_bg"
+       android:orientation="horizontal" >
+
+       <Button
+           android:id="@+id/clear_gv_btn"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1.45"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="0.5dp"
+           android:tag="white"
+           android:text="@string/bet_Ssp_gv_tv"
+           android:background="@color/white"
+           android:drawableLeft="@drawable/clear"
+           android:textColor="@color/login_color_4"
+           android:textSize="16.0dp" />
+
+<!--           android:background="@drawable/btn_bg_orange_selector" -->
+      
+      <TextView 
+          android:id="@+id/inall_inform_tv"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.9"
+          
+          android:paddingTop="1dp"
+          android:paddingBottom="1dp"
+          android:gravity="center_horizontal|bottom"
+          android:layout_gravity="center"
+          android:text=""
+          android:textSize="14sp"
+          />
+      <Button
+          android:id="@+id/affirm_next_btn"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1.45"
+         
+          android:drawableLeft="@drawable/next"
+          android:background="@color/white"
+          android:textColor="@color/red"
+          android:paddingLeft="5dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:text="@string/is_positive"
+          android:textSize="16.0dp" />
+<!--      
+          android:background="@drawable/btn_bg_red_selector"
+          android:textColor="@color/white" -->
+    
+   </LinearLayout>  
+
+ <RelativeLayout
+    android:id="@+id/normal_main" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottom_btn_ll"
+    android:orientation="vertical" >
+      
+    <com.mitenotc.ui.ui_utils.JCListView
+        android:id="@+id/home_expandable_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@color/white"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:groupIndicator="@null"
+        android:scrollbars="vertical" />
+           <!--  android:soundEffectsEnabled="true" -->
+          <!-- android:childDivider="@color/login_color_7" -->
+    
+  <LinearLayout
+        android:id="@+id/jc_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+      
+  </LinearLayout>
+
+
+  </RelativeLayout>
+   <RelativeLayout
+    android:id="@+id/rl_null_saishi" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_above="@id/bottom_btn_ll"
+    android:visibility="gone"
+    >
+     <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dip"
+        android:drawableTop="@drawable/acc_null_message"
+        android:gravity="center"
+        android:text="暂无对阵"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+       
+   </RelativeLayout>
+</RelativeLayout>

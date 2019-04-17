@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/pop_menu_iv"
+            android:layout_width="@dimen/pop_menu_iv_height"
+            android:layout_height="@dimen/pop_menu_iv_height"
+            android:layout_marginBottom="@dimen/pop_menu_iv_margin_bottom"
+            android:layout_marginLeft="@dimen/pop_menu_iv_margin_left"
+            android:layout_marginRight="@dimen/pop_menu_iv_margin_right"
+            android:layout_marginTop="@dimen/pop_menu_iv_margin_top"
+            android:src="@drawable/pop_award" />
+
+        <TextView
+            android:paddingLeft="6dp"
+            android:layout_marginRight="@dimen/pop_menu_iv_margin_left"
+            android:id="@id/pop_menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pop_menu_tv_text"
+            android:textColor="@color/pop_menu_tv_textcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pop_menu_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/pop_menu_divider_color" />
+
+</LinearLayout>

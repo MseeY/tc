@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moni_pl_green_modill">
+  
+	
+     <!--   快三    摇一摇布局  -->
+	 <RelativeLayout 
+			     android:id="@+id/reLayout"
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     
+			     android:layout_marginTop="10.0dp"
+			     android:layout_marginLeft="10.0dp"
+			     android:layout_marginRight="10.0dp">
+				     <Button
+				          android:id="@+id/common_btn"
+				          android:layout_width="wrap_content"
+				          android:layout_height="wrap_content"
+				          android:text="@string/zwl_dballcommon_tv_1"
+				         
+				          
+				          android:paddingLeft="5.0dp"
+				          android:paddingRight="5.0dp"
+				          android:paddingTop="3.0dp"
+				          android:paddingBottom="3.0dp"
+				          android:textSize="13.0dp"
+				          android:textColor="@color/white"
+				          android:drawableLeft="@drawable/shake"
+				          android:background="@drawable/bg_shape_circular"
+				          />
+				     
+				     <TextView 
+				          android:id="@+id/drag_code_tv"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				          android:layout_toRightOf="@id/common_btn"
+				          android:text="@string/fast3_show_tv"
+				          
+				          android:gravity="center_vertical|right"
+				          android:paddingLeft="5dip"
+				       
+				          android:textSize="14.0dp"
+				          android:textColor="@color/white"
+				          android:layout_alignBaseline="@id/common_btn"/>
+		           
+ </RelativeLayout>
+	
+    <ScrollView
+        android:layout_below="@id/reLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:scrollbarFadeDuration="1000"
+        android:scrollbarSize="1.0dip"
+        android:soundEffectsEnabled="false"
+        android:scrollbars="vertical" >
+	<LinearLayout
+	      android:id="@+id/fast3_pl_contentLayout"
+	      android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:orientation="vertical">
+	</LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

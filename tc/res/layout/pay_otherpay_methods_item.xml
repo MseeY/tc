@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_acc_me_bg8"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/iv_orderpay_img"
+            android:layout_width="80dip"
+            android:layout_height="23.12dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pay_kuai_jie1" />
+
+        <TextView
+            android:id="@+id/tv_other_pay_methods_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/iv_orderpay_img"
+            android:text="支付宝快捷支付"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_pay_circle_bg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/selector_acc_me_bg5" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/orderpay_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:background="#DBDBDB" />
+
+</LinearLayout>

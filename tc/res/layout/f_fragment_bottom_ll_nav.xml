@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_nav_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bottom_nav_bg"
+    android:orientation="horizontal" >
+
+    <View style="@style/bottom_nav_divider" />
+
+    <RelativeLayout
+        android:id="@id/bottom_nav_ll_custom"
+        style="@style/bottom_nav_rl_style" >
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_bg_custom"
+            style="@style/bottom_nav_iv_bg" />
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_custom"
+            style="@style/bottom_nav_iv_style"
+            android:src="@drawable/selector_bottom_nav_custom" />
+
+        <TextView
+            android:id="@id/bottom_nav_tv_custom"
+            style="@style/bottom_nav_tv_style"
+            android:layout_below="@id/bottom_nav_iv_custom"
+            android:text="@string/bottom_nav_tv_custom_text" />
+    </RelativeLayout>
+
+    <View style="@style/bottom_nav_divider" />
+
+    <RelativeLayout
+        android:id="@id/bottom_nav_ll_hall"
+        style="@style/bottom_nav_rl_style" >
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_bg_hall"
+            style="@style/bottom_nav_iv_bg" />
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_hall"
+            style="@style/bottom_nav_iv_style"
+            android:src="@drawable/selector_bottom_nav_hall" />
+
+        <TextView
+            android:id="@id/bottom_nav_tv_hall"
+            style="@style/bottom_nav_tv_style"
+            android:layout_below="@id/bottom_nav_iv_hall"
+            android:text="@string/bottom_nav_tv_hall_text" />
+    </RelativeLayout>
+
+    <View style="@style/bottom_nav_divider" />
+
+    <RelativeLayout
+        android:id="@id/bottom_nav_ll_award"
+        style="@style/bottom_nav_rl_style" >
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_bg_award"
+            style="@style/bottom_nav_iv_bg" />
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_award"
+            style="@style/bottom_nav_iv_style"
+            android:src="@drawable/selector_bottom_nav_award" />
+
+        <TextView
+            android:id="@id/bottom_nav_tv_award"
+            style="@style/bottom_nav_tv_style"
+            android:layout_below="@id/bottom_nav_iv_award"
+            android:text="@string/bottom_nav_tv_award_text" />
+    </RelativeLayout>
+
+    <View style="@style/bottom_nav_divider" />
+
+    <RelativeLayout
+        android:id="@id/bottom_nav_ll_user"
+        style="@style/bottom_nav_rl_style" >
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_bg_user"
+            style="@style/bottom_nav_iv_bg" />
+
+        <ImageView
+            android:id="@id/bottom_nav_iv_user"
+            style="@style/bottom_nav_iv_style"
+            android:src="@drawable/selector_bottom_nav_user" />
+
+        <TextView
+            android:id="@id/bottom_nav_tv_user"
+            style="@style/bottom_nav_tv_style"
+            android:layout_below="@id/bottom_nav_iv_user"
+            android:text="@string/bottom_nav_tv_user_text" />
+    </RelativeLayout>
+
+</LinearLayout>

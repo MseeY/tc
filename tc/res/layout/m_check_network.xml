@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/ymx_network_background_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/network_1"
+        android:text="@string/network_checking"
+        android:textColor="@color/ymx_network_title"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/network_2"
+        android:text="@string/two_minute"
+        android:textColor="@color/ymx_network_text"
+        android:textSize="@dimen/login_text1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/network_3"
+        android:text="@string/interrupt_check"
+        android:textColor="@color/ymx_network_text"
+        android:textSize="@dimen/login_text1" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/network_7"
+        android:layout_height="@dimen/margin_1"
+        android:layout_marginTop="@dimen/network_8"
+        android:progressDrawable="@drawable/check_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1"
+        android:text="@string/checking_router"
+        android:textColor="@color/ymx_network_text"
+        android:textSize="@dimen/login_text1" />
+
+</LinearLayout>

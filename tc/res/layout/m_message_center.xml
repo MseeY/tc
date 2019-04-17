@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/acc_msg_title_bg"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <TextView
+            android:id="@+id/tv_acc_msg_text1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="网站公告"
+            android:textColor="#FF0000"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#cbcbcb" />
+
+        <TextView
+            android:id="@+id/tv_acc_msg_text2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="站内新闻"
+            android:textColor="#606060"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#cbcbcb" />
+
+        <TextView
+            android:id="@+id/tv_acc_msg_text3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="专家推荐"
+            android:textColor="#606060"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#cbcbcb" />
+
+        <View
+            android:id="@+id/v_acc_title_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#FF0000"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ii_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

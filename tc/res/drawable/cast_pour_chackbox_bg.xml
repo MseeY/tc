@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--需求发生了改变  暂时去掉了这个效果  -->
+    <item android:drawable="@color/white" android:state_checked="false" android:state_enabled="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/check_pursue_choose"  android:state_checked="true" android:state_enabled="true" android:state_pressed="false"/>
+        
+    <item android:drawable="@drawable/check_pursue_choose"/>
+        
+    
+</selector>

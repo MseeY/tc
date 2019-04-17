@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000" >
+    <!-- 占据全屏 -->
+    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scrollbarFadeDuration="1000"
+	        android:scrollbarSize="1.0dip"
+	        android:soundEffectsEnabled="true"
+	        android:scrollbars="none"
+	        >
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_white_selector"
+        android:orientation="vertical"
+        android:paddingBottom="0.0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0.0dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38.5dp"
+            android:background="@color/white"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/bet_Ssp_towed_tv_3"
+            android:textColor="@color/item_hall_tv_title_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.mitenotc.ui.ui_utils.GridRadioGroup
+            android:id="@+id/saleType_grg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0.5dp"
+            android:orientation="vertical"
+            android:paddingBottom="0.0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0.0dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rbtn0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="0,1"
+                    android:text="@string/fast3_hz_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtn1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="0,2"
+                    android:text="@string/fast3_sth_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtn2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="0,6"
+                    android:text="@string/fast3_eth_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbtn3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="0,5"
+                    android:text="@string/fast3_sbth_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="0,8"
+                    android:text="@string/fast3_ebth_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+                <!-- android:background="@drawable/choose_rbtn_selector" -->
+            </LinearLayout>
+            <!-- 胆拖   rbtn 区 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38.5dp"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="12dp"
+                android:text="@string/bet_Ssp_towed_tv_4"
+                android:textColor="@color/item_hall_tv_title_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbtn5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="2,5"
+                    android:text="@string/fast3_sbth_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtn6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/choose_rbtn_selector"
+                    android:button="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="2,8"
+                    android:text="@string/fast3_ebth_text"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtn14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:enabled="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:tag="2,4"
+                    android:textColor="@color/rbtn_text_color_selector"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </com.mitenotc.ui.ui_utils.GridRadioGroup>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

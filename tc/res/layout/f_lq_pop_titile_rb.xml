@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:gravity="center_horizontal|top" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="1000"
+        android:scrollbarSize="1.0dip"
+        android:scrollbars="none"
+        android:soundEffectsEnabled="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white" >
+
+            <com.mitenotc.ui.ui_utils.GridRadioGroup
+                android:id="@+id/saleType_grg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="0dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical|center_horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/arrange3_rbtn0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/choose_rbtn_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:focusable="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag="216"
+                        android:text="@string/lq_sf"
+                        android:textColor="@color/rbtn_text_color_selector"
+                        android:textSize="14.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/arrange3_rbtn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/choose_rbtn_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag="214"
+                        android:text="@string/lq_rqsf"
+                        android:textColor="@color/rbtn_text_color_selector"
+                        android:textSize="14.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/arrange3_rbtn2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/choose_rbtn_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:tag="215"
+                        android:text="@string/lq_dxf"
+                        android:textColor="@color/rbtn_text_color_selector"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/arrange3_rbtn3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/choose_rbtn_selector"
+                        android:button="@null"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:tag="219"
+                        android:text="@string/lq_hhgg"
+                        android:textColor="@color/rbtn_text_color_selector"
+                        android:textSize="14.0sp" />
+                    <!-- android:background="@drawable/zq_spf_rbtn_middle_selector" -->
+					<!-- 胜分差 -->
+                    <RadioButton
+                        android:visibility="invisible"
+                        
+                        android:id="@+id/arrange3_rbtn4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/choose_rbtn_selector"
+                        android:button="@null"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/lq_sfc"
+                        android:textColor="@color/rbtn_text_color_selector"
+                        android:textSize="14.0sp" />
+
+                    <RadioButton
+                         android:visibility="invisible"
+                          
+                        android:id="@+id/arrange3_rbtn5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/choose_rbtn_selector"
+                        android:button="@null"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="@color/rbtn_text_color_selector"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </com.mitenotc.ui.ui_utils.GridRadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

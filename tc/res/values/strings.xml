@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">泰彩彩票</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- xlistview 中用到的 字符串 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="body1">body1</string>
+
+    <!-- titleFragment -->
+    <string name="title_bar_left_text">title bar left </string>
+    <string name="title_bar_right_text">right</string>
+    <string name="title_bar_right_middle">middle</string>
+
+    <!-- 编码格式 -->
+    <string name="CHARSET">UTF-8</string>
+    <!-- 注册布局中使用到的resources  String -->
+    <string name="zwl_register_title">注册泰彩彩票</string>
+    <string name="zwl_text_verify">获取验证码</string>
+    <string name="is_positive">确 定</string>
+    <string name="zwl_register_hint">请输入您的手机号码：</string>
+    <string name="register_gain_validation">获 取 验 证 码</string>
+    <string name="register_gain_validation0">随后验证</string>
+    <string name="register_i_have_verify">已有验证码</string>
+    <string name="register_gain_validation1">验证手机号：\n1.有利于保护账户的安全\n2.用于账户密码的找回\n3.有利于我们为您提供更好的服务\n4.如果现在不验证，请务必保证输入的手机号码的正确性\n5.您可以在用户中心中对手机号码进行验证！</string>
+    <string name="register_gain_validation2">验证手机号: 有利于保护账户的安全，  同时还有利于我们为您提供更好的服务。   您可以在用户中心对此手机号码再次的验证！</string>
+    <string name="register_next3_text">账户密码一定要牢记,请不要告诉别人！\n建议您使用数字与字母的组合。\n\n何时会用到账户密码？\n 1、用户登录时\n 2、投注订单支付时\n 3、现金提取时</string>
+    <string name="register_agree_text">我同意并接受【 泰彩彩票服务条款】</string>
+    <string name="register_Toast_text">请输入正确的手机号码</string>
+    <string name="register_show_text1">您会收到一条带有验证码的短信,请输入验证码</string>
+    <string name="register_show2_text1">您的账号为：</string>
+    <string name="register_show2_text2">-----------</string>
+    <string name="register_show2_text3">提交验证码</string>
+    <string name="register_show2_text4">没有收到？</string>
+    <string name="register_show2_text5">重新发送</string>
+    <string name="register_show2_text6">请输入手机收到的验证码</string>
+    <string name="register_show3_text1">请输入至少6位账户密码</string>
+    <string name="register_show3_text2">请再次输入至少6位账户密码</string>
+    <string name="register_show3_text3">确认注册</string>
+    <string name="register_show3_text4_4">随便转转</string>
+    <string name="register_show3_text4">请输入当前账户的原密码</string>
+    <string name="register_show4_text1">恭喜您，您的手机号:</string>
+    <string name="register_show4_text2">立即验证</string>
+    <string name="register_show4_text3">继续我的订单</string>
+    <string name="register_show4_text5">去夺宝摩天轮碰碰运气吧！</string>
+    <string name="register_show4_text6">马上购彩</string>
+    <string name="register_show4_text7">模拟购彩10元红包已经到您的账号中,请查收!</string>
+    <string name="register_show4_text8">为了您的账号安全，防止被盗，建议您立即验证！</string>
+    <string name="register_show_Toast">您同意了泰彩服务条约!</string>
+    <string name="register_show_Toast0">您的手机号码有误!</string>
+    <string name="register_show_Toast1">您还没有同意泰彩服务条约!</string>
+    <string name="register_show_Toast2">请求失败，请重新点击获取验证码！</string>
+    <string name="register_show_Toast3">您的6位验证码有误!</string>
+    <string name="register_show_Toast4">正在提交...</string>
+    <string name="register_show_Toast5">已发送</string>
+    <string name="register_show_Toast6">手机号码不能为空！</string>
+    <string name="register_show_Toast7">密码不能为空！</string>
+    <string name="register_show_Toast8">两次输入密码不一致！</string>
+    <string name="register_show_Toast9">发送失败！</string>
+    <string name="register_show1_Toast1">验证码不能为空！</string>
+    <string name="play_bothball_item_1_4">共0注0元</string>
+    <string name="play_bothball_item_1_5">清空</string>
+    <string name="net_setting_toast">网络环境异常，请检查网络</string>
+      
+    <!-- 任九场 -->
+    <string name="any9_chbx_text">显示本站投注比例</string>
+    <string name="any9_time_text">距截止：10小时6分</string>
+    <string name="any9_sharek_reight_text">竞猜任意9场的比赛结果</string>
+    <string name="any9_sharek_reight_text1">巴伦西</string>
+    <string name="any9_sharek_reight_text2">vs</string>
+    <string name="any9_sharek_reight_text3">奥格斯</string>
+    <string name="any9_sharek_reight_text4">主队</string>
+    <string name="any9_sharek_reight_text5">客队</string>
+    
+    <!-- 投注页面 -->
+    <string name="bet_btn_oneselftext">自选号码</string>
+    <string name="bet_btn_addcompetition">编辑 / 添加赛事</string>
+    <string name="bet_btn_machinetext">机选 1 注</string>
+    <string name="bet_btn_cleartext">清空列表</string>
+    <string name="bet_tv_text1">您尚未选择任何投注号码\n  机选一注试试手气？</string>
+    <string name="bet_tv_fstext1">您尚未选择过关方式</string>
+    <string name="bet_tv_text2">我已阅读并同意《委托投注规则》</string>
+    <string name="bet_tv_successionText">连续买</string>
+    <string name="bet_tv_upText">收起</string>
+    <string name="bet_tv">追</string>
+    <string name="bet_tv_expectText">期</string>
+    <string name="bet_tv_castText">投</string>
+    <string name="bet_tv_againText">倍</string>
+    <string name="bet_tv_payText">付   款</string>
+    <string name="bet_tv_znzhText">智能追号</string>
+    <string name="bet_optimize_text">奖金优化</string>
+    <string name="bet_tv_huifu">恢复默认</string>
+
+     <string name="bet_tv_resultText">0注0元</string>
+     <string name="bet_gain_reward_stop_checkBox">中奖后停止追号</string>
+     <string name="bet_zj_checkBox">追加投注</string>
+     <string name="bet_pursue_monuth_tv">追一个月\n 14期</string>
+     <string name="bet_pursue_monuth_tv1">追三个月\n 40期</string>
+     <string name="bet_pursue_monuth_tv2">最大\n155期</string>
+     <string name="bet_Ssp_gv_tv">清 空</string>
+     <string name="bet_Ssp_towed_tv0">至少选择6个红球一个蓝球</string>
+     <string name="bet_Ssp_towed_tv">胆码区 - 红球  至少选择1个,最多选择5个</string>
+     <string name="bet_Ssp_towed_tv_1">拖码区 - 红球  至少选择2个</string>
+     <string name="bet_Ssp_towed_tv_2">蓝球区,至少选择1个</string>
+     <string name="bet_Ssp_towed_tv_3">普通投注</string>
+     <string name="bet_Ssp_towed_tv_4">胆拖投注</string>
+     <string name="bet_hsmsg_tv">获取开奖记录失败</string>
+     <string name="bet_hsmsg_btn">重         试</string>
+      <!-- 智能追号界面  -->
+       <string name="zn_hint_1_ed">1</string>
+       <string name="zn_hint_2_ed">2</string>
+       <string name="zn_hint_10_ed">10</string>
+    <!-- ck 主界面 -->
+    <string name="title_nav_tv_text">购彩大厅</string>
+    <string name="title_jczq_text">竞彩足球投注</string>
+    <string name="bottom_nav_tv_custom_text">我的定制</string>
+    <string name="bottom_nav_tv_hall_text">购彩大厅</string>
+    <string name="bottom_nav_tv_award_text">开奖信息</string>
+    <string name="bottom_nav_tv_user_text">我</string>
+
+    <!-- ck 头部导航标题的文字 -->
+    <string name="title_nav_custom">泰彩彩票</string>
+    <string name="title_nav_hall">购彩大厅</string>
+    <string name="title_nav_award">开奖信息</string>
+    <string name="title_nav_user">我</string>
+    <string name="title_nav_user_center">用户中心</string>
+    <string name="title_nav_find">发现</string>
+
+    <!-- ck dialog title text -->
+    <string name="dialog_title_ssq">双色球</string>
+    <string name="dialog_btn1_ssq">添加双色球到我的定制</string>
+    <string name="dialog_btn2_ssq">发送双色球到我的桌面</string>
+    <string name="dialog_btn_move_down">下移</string>
+    <string name="dialog_btn_move_up">上移</string>
+    <string name="dialog_btn_remove">移除此应用</string>
+    <string name="dialog_tv_bind_number_text">您的手机尚未通过验证,为了账号安全,请立即去验证!</string>
+    <string name="dialog_tv_exit_confir_text">您确认退出泰彩彩票?</string>
+    <string name="dialog_tv_exit_title_text">退出泰彩彩票</string>
+    <string name="dialog_btn_ok">确定</string>
+    <string name="dialog_btn_name_baocun">个性签名</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_title_tc">泰彩彩票</string>
+    <string name="dialog_title_ver_phonenumber">手机号码验证</string>
+    <string name="dialog_tv_ver_phonenumber_text">恭喜您,手机号码验证成功！您的账户将会更加安全！</string>
+    <string name="dialog_tv_ver_success_return_text">恭喜您,您的账户密码已成功找回！</string>
+    <string name="dialog_tv_ver_update_success_text">恭喜您,您的账户密码已修改成功！</string>
+    <string name="dialog_btn_start">开始</string>
+    <string name="dialog_tv_sell_apply_text">销代审核请需要您进一步完善个人相关信息！</string>
+    <string name="dialog_title_sell_apply">销代申请</string>
+    <string name="dialog_tv_apply_success_text">恭喜您，销代审核通过！请关注您的手机短信或系统消息！</string>
+    <string name="dialog_tv_del_bankcard_text">您确认要删除此张银行卡吗?</string>
+    <string name="dialog_title_check_newversion">检测新版本</string>
+    <string name="dialog_tv_check_version_text">当前已是最新版本啦！</string>
+    <string name="dialog_btn_close">关闭</string>
+    <string name="dialog_title_loginout">退出登录</string>
+    <string name="dialog_tv_logonout_text">确定退出登录吗?</string>
+    <string name="dialog_title_find_newversion">发现新版本</string>
+    <string name="dialog_btn_download">下载</string>
+    <string name="dialog_to_check">立即验证</string>
+    <string name="dialog_to_jump">跳过</string>
+    <string name="dialog_ok">原 来 如 此</string>
+    <string name="dialog_help">什么是中奖后停止追号?</string>
+    <string name="dg_title_text">系统消息</string>
+    <string name="dialog_help_text">\t勾选后,当您的追号方案某一期中奖,则后续的追号订单将被撤销,资金返还到您的账户中.如不勾选,系统一直帮你购买所有的追号投注订单.</string>
+    
+    
+    <!-- ck pop menu -->
+    <string name="pop_menu_tv_text">菜单项文字描述</string>
+    <string name="pop_menu_tv_award">开奖信息</string>
+    <string name="pop_menu_tv_play_method">玩法介绍</string>
+    <string name="pop_menu_tv_custom">收录到我的定制</string>
+    <string name="item_hall_kaijiang">今日开奖</string>
+    <string name="item_hall_jiajiang">加奖</string>
+    <!-- ck hall item -->
+    <string name="item_hall_tv_issue_text">距ISSUE期截止 TIME</string>
+
+    
+    <!-- 用户中心  -->
+    <string name="reminder_text">验证手机号：有利于保护账号的安全,同时还有利于我们为您提供更好的服务.</string>
+    <string name="checkbox_text">系统已向您的手机发送一条带有6位验证码的短\n信,请输入验证码！</string>
+    <string name="affirm_alter_text">确  认  修  改</string>
+    <!-- With payment  related  layout's  String  resource 与支付相关的String -->
+    <string name="zwl_payment_String_1_1">支付项目：</string>
+    <string name="zwl_payment_String_1_2">订单金额：</string>
+    <string name="zwl_payment_String_1_3">¥ </string>
+    <string name="zwl_payment_String_1_4">****第******期</string>
+    <string name="zwl_payment_String_1_5">更多支付方式</string>
+    <string name="zwl_payment_String_1_6">支付宝快捷支付</string>
+    <string name="zwl_payment_String_1_7">确 认 付 款</string>
+    <string name="zwl_payment_String_1_9">立即充值</string>
+    <string name="zwl_payment_String_2_1">银联无卡支付</string>
+    <string name="zwl_payment_String_2_2">银联语音支付</string>
+    <string name="zwl_payment_String_2_3">账户余额支付：  MONEY元</string>
+    <string name="zwl_payment_String_2_4">账户：NUMBER</string>
+    <string name="zwl_payment_String_2_5">红包支付,可用红包：¥ MONEY</string>
+    <string name="zwl_payment_String_2_6">余额：¥ MONEY</string>
+    <string name="zwl_payment_String_2_7">请输入使用红包的金额</string>
+    <string name="zwl_payment_String_2_8">请输入账户密码</string>
+    <string name="zwl_payment_String_2_9">使用其它方式支付剩余金额：MONEY元</string>
+    <string name="zwl_payment_String_3_1">充值</string>
+    <string name="zwl_payment_String_3_2">1</string>
+    <string name="zwl_payment_String_3_3">忘记账户密码?</string>
+    <string name="zwl_payment_String_3_4">银联卡支付</string>
+    <string name="payment_czmsxf">充值免手续费</string>
+    <string name="payment_showmsg">梅泰诺泰彩科技(北京)有限公司</string>
+    <string name="payment_zxkf">在线客服</string>
+    <string name="payment_phone_number">4000328666</string>
+    <string name="payment_phone_number1">400&#8211;0328&#8211;666</string>
+    
+    <!--  双色球投注有关的String  -->
+    <string name="zwl_dballcommon_tv_1">机选摇一摇</string>
+    <string name="zwl_dballcommon_tv_2">至少选择6个红球和1个蓝球</string>
+    <string name="zwl_dballcommon_tv_3">请选择至少1注</string>
+    <string name="zwl_dballcommon_toast_1_1">您还需要选择 :</string>
+    <string name="zwl_dballcommon_toast_1_2">个红球!</string>
+    <string name="zwl_dballcommon_toast_1_3">您还需要选择一个蓝球!</string>
+    <string name="zwl_dballcommon_toast_1_4">共</string>
+    <string name="zwl_dballcommon_toast_1_5">注</string>
+    <string name="zwl_dballcommon_toast_1_6">元</string>
+   <string name="zwl_dballcommon_toast_1_7">胆码 </string>
+    <string name="zwl_dballcommon_toast_1_8">拖码 </string>
+    <string name="zwl_dballcommon_toast_1_9">胆码区-红球 最多只能选择5个</string>
+    <string name="zwl_dballcommon_toast_2_0">您多选了：</string>
+     <string name="zwl_dballcommon_toast_2_1">拖码区不能和胆码去号码有重复！</string>
+     <string name="zwl_dballcommon_toast_2_2">红球区 -至少选择6个</string>
+    <string name="zwl_inform_tv">共0注0元 </string>
+    <string name="zwl_inform_tv0">1期1倍0注</string>
+    <string name="zwl_inform_tv1">0元 </string>
+    <string name="ssp_bg_inform_tv">奖池</string>
+    <string name="ssp_bg_inform_tv0">倍可掏空奖池</string>
+    <string name="ssp_bg_inform_item_tv">\n普通投注  共1注2元</string>
+    <string name="ssp_bg_inform_item_tv1">不足一注</string>
+    <!-- ******** ymx 登陆布局中使用到的resources  String ************ -->
+    <string name="user_login">用户登录</string>
+    <string name="login">登录</string>
+    <string name="login_hint">请输入您的手机号</string>
+    <string name="login_hint1">请输入您的账号</string>
+    <string name="login_pwd_hint">请输入您的账户密码</string>
+    <string name="login_text1">登&#160;&#160;&#160;&#160;录</string>
+    <string name="forget_pwd">忘记密码?</string>
+    <string name="free_regist">免费注册</string>
+    <string name="you_account">您的账号:</string>
+    <string name="change_account">换个账号</string>
+    <string name="former_pwd_text">请输入当前的登录密码！</string>
+    <string name="is_null_erro_text">输入密码不能为空！</string>
+    <string name="is_length_erro_text">输入密码长度必须大于6位！</string>
+    <!-- 七乐彩  -->
+    
+    <string name="qlc_pt_title">七乐彩-普通投注</string> 
+    <string name="qlc_dt_title">七乐彩-胆拖投注</string> 
+    <string name="qi_le_show_rule_text">至少选择七个号码</string> 
+    <string name="qi_le_red_text">红球-胆码区,至少选择1个,最多选择6个</string> 
+    <string name="qi_le_red_mop_text">红球-拖码区,至少选择2个</string> 
+     <!-- 七星彩  -->
+     <string  name="qxc_title">七星彩-普通投注</string>
+     <string  name="qi_xin_one_text">一</string>
+     <string  name="qi_xin_two_text">二</string>
+    <string  name="qi_xin_three_text">三</string>
+     <string  name="qi_xin_four_text">四</string>
+     <string  name="qi_xin_five_text">五</string>
+     <string  name="qi_xin_sex_text">六</string>
+     <string  name="qi_xin_seven_text">七</string>
+     
+       <!-- 大乐透  -->
+       
+     <string  name="dlt_pt_title">大乐透-普通投注</string>
+     <string  name="dlt_dt_title">大乐透-胆拖投注</string>
+     <string  name="da_le_tou_rule_text">至少选择五个红球两个蓝球</string>
+     <string  name="da_le_tou_red_text">胆码区-前区,至少选择1个,最多选择4个</string>
+     <string  name="da_le_tou_blue_text">蓝码区,至少选择2个</string>
+     <string  name="da_le_tou_redmop_text">拖码区-前区,至少选择2个</string>
+     <string  name="da_le_tou_text">拖码区-后区，至少选择2个</string>
+    <!-- 组三 投注有关的String  -->
+    
+    <string name="arrange3_rbtn0_text_pls">排列3-直选</string>
+    <string name="arrange3_rbtn0_text">直选</string>
+    <string name="arrange3_rbtn1_text">组三单式</string>
+    <string name="arrange3_rbtn2_text">组三复式</string>
+    <string name="arrange3_rbtn3_text">组六</string>
+    <string name="arrange">直选</string>
+    <string name="arrange_rule_tv">每位至少选1个号</string>
+    <string name="arrange_num_tv">百位</string>
+    <string name="arrange_the_unit_tv">个位</string>
+    <string name="arrange_ten_unit_tv">十位</string>
+    <string name="arrange_four_tv">万位</string>
+    <string name="arrange_qian_tv">千位</string>
+      <!-- 福彩3D 投注有关的String  -->
+    <string name="fc3d_text">福彩3D直选</string>
+    <!--   排列五  -->
+    
+    <string name="pl5_title">排列五-普通投注</string>
+   <!--   快乐扑克 3  title  -->
+    <string name="pk3_title_klpk">快乐扑克</string>
+    <string name="pk3_title_cdz">猜对子</string>
+    <string name="pk3_title_cbz">猜豹子</string>
+    <string name="pk3_title_cth">猜同花</string>
+    <string name="pk3_title_csz">猜顺子</string>
+    <string name="pk3_title_cths">猜同花顺</string>
+    
+    <string name="t_text_bx">包选\n最高奖535元</string>
+    <string name="t_text_cdz">猜对子\n最高奖88元</string>
+    <string name="t_text_cbz">猜豹子\n最高奖6400元</string>
+    <string name="t_text_cth">猜同花\n最高奖90元</string>
+    <string name="t_text_csz">猜顺子\n最高奖400元</string>
+    <string name="t_text_cths">猜同花顺\n最高奖2150元</string>
+    
+    <string name="t_text_pkry">任选一\n奖金5元</string>
+    <string name="t_text_pkre">任选二\n奖金33元</string>
+    <string name="t_text_pkrs">任选三\n奖金116元</string>
+    <string name="t_text_pkrs_1">任选四\n奖金46元</string>
+    <string name="t_text_pkrw">任选五\n奖金22元</string>
+    <string name="t_text_pkrl">任选六\n奖金12元</string>
+    
+    <string name="f_pk_dxtext">单选</string>
+    <string name="f_pk_dxtext1">所选的对子开出(不分花色)即中奖</string>
+    <string name="f_pk_bztext">所选的豹子开出(不分花色)即中奖</string>
+    
+    <string name="f_pk_dxtext2">开出同花顺且所选花色即中奖</string>
+    <string name="f_pk_dxtext3">所选的顺子开出(不分花色)即中奖</string>
+    <string name="f_pk_dxtext4">开出的3张牌都是所选的花色即中奖</string>
+    <string name="f_pk_bxtext">包选</string>
+    <string name="f_pk_bxtext1">只要开出对子(任意数字)即中</string>
+    <string name="f_pk_bxtext2">任意数字，只要开出豹子即中</string>
+    <string name="f_pk_bxtext3">任意数字，只要开出同花顺即中</string>
+    <string name="f_pk_bxtext4">任意数字，只要开出顺子即中</string>
+    <string name="f_pk_bxtext5">任意数字，只要开出同花即中</string>
+    
+    <string name="f_pk_rx0_text">即将开出3张扑克，我猜会开</string>
+    <string name="f_pk_rx1_text">与开奖任意</string>
+    <string name="f_pk_rx2_text">与开奖任意2个号码相同(不分花色)即中</string>
+    <string name="f_pk_rx3_text">个号码相同(不分花色)即中</string>
+    <string name="f_pk_bh_text">投注号码包含开奖号码(不分花色)即中</string>
+    <string name="pk3_shakenotice_text">至少选</string>
+    <string name="pk3_shakenotice_text1">张牌</string>
+    
+    
+     <!--   快三布局    -->
+     <string name="fast3_hz_text">和值</string>
+     <string name="fast3_sth_text">三同号</string>
+     <string name="fast3_eth_text">二同号</string>
+     <string name="fast3_sbth_text">三不同号</string>
+     <string name="fast3_ebth_text">二不同号</string>
+     <string name="fast3_ebth_text1">三连号</string>
+     <string name="fast3_ebth_text2">三同号通选\n任意一个豹子号开出即中40元</string>
+     <string name="fs_sth_th">三同号通选</string>
+     <string name="fs_sth_th1">任 意 一 个 豹 子 号 开 出 即 中 40 元</string>
+     <string name="moni_fast3_ebth_text2">三同号通选\n任意一个豹子号开出即中40分</string>
+     <string name="fs_sth_th1">任意一个豹子号开出即中40元</string>
+      <string name="sbth_text">三连号通选</string>
+      <string name="sbth_tv_text">123,234,345,456任意开出即中10元</string>
+      <string name="moni_sbth_tv_text">123,234,345,456任意开出即中10分</string>
+    <string name="SaleType_set_d_text">二不同号</string>
+     <string name="SaleType_set_d_text1">三不同号</string>
+    <string name="SaleType_set_p_text">二不同号</string>
+      <string name="SaleType_set_p_text1">三不同号</string>
+     <string name="fast3_tv_1">--期 </string>
+     <string name="fast3_tv_2">等待开奖</string>
+     <string name="fast3_tv_3">距</string>
+     <string name="fast3_tv_4">距--期截止：</string>
+     <string name="fast3_tv_5">--</string>
+      <string name="fast3_show_tv">猜中开奖号码相加的和</string>
+      <string name="fast3_show_tv1">猜豹子号(3个号相同)</string>
+      <string name="fast3_show_tv2">猜豹子号(2个号相同)</string>
+      <string name="fast3_show_tv3">猜对子号(有2个号相同)</string>
+     <string name="fast3_top_tv">猜中开奖号码中2个指定的不同号码,奖金8元</string>
+     <string name="moni_fast3_top_tv">猜中开奖号码中2个指定的不同号码,奖金8分</string>
+     <string name="fast3_top_tv1">猜中开奖的3个不同号码,奖金40元</string>
+     <string name="moni_fast3_top_tv1">猜中开奖的3个不同号码,奖金40分</string>
+     <string name="fast3_middle_left_tv">单选</string>
+      <string name="fast3_middle_reight_tv">选择同号和不同号的组合,奖金80元</string>
+      <string name="moni_fast3_middle_reight_tv">选择同号不同号的组合,奖金80分</string>
+      <string name="fast3_middle_reight_tv1">猜开奖中2个指定相同号码,奖金15元</string>
+      <string name="moni_fast3_middle_reight_tv1">猜开奖中2个指定相同号码,奖金15分</string>
+      <string name="fast3_bottom_tv">同 号</string>
+      <string name="fast3_bottom_tv1">不 同 号</string>
+      <string name="fast3_repetition_tv">复选</string>
+     <!-- 选号跳转  key  -->
+    <string name="sth_key">STH_KEY</string>
+    <string name="slh_key">STH_KEY</string>
+    
+   
+    <string name="fast3_he_bottom_tv">快速选号</string>
+    <string name="group_choose_three_single">组三单式</string>
+    <string name="group_choose_three_playmethod_tv">至少选择1个重号和1个单号</string>
+    <string name="group_choose_three_repeat_num">重号</string>
+    <string name="group_choose_three_single_num">单号</string>
+   
+    <string name="group_choose_three_double">组三复式</string>
+    <string name="group_choose_three_playmethod_tv2">至少选2个号</string>
+    <string name="group_choose_sex">组六</string>
+    <string name="group_choose_playmethod_tv">至少选4个号</string>
+    
+     <string name="fast3_rbtn_da">大</string>
+     <string name="fast3_rbtn_xiao">小</string>
+     <string name="fast3_rbtn_dan">单</string>
+     <string name="fast3_rbtn_shuang">双</string>
+    
+    <!-- 十一 选5 -->
+    <string name="elevenC5_timenotice_tv">距01期截止08:59</string>
+    <string name="elevenC5_show_bonus_tv">与开奖前3位一一对应即奖1170元</string>
+   <string name="elevenC5_Iguess_tv">我认为必出的号码</string>
+   <string name="elevenC5_Iguess_little_text">至少选择1个最多选择10个</string>
+   <string name="elevenC5_Iguess1_tv">请选择1个,最多2个</string>
+   <string name="arrange_omit_tv">遗漏</string>
+   <string name="anychoose_rbtn_text_1">任选二</string>
+   <string name="anychoose_rbtn_text_2">任选三</string>
+   <string name="anychoose_rbtn_text_3">任选四</string>
+   <string name="anychoose_rbtn_text_4">任选五</string>
+   <string name="anychoose_rbtn_text_5">任选六</string>
+   <string name="anychoose_rbtn_text_6">任选七</string>
+   <string name="anychoose_rbtn_text_7">任选八</string>
+   <string name="anychoose_rbtn_text_8">前一</string>
+   <string name="anychoose_rbtn_text_9">前二直选</string>
+   <string name="anychoose_rbtn_text0_1">前二组选</string>
+   <string name="anychoose_rbtn_text0_2">前三直选</string>
+   <string name="anychoose_rbtn_text0_3">前三组选</string>
+   <string name="show_guess_msg">猜中开奖的全部</string>
+   <string name="show_guess_msg1">猜中开奖的第</string>
+   <string name="now_award">个号即奖</string>
+   <string name="now_award1">位</string>
+   <string name="any_one_choose_1text">任意一位上至少选1个号码</string>
+   <string name="any_two_choose_1text">任意两位上至少选各选1个号码</string>
+   <!-- 时时彩     -->
+   <string name="ssc_title_1">一星直选</string>
+   <string name="ssc_title_2">二星直选</string>
+   <string name="ssc_title_3">二星组选</string>
+   <string name="ssc_title_4">三星直选</string>
+   <string name="ssc_title_5">三星组三单式</string>
+   <string name="ssc_title_6">三星组三复式</string>
+   <string name="ssc_title_7">三星组六</string>
+   <string name="ssc_title_8">四星直选</string>
+   <string name="ssc_title_9">五星直选</string>
+   <string name="ssc_title1_0">五星通选</string>
+   <string name="ssc_title1_1">大小单双</string>
+   <string name="ssc_title1_2">任选一</string>
+   <string name="ssc_title1_3">任选二</string>
+   <string name="ssc_shakenotice_text1">至少选</string>
+    <string name="ssc_shakenotice_text2">个号</string>
+   <string name="ssc_shakenotice_each_text">每位至少选</string>
+    <string name="ssc_shakenotice_each_text1">个号</string>
+    <string name="ssc_shakenotice_text3">至少选1个重号和1个单号</string>
+    <string name="ssc_shakenotice_text5">任意一位上至少选1个号</string>
+    <string name="ssc_shakenotice_text6">任意两位上至少选1个号</string>
+    <string name="ssc_shakenotice_text7">每位至少选1个号</string>
+     <!-- 竞彩 足球     -->
+    <string name="zq_cg">过关</string>
+    <string name="zq_dg">单关</string>
+    <string name="zq_spf">胜平负</string>
+    <string name="zq_rqspf">让球胜平负</string>
+    <string name="zq_bf">比分</string>
+    <string name="zq_zjq">总进球</string>
+    <string name="zq_bqc">半全场</string>
+    <string name="zq_hh">混合过关</string>
+    <string name="bqc_ss">胜胜</string>
+    <string name="bqc_sp">胜平</string>
+    <string name="bqc_sf">胜负</string>
+    <string name="bqc_ps">平胜</string>
+    <string name="bqc_pp">平平</string>
+    <string name="bqc_pf">平负</string>
+    <string name="bqc_fs">负胜</string>
+    <string name="bqc_fp">负平</string>
+    <string name="bqc_ff">负负</string>
+    <string name="bqc_c_affirm">确  认</string>
+    <string name="bqc_c_cancel">取  消</string>
+    <!-- 竞彩篮球 -->
+    <string name="lq_rqsf">让分胜负</string>
+    <string name="lq_dxf">大小分</string>
+    <string name="lq_sf">胜负</string>
+    <string name="lq_hhgg">混合过关</string>
+    <string name="lq_sfc">胜分差</string>
+    
+    <!-- ******** ymx 网络故障及诊断 resources  String********* -->
+    <string name="network_checking">网络诊断中</string>
+    <string name="two_minute">诊断需要两分钟，在此期间您不可以进行其他操作</string>
+    <string name="interrupt_check">但是您可以随时中断诊断</string>
+    <string name="checking_router">正在检查路由器信息......</string>
+    <string name="no_connect_server">无法连接到服务器</string>
+    <string name="network_fault">由于服务器故障时您可能无法连接到泰彩彩票</string>
+    <string name="unable_to_operate">暂时无法进行彩票操作</string>
+    <string name="unable_to_znzh">网络异常，无法获取期号！</string>
+    <string name="check_network">诊断网络</string>
+    <string name="solve_problem">进行网络诊断有助于我们为您更快的解决问题</string>
+    <string name="had_two_minute">诊断时间为2分钟</string>
+    <string name="terms_and_policies">使用条款和隐私政策</string>
+     <string name="znzh_tv2_text">共10期 全程最低盈利率30%</string>
+     <string name="znzh_btn_text">修      改</string>
+     <string name="jc_bqc_text">竞猜主队在上半场和全场比赛(不含加时赛和点球大赛)的胜负结果.</string>
+     <string name="jc_bf_text">竞猜全场90分钟(含伤停补时)的比分.</string>
+    
+    <!--****** ymx  开奖信息     item ******-->
+    <string name="ymx_bqxl">本期销量:</string>
+    <string name="ymx_shuzi">3.46</string>
+    <string name="ymx_danwei">亿</string>
+    <string name="ymx_dzxq">对阵详情</string>
+    <string name="ymx_jiangxiang">奖项</string>
+    <string name="ymx_zjzs">中奖注数</string>
+    <string name="ymx_jiangjin">奖金</string>
+    <string name="ymx_1dj">一等奖</string>
+    <string name="ymx_2dj">二等奖</string>
+    <string name="ymx_3dj">三等奖</string>
+    <string name="ymx_4dj">四等奖</string>
+    <string name="ymx_5dj">五等奖</string>
+    
+    <!--****** ymx  账户中心     item ******-->
+  	<string name="acc_title_fund_manager">账户明细</string>
+  	<string name="acc_title_help_center">帮助中心</string>
+  	<string name="acc_title_betting_records">投注记录查询</string>
+  	<string name="acc_title_setting">系统设置</string>
+  	<string name="acc_title_message_center">消息中心</string>
+  	<string name="acc_title_safe">安全与隐私</string>
+  	<string name="acc_jifen">积&#160;&#160;&#160;&#160;分</string>
+  	<string name="acc_title_extraction_cash">转出到银行卡</string>
+  	<string name="acc_title_recharge">账户充值</string>
+  	<string name="acc_title_buy_read_pac">红包商城</string>
+  	<string name="acc_title_buy_read_pac_buy">红包商城</string>
+  	<string name="acc_title_about">关于我们</string>
+  	<string name="acc_title_online_consultation">在线咨询</string>
+  	<string name="acc_title_order_pay">订单支付</string>
+  	<string name="acc_big_accounts">大额银行转账</string>
+  	
+    <!-- ck pop menu 添加 -->
+     <string name="pop_menu_tv_user">用户中心</string>
+     <string name="pop_menu_tv_help">需要帮助</string>
+     <!-- ck betting detail -->
+     <string name="betting_detail_tv_notice">中大奖后，泰彩将第一时间通知您，办理领奖手续，小奖直接派到您的泰彩账户。</string>
+     <string name="betting_detail_tv_notice_moni">模拟投注中奖后，中奖所得积分会自动转入到您的积分账用户中。</string>
+     <string name="betting_detail_tv_alert">注：您的手机还未通过验证，为避免我们无法联系到您，请您及时验证，【立即验证】</string>
+     <!-- ck BaseBuyFragment 中的主布局 添加 -->
+     <string name="basebuy_notice_text"><![CDATA[共NUM注<font color="#f7b52c"> MONEY 元</font>]]></string>
+     <string name="basebuy_notice_jf_text"><![CDATA[共NUM注<font color="#f7b52c"> MONEY 积分</font>]]></string>
+     
+     <string name="basebuy_notice_jc_text"><![CDATA[已选<font color="#ff9500">NUM</font>场<font color="#606060"><small><br>页面赔率仅供参考,请以出票为准<small></font>]]></string>
+     <string name="jc_bo_showtext"><![CDATA[总金额:<font color="#ff9500">NUM</font>元<br><small>奖金范围值:<font color="#ff9500">MIM ~ MAX</font><small></font>]]></string>
+     <string name="basebuy_notice_jc_text1"><![CDATA[请至少选择2场比赛<font color="#606060"><small><br>页面赔率仅供参考,请以出票为准<small></font>]]></string>
+     <string name="basebuy_notice_jclack_text"><![CDATA[已选<font color="#ff9500">NUM</font>场,还差<font color="#ff9500">LACK_NUM</font>场<font color="#606060"><small><br>页面赔率仅供参考,请以出票为准<small></font>]]></string>
+     <string name="jcbetorder_notice_text"><![CDATA[投N倍ZHU注<font color="#ff9500">MONEY元</font>]]></string>
+     
+     <string name="betorder_show_text"><![CDATA[追QS期投N倍ZHU注<font color="#ff9500">MONEY元</font>]]></string>
+     <string name="moni_betorder_show_text"><![CDATA[追QS期投N倍ZHU注<font color="#ff9500">MONEY积分</font>]]></string>
+    <!--  竞彩页面 -->
+     <string name="jc_209item_true"><![CDATA[NAME<small>SP</small>]]></string>
+     <string name="jc_209item_false"><![CDATA[NAME<font color="#606060"><small>SP</small></font>]]></string>
+     
+     <string name="jc_211dialog_sp"><![CDATA[NAME<br><small>SP</small></br>]]></string>
+     
+     <string name="gray_text"><![CDATA[<font color="#606060">MSG</font>]]></string>
+     <string name="red_text"><![CDATA[<font color="#ef2d33">MSG</font>]]></string>
+     <string name="green_text"><![CDATA[<font color="#94c400">MSG</font>]]></string>
+     
+     <string name="jc_itemui_false"><![CDATA[NAME<br><small>PK<font color="#ef2d33">SP</font></small></br>]]></string>
+     <string name="jc_itemui_true"><![CDATA[NAME<br><small>PK_SP</small></br>]]></string>
+     <string name="jc_itemui_false1"><![CDATA[NAME<small>PK<font color="#ef2d33">SP</font></small>]]></string>
+     <string name="jc_itemui_true1"><![CDATA[NAME<small>PK_SP</small>]]></string>
+     
+     <string name="jc_awardinfo_msg"><![CDATA[H<br>G</br>&#160;<small>I</small>]]></string>
+     <string name="jc_awardinfo_vs3"><![CDATA[<font color="#ff0000">SPF<br>SP</br></font>]]></string>
+     <string name="jc_awardinfo_vs1"><![CDATA[<font color="#007AFF">SPF<br>SP</br></font>]]></string>
+     <string name="jc_awardinfo_vs0"><![CDATA[<font color="#ff6e940e">SPF<br>SP</br></font>]]></string>
+     <string name="jc_userBetmsg"><![CDATA[ZHU<small><br>VS</br></small><br>KE</br>]]></string>
+     <string name="jc_bovsText"><![CDATA[V1<small><br>V2</br></small>]]></string>
+     <string name="jc_startmsg"><![CDATA[TIME<br>CC</br>]]></string>
+     <!-- 追期方案 -->
+     <string name="alter_scheme">· 修改追号方案</string> 
+     <string name="continuous_expect">连续追号 ：</string> 
+     <string name="continuous_multiple">起始倍数 ：</string> 
+     <string name="anticipate_profit">预期盈利 ：</string> 
+     <string name="earnings_interest">全程最低盈利率</string> 
+     <string name="earnings_interest2">全程最低盈利</string>
+     <string name="earnings_later">之后盈利</string> 
+     <string name="create_scheme">生成方案</string>
+     <string name="table_title_text1">序\n号</string>
+     <string name="table_title_text2">期\n号</string>
+     <string name="table_title_text3">倍数</string>
+     <string name="table_title_text4">累计\n投入</string>
+     <string name="table_title_text5">中奖\n盈利</string>
+     <string name="table_title_text6">盈利率</string>
+     <string name="comparison_toast_text">默认至少追10期</string>
+     <string name="comparison_toast_text1">默认起始倍数为2倍</string>
+     <string name="comparison_toast_text2">默认全程最低盈利率为30%</string>
+     <string name="comparison_toast_text3">默认为前5期</string>
+     <string name="comparison_toast_text4">默认为前5期盈利率为50%</string>
+     <string name="comparison_toast_text5">默认为前5期之后盈利率为20%</string>
+     <string name="comparison_toast_text6">默认全程最低盈利为30元</string>
+     <string name="ob_yzcj">预测资金</string>
+     <string name="ob_zsfb">注数分布</string>
+     <string name="ob_dzzh">单注组合</string>
+     <string name="ob_gg">过关</string>
+     
+     <string name="front">前</string>
+     <!-- ck 添加, 语音支付 -->
+     <string name="voicepay_notice"><![CDATA[1. 用户所填写的开卡人姓名、银行卡号、手机号码等其它证件必须真实有效且相匹配。<br/>2. 在您点击“确认付款”按钮之后，你会接到来自中国银联<font color="#007aff"> 96585</font>的电话，请你根据语音提示完成后续的操作。<br/>3. 充值中如遇到其它问题，可联系在线客服进行咨询。]]></string>
+     <string name="voicepay_hint_name">开户人姓名</string>
+     <string name="voicepay_hint_card_num">银行卡号</string>
+     <string name="voicepay_hint_phone">银行预留手机号码</string>
+     <string name="voicepay_hint_chose_card">选择银行卡</string>
+     <string name="voicepay_hint_chose_certificate_type">选择证件类型</string>
+     <string name="voicepay_hint_certificate_num">银行开户证件号码</string>
+     <string name="voicepay_hint_open_band_address">选择银行开户省市</string>
+     <string name="voicepay_hint_certificate_address">开户证件地址</string>
+     <string name="voicepay_hint_beneficiary">受益人</string>
+     <string name="voicepay_hint_beneficiary_num">受益人手机号</string>
+     <string name="convince_pay">确 认 付 款</string>
+     <!-- ck 添加 支付方式 -->
+     <string name="paymethod_ali_plugin">支付宝快捷支付\n支付宝推荐,安全快捷</string>
+     <string name="paymethod_payeco_plugin">银联无卡支付</string>
+     <string name="paymethod_payeco_voicepay">银联语音充值\n无需开通网银,支持多家银行借记卡</string>
+     <string name="paymethod_upay_">支付宝Wap支付\n需开通支付宝账户,无需安装插件</string>
+     <string name="paymethod_ali_wap">支付宝Wap支付\n需开通支付宝账户,无需安装插件</string>
+     <string name="paymethod_upay_savings_card">银联借记卡支付\n需开通支付宝账户,无需安装插件</string>
+     <string name="paymethod_upay_credit_card">银联信用卡支付\n需开通支付宝账户,无需安装插件</string>
+     <!-- 银联安全支付 -->
+     <string name="payeco_plugin_name">开户人姓名</string>
+     <string name="payeco_plugin_card_num">银行卡号</string>
+     <string name="payeco_plugin_phone_num">银行预留手机号码</string>
+     <string name="payeco_plugin_certificate_num">银行开户证件号码</string>
+     <string name="payeco_plugin_certificate_type">请选择您的证件类型</string>
+     
+    <!-- 注册中存储在sharepreferences中的信息 -->
+    <string name="USR">USR</string> <!-- 用户手机号  (用户名) --> 
+    <string name="SND">SND</string> <!-- 用户会话状态 --> 
+    <string name="verify">VF</string>
+    <string name="time_interval">TIME_INTERVAL</string><!-- 咨询中心聊天信息1358请求轮询时间 -->
+    <string name="msg_count">MSG_COUNT</string><!-- 咨询中心聊天信息1358请求轮询未读取客服留言-->
+    <string name="recommendName">RMMNM</string>
+    <string name="pwd">PWD</string>
+    <string name="pay_method">pay_method</string>
+    <string name="cmd">CMD</string><!-- 获取验证码 根据此值判断所显示的布局需不需要获取验证码  -->
+     <string name="bl">BOOLEAN</string><!-- 找回密码还是修改密码  默认是找回密码 (false) -->
+     <string name="custom_codes">custom_codes</string><!-- 用户自定义的快捷开始中心界面的id -->
+     <string name="pay_success_notice">为了完成您的订单,请耐心等待来自中国银联的确认电话</string>
+     <string name="REMIND">REMIND</string>
+     <string name="PAYPWD">PAYPWD</string>
+     <string name="PAYPWD1">PAYPWD1</string>
+     <string name="FROZEN">FROZEN</string>
+     <string name="SHAKE">SHAKE</string>
+     <string name="SOUND">SOUND</string>
+     <string name="is_usable">IS_USABLE</string>
+     <string name="ALLCHECKBOX">ALLCHECKBOX</string>
+     <string name="USERPHOTO">USERPHOTO</string>
+     <string name="lottery_ids">LOTTERYIDS</string>
+     <string name="SPLASH">SPLASH</string>
+     <string name="TRUENAME">TRUENAME</string>
+     <string name="PHONERECHARGE">PHONERECHARGE</string>
+     <string name="probe_id">PROBEID</string>
+     <string name="MoneyMode">MoneyMode</string>
+     <string name="MoneyModeOther">MoneyModeOther</string>
+     <string name="REMEMBER_PWD">REMEMBER_PWD</string>
+     <string name="REMEMBER_PWD_BOOLEAN">REMEMBER_PWD_BOOLEAN</string>
+     <string name="PAY_PWD_FLAG">PAY_PWD_FLAG</string>
+     <string name="PAY_PWD_BUY">PAY_PWD_BUY</string>
+     <string name="PAY_METHODS">PAY_METHODS</string>
+     <string name="ImageCache">ImageCache</string>
+     <string name="HasNew">HasNew</string>
+     <string name="uname">UNAME</string>
+     <string name="FOREGROUNDCOLOR">FOREGROUNDCOLOR</string>
+     <string name="BACKGROUNDCOLOR">BACKGROUNDCOLOR</string>
+     
+     <!-- 支付成功界面 -->
+     <string name="paysuccess_buy_0">恭喜您,购彩成功</string>
+     <string name="paysuccess_recharge_0">恭喜您,充值成功</string>
+     <string name="paysuccess_redpacket_0">恭喜您,红包购买成功</string>
+     <string name="paysuccess_buy_1">对不起,购彩失败</string>
+     <string name="paysuccess_recharge_1">对不起,充值失败</string>
+     <string name="paysuccess_redpacket_1">对不起,红包购买失败</string>
+     <string name="paysuccess_repay">重新支付</string>
+     <string name="paysuccess_check_orders">查看订单</string>
+     <string name="paysuccess_goto_recharge">重新充值</string>
+     <string name="paysuccess_goto_buy_redpacket">重新购买</string>
+     <string name="paysuccess_goto_user">进入用户中心</string>
+     <string name="paysuccess_progressing">正在处理中,请稍后</string>
+     
+         <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="image_desc">图片</string>
+     
+     <string name="login_required_cmds">1002,1003,1004,1006,1007,1008,1010,1100,1101,1102,1103,1105,1106,1107,1205,1206,1207,1208,1210,1211,1301,1302,1303,1304,1305</string>
+</resources>

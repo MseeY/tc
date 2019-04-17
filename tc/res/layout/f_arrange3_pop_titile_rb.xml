@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|top"
+    android:background="#b0000000">
+    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scrollbarFadeDuration="1000"
+	        android:scrollbarSize="1.0dip"
+	        android:soundEffectsEnabled="true"
+	        android:scrollbars="none"
+	        >
+    
+   <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		     android:background="@color/white">   
+         
+	    <com.mitenotc.ui.ui_utils.GridRadioGroup 
+              android:id="@+id/saleType_grg"
+		      android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              
+              android:paddingTop="0.0dp"
+              android:paddingBottom="0.0dp"
+              android:paddingLeft="0dp"
+              android:paddingRight="0dp"
+               android:layout_marginTop="5dp" 
+              android:layout_marginBottom="5dp"
+              android:layout_marginLeft="2dp"
+			  android:layout_marginRight="2dp"
+             
+		      android:orientation="vertical">
+			  <LinearLayout 
+			            android:layout_width="fill_parent"
+			            android:layout_height="30dp"
+			            android:gravity="center_vertical|center_horizontal">
+						 <RadioButton 
+						      android:id="@+id/arrange3_rbtn0"
+				              android:tag="0"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+				               android:background="@drawable/choose_rbtn_selector"
+			                   android:textColor="@color/rbtn_text_color_selector"
+			                   android:checked="true"
+			                    
+				              android:gravity="center_vertical|center_horizontal"
+				              
+				              android:layout_gravity="center"
+						      android:button="@null"
+				              android:text="@string/arrange3_rbtn0_text"
+				              android:textSize="14.0sp" />
+						   <!--  android:background="@drawable/zq_spf_rbtn_middle_selector" -->
+						  <RadioButton 
+						      android:id="@+id/arrange3_rbtn1"
+				              android:tag="3"
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+				               android:background="@drawable/choose_rbtn_selector"
+			                   android:textColor="@color/rbtn_text_color_selector"
+			                  android:layout_marginLeft="2dp"
+			                  android:layout_marginRight="2dp" 
+						      android:button="@null"
+						       
+						      android:gravity="center_vertical|center_horizontal"
+						      
+				              android:text="@string/arrange3_rbtn1_text"
+				              android:textSize="14.0sp" />
+						  <RadioButton 
+						      android:id="@+id/arrange3_rbtn2"
+				              android:tag="5"
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+				               android:background="@drawable/choose_rbtn_selector"
+			                   android:textColor="@color/rbtn_text_color_selector"
+			                    
+						      android:button="@null"
+						       
+						      android:gravity="center"
+						      
+				              android:text="@string/arrange3_rbtn2_text"
+				              android:textSize="14.0sp" />
+		        </LinearLayout>
+		         <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="30dp"
+			            android:gravity="center"
+			            android:layout_marginTop="2dp"
+			            android:orientation="horizontal">
+		     
+		                <RadioButton 
+						      android:id="@+id/arrange3_rbtn3"
+				              android:tag="4"
+				              
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+						       android:background="@drawable/choose_rbtn_selector"
+			                   android:textColor="@color/rbtn_text_color_selector"
+			                   
+			                    
+				              android:gravity="center_vertical|center_horizontal"
+						      android:button="@null"
+				              android:text="@string/arrange3_rbtn3_text"
+				              android:textSize="14.0sp" />
+
+					     <RadioButton
+					         android:enabled="false"
+					            
+					         android:id="@+id/arrange3_rbtn4"
+					         android:layout_width="fill_parent"
+					         android:layout_height="fill_parent"
+					         android:layout_weight="1"
+					         android:button="@null"
+					               android:background="@color/white"
+			                  android:textColor="@color/rbtn_text_color_selector"
+			                    
+					         android:gravity="center_vertical|center_horizontal"
+					         android:textSize="14.0sp" />
+                          <!-- 不显示  有需求时候可以显示 -->
+						  <RadioButton 
+						      android:enabled="false"
+						      
+						      android:id="@+id/arrange3_rbtn5"
+						      android:layout_width="fill_parent"
+				              android:layout_height="fill_parent"
+				              android:layout_weight="1"
+				              
+			                  android:textColor="@color/rbtn_text_color_selector"
+			                   
+						      android:button="@null"
+						      android:background="@color/white"
+						       
+						      android:gravity="center_vertical|center_horizontal"
+				              android:text=""
+				              android:textSize="14.0sp" />  
+		                    </LinearLayout>
+		   	  </com.mitenotc.ui.ui_utils.GridRadioGroup>
+              </LinearLayout> 
+</ScrollView>
+</RelativeLayout>

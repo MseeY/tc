@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_title_tv_color" >
+
+    <RelativeLayout
+        android:id="@+id/reLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <Button
+            android:id="@+id/common_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_circular"
+            android:drawableLeft="@drawable/shake"
+            android:paddingBottom="3.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="3.0dip"
+            android:text="@string/zwl_dballcommon_tv_1"
+            android:textColor="@color/white"
+            android:textSize="13.0dip" />
+
+        <TextView
+            android:id="@+id/arrange_top_playmethod_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/common_btn"
+            android:layout_toRightOf="@id/common_btn"
+            android:gravity="right|center_horizontal"
+            android:text="@string/arrange_rule_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+    <!-- 百位 -->
+
+    <RelativeLayout
+        android:id="@+id/arrange_num_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reLayout"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/num_top_imgvl"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <TextView
+            android:id="@+id/arrange_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/num_top_imgvl"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_num_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_num_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/num_top_imgvl"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_num_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="2dip" />
+    </RelativeLayout>
+    <!-- 十位 -->
+
+    <RelativeLayout
+        android:id="@+id/arrange_ten_unit_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrange_num_RL"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/ten_top_imgvl"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/arrange_ten_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ten_top_imgvl"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_ten_unit_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_ten_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ten_top_imgvl"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_ten_unit_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dip" />
+    </RelativeLayout>
+    <!-- 个位 -->
+
+    <RelativeLayout
+        android:id="@+id/arrange_the_unit_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrange_ten_unit_RL"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/the_top_imgvl"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/arrange_the_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/the_top_imgvl"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_the_unit_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_the_unit_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/the_top_imgvl"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_the_unit_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/four_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrange_the_unit_RL"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/the_top_imgv2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/arrange_four_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/the_top_imgv2"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_the_unit_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_four_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/the_top_imgv2"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_four_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/five_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/four_RL"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/arrange_five_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/v_line1"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_the_unit_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_five_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/v_line1"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_five_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/five_RL"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/v_line2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/arrange_sex_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/v_line2"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_the_unit_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_sex_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/v_line2"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_sex_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seven_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sex_RL"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+
+        <!-- 线 -->
+
+        <View
+            android:id="@+id/v_line3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/parting_line" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/arrange_seven_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/v_line3"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/choose_tv_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/arrange_the_unit_tv"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="12.0dip" />
+
+        <com.mitenotc.ui.ui_utils.MGridView
+            android:id="@+id/arrange_seven_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/v_line3"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/arrange_seven_tv"
+            android:columnWidth="40dip"
+            android:horizontalSpacing="1.5dip"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

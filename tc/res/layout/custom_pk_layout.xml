@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/external_RLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+          
+			       <!-- 快乐扑克特殊的 玩法 豹子 -->
+			     <RelativeLayout 
+				    android:visibility="gone"  
+			         
+			        android:id="@+id/unselect_pk_rl"
+			        android:layout_width="match_parent"
+			        android:layout_height="75dp"
+			        android:gravity="center">
+					<!-- <RelativeLayout 
+					    android:id="@+id/pk_one_rl"
+					    android:layout_width="match_parent"
+					    android:layout_height="64dip"
+					    android:gravity="center"
+					    android:background="@drawable/ctm_pk_bg"> -->
+					  <TextView
+					    android:id="@+id/pk_one_textStr"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:gravity="center"
+					    android:textSize="20sp"
+					    android:text="A"
+					    android:padding="0dip"
+					    android:background="@drawable/ctm_pk_bg"/>
+					<!-- </RelativeLayout>
+					
+					
+				    <RelativeLayout 
+				        
+				          android:id="@+id/pk_two_rl"
+					      android:layout_width="match_parent"
+					      android:layout_height="64dip"
+					     android:layout_marginLeft="11dip"
+					     android:paddingLeft="0dip"
+					     android:padding="0dip"
+					     android:gravity="center"
+					    android:background="@drawable/ctm_pk_bg"> -->
+					  <TextView
+					        android:visibility="gone"  
+					    android:id="@+id/pk_two_textStr"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					     android:layout_marginLeft="11dip"
+					     android:gravity="center"
+					    android:textSize="20sp"
+					    android:text="A"
+					    android:padding="0dip"
+					     android:background="@drawable/ctm_pk_bg"/>
+					 <!-- 
+					</RelativeLayout>
+					
+					 <RelativeLayout 
+					    android:id="@+id/pk_three_rl"
+					    android:layout_width="match_parent"
+					    android:layout_height="64dip"
+					     android:gravity="center"
+					     android:layout_marginLeft="22dip"
+					    android:background="@drawable/ctm_pk_bg"> -->
+					  <TextView
+					        android:visibility="gone"  
+					    android:id="@+id/pk_three_textStr"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_marginLeft="22dip"
+					    
+					    android:textSize="20sp"
+					    android:text="A"
+					    android:padding="0dip"
+                        android:gravity="center"
+                        android:background="@drawable/ctm_pk_bg"/>
+					<!-- </RelativeLayout> -->
+				</RelativeLayout>
+			     
+							<!-- 快乐扑克特殊的 玩法  顺子 -->
+					     <RelativeLayout 
+					        android:visibility="gone"
+					         
+					        android:id="@+id/unselect_pk_rl2"
+					        android:layout_width="match_parent"
+					        android:layout_height="64dip"
+					        android:gravity="center">
+						<!-- 	<RelativeLayout 
+							    android:id="@+id/pk_one_rl2"
+							    android:layout_width="match_parent"
+							    android:layout_height="64dip"
+							    android:gravity="center"
+							    android:background="@drawable/ctm_pk_bg"> -->
+							  <TextView
+							    
+							    android:id="@+id/pk_one_textStr2"
+							    android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							    
+							    android:textSize="20sp"
+							    android:text="A"
+							    android:gravity="center"
+							    android:background="@drawable/ctm_pk_bg"/>
+							  
+						<!-- 	</RelativeLayout> -->
+							
+						<!-- 	
+						    <RelativeLayout 
+						         android:visibility="gone"
+						         
+						        android:id="@+id/pk_two_rl2"
+							    android:layout_width="match_parent"
+							    android:layout_height="64dip"
+							    
+							    android:layout_marginLeft="25dip"
+							    android:gravity="center"
+							    
+							    android:background="@drawable/ctm_pk_bg"> -->
+							  <TextView
+							    android:id="@+id/pk_two_textStr2"
+							    android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							     android:layout_marginLeft="25dip"
+							     
+							    android:textSize="20sp"
+							    android:text="A"
+							    android:gravity="center"
+							    android:padding="0dp"
+							    android:background="@drawable/ctm_pk_bg"/>
+							<!--   
+							</RelativeLayout> -->
+							
+						<!-- 	<RelativeLayout 
+							     android:visibility="gone"
+							     
+							    android:id="@+id/pk_three_rl2"
+							    android:layout_width="match_parent"
+							    android:layout_height="64dip"
+							    
+							    android:layout_marginLeft="50dip"
+                                android:gravity="center"							    
+							    android:background="@drawable/ctm_pk_bg"> -->
+							  <TextView
+							      
+							    android:id="@+id/pk_three_textStr2"
+							    android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							    android:layout_marginLeft="50dip"
+							    
+							    android:textSize="20sp"
+							    android:text="A"
+                                android:gravity="center"							    
+							    android:padding="0dip"
+							    android:background="@drawable/ctm_pk_bg"/>
+							<!-- </RelativeLayout> -->
+						</RelativeLayout>
+						
+		<!-- 快乐扑克特殊的 玩法  包选 -->
+     <RelativeLayout 
+         
+        android:id="@+id/unselect_pk_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+		android:gravity="center_horizontal|center_vertical"
+		android:padding="0dp"
+        android:background="@drawable/pk_shape_blue_bxbg">
+		 	 <TextView
+			    android:id="@+id/pk_bx_textStr"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    
+			    android:textSize="20sp"
+			    android:text="对子"
+			    android:gravity="center"
+			    
+			    android:padding="0dip"
+			    android:textColor="@color/white"/>   
+		     <TextView
+		        android:id="@+id/ctm_bx_pk_bonustv"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/pk_bx_textStr"
+			    android:layout_marginTop="5dip"
+			    
+			    android:textSize="13sp"
+			    android:text="奖金"
+			    
+			    android:textColor="@color/klpk_text_color"/>   
+		     <TextView
+			    android:id="@+id/pk_bx_textStrBonus"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/pk_bx_textStr"
+			    android:layout_toRightOf="@id/ctm_bx_pk_bonustv"
+			    android:layout_marginTop="5dip"
+			    android:textSize="13sp"
+			    android:text="--"
+			    
+			    android:textColor="@color/klpk_bonustext_color"/>   
+		     <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/pk_bx_textStr"
+		        android:layout_toRightOf="@id/pk_bx_textStrBonus"
+		        android:layout_marginTop="5dip"
+			    android:textSize="13sp"
+			    android:text="元"
+			    
+			    android:textColor="@color/klpk_text_color"/>   
+                        
+         <!-- 展示示例    如  -->
+			<TextView
+			  android:id="@+id/sl_tv_img"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_below="@id/pk_bx_textStrBonus"
+	          android:text="如"
+	          
+			  android:layout_marginTop="10dip"
+	          android:gravity="center"
+	          
+	          android:padding="0dp"
+	          
+	          android:textSize="20.0dp"
+	          android:drawablePadding="5dip"
+	          android:textColor="@color/klpk_text_color"
+	          android:drawableRight="@drawable/pk_dz"
+	          />
+         
+     </RelativeLayout>
+    <!-- 选中效果  -->
+     <RelativeLayout 
+         android:visibility="gone"
+        android:id="@+id/select_pk_rl"
+        android:layout_width="match_parent"
+        android:layout_height="81dip"
+        android:background="@drawable/pk_select"/>
+				     
+</RelativeLayout> 
+   <TextView 
+       android:id="@+id/ctm_pk_yiloutv"
+       android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:layout_below="@id/external_RLayout"
+	   android:text="--"
+	   android:textColor="@color/black1"
+	   android:textSize="14sp"
+	   android:gravity="center"
+       />
+</RelativeLayout>

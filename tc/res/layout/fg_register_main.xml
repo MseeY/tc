@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/dialog_title_tv_color">
+
+    <!-- 中间 -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:scrollbarFadeDuration="1000"
+        android:scrollbarSize="1.0dip"
+        android:soundEffectsEnabled="true"
+        android:scrollbars="vertical" >
+    <fragment
+        android:id="@+id/zwl_register_middle_fragment"
+        android:name="com.mitenotc.ui.register.RegisterNextone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+            
+    </fragment>
+
+
+  </ScrollView>
+
+</RelativeLayout>

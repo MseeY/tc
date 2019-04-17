@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF" >
+
+    <LinearLayout
+        android:id="@+id/ll_aa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/paysuccess_processing_pb"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/paysuccess_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您，购彩成功！"
+                android:textColor="@color/text_red"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="17dip"
+            android:orientation="horizontal"
+            android:padding="0dp" >
+
+            <Button
+                android:layout_marginRight="5dip"
+                android:id="@+id/paysuccess_rebug_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_red_selector"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:padding="10dip"
+                android:text="继续购彩"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/paysuccess_check_order_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_orange_selector"
+                android:gravity="center|center_vertical|center_horizontal"
+				android:padding="10dip"
+                android:text="查看订单"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:id="@+id/ll_aa1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_aa"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32.5dip"
+            android:text="还在来回跳转支付？"
+            android:textColor="#007AFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:text="使用红包,支付一键搞定！"
+            android:textColor="#007AFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/paysuccess_redpacket_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="24dip"
+            android:layout_marginRight="24dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/selector_bt_red"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:paddingBottom="8.0dp"
+            android:paddingTop="8.0dp"
+            android:text="购买红包"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/ll_chongzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_aa"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的账户余额为:"
+            android:layout_marginRight="2dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/paysuccess_cashamount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_red"
+            android:textSize="15sp" />
+
+		</LinearLayout>
+        <TextView
+            android:id="@+id/paysuccess_recharge_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即充值"
+            android:padding="5dip"
+            android:textColor="#007AFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+     <TextView
+        android:id="@+id/wenzi_chongzhi"
+        android:layout_below="@+id/ll_chongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:layout_marginTop="10dip"
+        android:text="如果您在线支付遇到了困难，请联系在线客服，或选择其他充值方式；"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_below="@id/wenzi_chongzhi"
+        android:id="@+id/tv_acc_out_online_ask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:drawableLeft="@drawable/acc_online_ask"
+        android:drawablePadding="5dip"
+        android:layout_marginTop="5dip"
+        android:text="在线客服"
+        android:textColor="#007aff"
+        android:textSize="14sp" />
+</RelativeLayout>

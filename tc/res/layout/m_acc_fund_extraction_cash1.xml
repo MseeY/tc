@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_fund_extra_cash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/chongzhi_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:gravity="center_vertical"
+                        android:text="账号："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/extra_cash_content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="正在加载..."
+                    android:textColor="#EF2d33"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/line_gray1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/chongzhi_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:gravity="center_vertical"
+                        android:text="姓名："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/extra_cash_content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="正在加载..."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/acc_title_content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="您还未进行实名设置,立即完善"
+                    android:textColor="#ffbc47"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dip"
+            android:background="@color/line_gray2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingBottom="15dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_show_bank_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/tv_acc_extraction_select_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ed_bg"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/arrow_down_black"
+                        android:gravity="left|center_vertical"
+                        android:hint="请选择您的银行卡"
+						android:padding="10dip"
+                        android:textColor="#000000"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_no_bind_bank_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="right"
+                    android:text="您还未绑定银行卡请,立即绑定"
+                    android:textColor="#ffbc47"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/tv_acc_extraction_input_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dip"
+                        android:background="@drawable/ed_bg"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入您要提现的金额"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:padding="10dip"
+                        android:maxLength="8"
+                        android:textColor="#000000"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/tv_acc_extraction_input_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dip"
+                        android:background="@drawable/ed_bg"
+                        android:hint="请输入您的账户密码"
+                        android:inputType="textPassword"
+                        android:padding="10dip"
+                        android:textColor="#000000"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/bt_acc_fund_extraction_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:background="@drawable/shape_acc_graynull_btn"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="确认转出"
+                        android:textColor="#CCCCCC"
+                        android:textSize="@dimen/login_buletext"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/rl_btn_tikuan_shuoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="收起说明"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="18dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dip"
+                        android:src="@drawable/small_icon_online" />
+
+                    <TextView
+                        android:id="@+id/tv_acc_out_online_ask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在线客服"
+                        android:textColor="#999999"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_acc_fund_extraction_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:background="#dfdfdf"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingTop="10dip"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="25dip"
+                    android:text="1)  您的银行卡信息须与您所填写的真实姓名一致。"
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="5dip"
+                    android:text="2)  我们会在两个工作日（节假日顺延）内处理您的订单，若三个工作日资金未到达，请与我们客服联系。"
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="5dip"
+                    android:text="3)  一次提取现金低于10元时，我们会每笔收取1元的手续费，10元及以上金额时，我们为您免费处理。手续费会优先从您的转出金额中扣除。"
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="5dip"
+                    android:text="4)  如出现“提现金额”与“账户金额”不一致情况，可能是您的购彩消费还未达到充值金额的30%或您获得额外赠款（为防止洗钱和信用卡套现行为，充值金额的30%不可提出现金）。"
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

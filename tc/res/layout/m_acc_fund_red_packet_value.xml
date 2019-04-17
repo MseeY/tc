@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="11dip"
+        android:paddingLeft="14dip"
+        android:paddingTop="13dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付项目："
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包优惠"
+                android:textColor="#ef2d33"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="面值"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_red_packet_befor_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0元"
+                    android:textColor="#ef2d33"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="特价"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_red_packet_now_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0元"
+                    android:textColor="#ef2d33"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    <View
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginRight="10dip"
+        android:background="#cecece" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买数量："
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_acc_red_pac_value_subtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_btn_sub_selector"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/custom_control_text_color_selector"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/et_acc_red_pac_value_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_ed"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text="1"
+                    android:textColor="@color/award_info_tv_title_color"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/bt_acc_red_pac_value_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_btn_add_selector"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/custom_control_text_color_selector"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:text="可购买"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_acc_red_pac_value_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载.."
+                    android:textColor="#ef2d33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个"
+                    android:textColor="#606060"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+<View
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginRight="10dip"
+        android:background="#cecece" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应付金额："
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_acc_red_pac_change_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载"
+                android:textColor="#ef2d33" />
+        </LinearLayout>
+        
+        <View
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="30dip"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginRight="10dip"
+        android:background="#cecece" />
+
+        <Button
+            android:layout_marginRight="15dip"
+            android:id="@+id/bt_acc_red_pac_value_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_7"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/btn_bg_red_selector"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:paddingBottom="@dimen/margin_8"
+            android:paddingTop="@dimen/margin_8"
+            android:text="确认付款"
+            android:textColor="@color/login_color_5"
+            android:textSize="@dimen/login_buletext"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.每笔订单只能使用一个红包。"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:text="2.红包剩余金额可再次使用。"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

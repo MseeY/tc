@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="f_fragment_title_padding">5dp</dimen>
+    <!-- ck 主界面 -->
+    <dimen name="activity_main_title_nav_height">45dp</dimen>
+    <dimen name="title_nav_iv_margin_left">5dp</dimen>
+    <dimen name="title_nav_iv_margin_right">11dp</dimen>
+    <dimen name="title_nav_tv_size">18sp</dimen>
+    <dimen name="bottom_nav_height">47dp</dimen>
+    <dimen name="bottom_nav_iv_height">20.5dp</dimen>
+    <dimen name="bottom_nav_tv_size">9sp</dimen>
+    <dimen name="bottom_nav_iv_margin_top">9dp</dimen>
+    <dimen name="bottom_nav_tv_margin_bottom">7dp</dimen>
+    <!-- ck dialog -->
+    <dimen name="dialog_title_height">44dp</dimen>
+    <dimen name="dialog_title_iv_margin_left">10dp</dimen>
+    <dimen name="dialog_title_iv_margin_right">10dp</dimen>
+    <dimen name="dialog_title_tv_size">18sp</dimen>
+    <dimen name="dialog_btn_height">44dp</dimen>
+    <dimen name="dialog_content_padding_left">12dp</dimen>
+    <dimen name="dialog_content_padding_right">12dp</dimen>
+    <dimen name="dialog_content_padding_top">10dp</dimen>
+    <dimen name="dialog_content_padding_bottom">15dp</dimen>
+    <dimen name="dialog_btn_text_size">16sp</dimen>
+    <dimen name="dialog_btn_margin_top">5dp</dimen>
+    <dimen name="dialog_margin_left">15dp</dimen>
+    <dimen name="dialog_margin_right">15dp</dimen>
+    <!-- ck pop menu -->
+    <dimen name="pop_menu_ll_height">40dp</dimen>
+    <dimen name="pop_menu_iv_height">16dp</dimen>
+    <dimen name="pop_menu_iv_margin_left">22dp</dimen>
+    <dimen name="pop_menu_iv_margin_bottom">12dp</dimen>
+    <dimen name="pop_menu_iv_margin_top">12dp</dimen>
+    <dimen name="pop_menu_iv_margin_right">10dp</dimen>
+    <dimen name="pop_menu_tv_textsize">12sp</dimen>
+    <dimen name="pop_menu_divider_width">187dp</dimen>
+    <!-- ck award info -->
+    <dimen name="award_info_ll_margin_bottom">5dp</dimen>
+    <dimen name="award_info_text_margin">11dp</dimen>
+    <dimen name="award_info_tv_title_size">13sp</dimen>
+    <dimen name="award_info_item_content_height">44dp</dimen>
+    <dimen name="award_info_item_content_radius">22dp</dimen>
+    <dimen name="award_info_item_content_margin_left">7.5dp</dimen>
+    <dimen name="award_info_item_content_padding_top">5dp</dimen>
+    <dimen name="award_info_item_content_padding_left">2.5dp</dimen>
+    <dimen name="award_info_ll_item_ball_bg_height">29dp</dimen>
+    <dimen name="award_info_text_size">15sp</dimen>
+    <dimen name="award_info_ball_margin_right">4dp</dimen>
+    <dimen name="award_info_item_dice_radius">1dp</dimen>
+    <dimen name="award_info_dice_iv_height">30dp</dimen>
+    <dimen name="award_info_dice_bg_height">34dp</dimen>
+    <dimen name="award_info_item_dice_margin_right">5dp</dimen>
+    <dimen name="award_info_shengfu_width">16dp</dimen>
+    <dimen name="award_info_shengfu_margin_left">2dp</dimen>
+    <!-- ck item hall -->
+    <dimen name="item_hall_padding">10dp</dimen>
+    <dimen name="item_hall_iv_height">60dp</dimen>
+    <dimen name="item_hall_iv_margin_right">8dp</dimen>
+    <dimen name="item_hall_tv_title_margin_left">5dp</dimen>
+    <dimen name="item_hall_tv_title_text_size">15sp</dimen>
+    <dimen name="item_hall_tv_kaijiang_text_size">9sp</dimen>
+    <dimen name="item_hall_tv_kaijiang_margin_left">5dp</dimen>
+    <dimen name="item_hall_tv_desc_text_size">12dp</dimen>
+    <dimen name="item_hall_tv_issue_text_size">9dp</dimen>
+
+    <!-- ****** ymx  登陆适配的尺寸***** -->
+    <dimen name="margin_1">12dip</dimen>
+    <dimen name="margin_2">42dip</dimen>
+    <dimen name="margin_3">21dip</dimen>
+    <dimen name="margin_4">2dip</dimen>
+    <dimen name="margin_5">41dip</dimen>
+    <dimen name="margin_6">30dip</dimen>
+    <dimen name="margin_7">41dip</dimen>
+    <dimen name="margin_8">8dip</dimen>
+    <dimen name="margin_9">5dip</dimen>
+    <dimen name="login_text1">14sp</dimen>
+    <dimen name="login_text2">14sp</dimen>
+    <dimen name="login_buletext">16sp</dimen>
+
+    <!-- ******** ymx   网络故障********* -->
+    <dimen name="network_1">65dip</dimen>
+    <dimen name="network_2">19.5dip</dimen>
+    <dimen name="network_3">8dip</dimen>
+    <dimen name="network_4">267dip</dimen>
+    <dimen name="network_5">38dip</dimen>
+    <dimen name="network_6">25dip</dimen>
+    <dimen name="network_7">267.5dip</dimen>
+    <dimen name="network_8">22.5dip</dimen>
+    <dimen name="network_9">1dip</dimen>
+    
+    <!-- ck bodyfragment2  -->
+    <dimen name="bodyfragment2_lv_divider_height">0.8dip</dimen>
+    <!-- ck bodyfragment3 -->
+    <dimen name="bodyfragment3_padding">10dp</dimen>
+    <dimen name="bodyfragment1_height">44dp</dimen>
+    <dimen name="bodyfragment1_iv_width">14dp</dimen>
+    <dimen name="bodyfragment_iv_margin_left">21dp</dimen>
+    <dimen name="bodyfragment1_iv_margin_top">15dp</dimen>
+    <dimen name="bodyfragment1_margin_left">10dp</dimen>
+    <dimen name="bodyfragment1_btn_margin_top">12dp</dimen>
+    <dimen name="bodyfragment1_btn_width">57dp</dimen>
+    <dimen name="bodyfragment1_btn_margin_right">21dp</dimen>
+    <dimen name="bodyfragment1_btn_height">20dp</dimen>
+    
+    <!-- ymx 开奖信息item的dp值 -->
+    <dimen name="kj_info_item1">7dip</dimen>
+    <dimen name="kj_info_item2">5dip</dimen>
+    <dimen name="kj_info_item3">389dip</dimen>
+    <dimen name="kj_info_item4">21dip</dimen>
+    <dimen name="kj_info_item5">41dip</dimen>
+    <dimen name="kj_info_item6">35dip</dimen>
+    <dimen name="kj_info_item7">319dip</dimen>
+    <dimen name="kj_info_item8">33dip</dimen>
+    <dimen name="kj_info_item9">31dip</dimen>
+    <dimen name="kj_info_item10">63dip</dimen>
+    <dimen name="kj_info_item11">37dip</dimen>
+    <dimen name="kj_info_item12">120dip</dimen>
+    <dimen name="kj_info_item13">1dip</dimen>
+    <dimen name="kj_info_text1">16sp</dimen>
+    <dimen name="kj_info_text2">15sp</dimen>
+    <!-- ck item hall 添加 -->
+    <dimen name="item_hall_rl_width">75dp</dimen>
+    <!-- ck title nav 添加 -->
+    <dimen name="title_nav_tv_padding_left">10dp</dimen>
+    <!-- ck betting detail -->
+    <dimen name="betting_detail_btn_margin_left">7.5dp</dimen>
+    <dimen name="betting_detail_btn_padding_left">15dp</dimen>
+    <dimen name="betting_detail_margin_top">5dp</dimen>
+
+</resources>

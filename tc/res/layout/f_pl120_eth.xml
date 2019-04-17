@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <!--  普通投注 二同号 布局   -->  
+
+ 	<LinearLayout
+	      android:id="@+id/fast3_show_one_Layout"
+	      
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  
+		  
+		  
+         android:layout_marginTop="10.0dp"
+	     android:layout_marginLeft="10.0dp"
+	     android:layout_marginRight="10.0dp"
+	     android:layout_below="@id/reLayout"
+		  android:orientation="vertical">
+    <LinearLayout
+	        
+	      android:id="@+id/fast3_show_two_Layout"
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  
+		  android:orientation="horizontal">
+	       <TextView 
+				          android:id="@+id/fast3_middle_left_tv"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				          android:layout_weight="0.8"
+				          
+				          android:layout_gravity="center_vertical|left"
+				          android:gravity="center_vertical|left"
+				          android:background="@drawable/choose_tv_bg"
+				          android:paddingLeft="10dp"
+				          
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:text="@string/fast3_middle_left_tv"/>
+	          <TextView 
+	                       android:id="@+id/fast3_middle_reight_tv"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				           android:layout_gravity="center_vertical|center"
+				          android:layout_weight="0.2"
+				          android:gravity="center_vertical|left"
+				          android:paddingLeft="5dp"
+				       
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:text="@string/fast3_middle_reight_tv"/>
+	           
+	    
+	    
+	    
+	     </LinearLayout>
+	       <TextView      
+	                      android:id="@+id/equal_num_tv"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				          android:layout_marginBottom="5dp"
+				          
+				          android:gravity="center"
+				          android:paddingTop="5dp"
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:text="@string/fast3_bottom_tv"/>
+	       <com.mitenotc.ui.ui_utils.MGridView
+	                       
+	                        android:id="@+id/eth_one_mgv"
+			                android:layout_height="53dip"
+			                android:layout_width="fill_parent"
+			                
+			                
+			                android:verticalSpacing="0dp"
+			                android:horizontalSpacing="2.0dp"
+			                
+			                android:numColumns="6"
+			                android:columnWidth="40dp"
+			                />
+	       	<TextView 
+	       	              android:id="@+id/unequal_num_tv"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				          android:layout_marginBottom="5dp"
+				          
+				          android:gravity="center"
+				          android:paddingTop="5dp"
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:text="@string/fast3_bottom_tv1"/>
+	         <com.mitenotc.ui.ui_utils.MGridView
+	                       
+	                        android:id="@+id/eth_two_mgv"
+			                android:layout_height="53dip"
+			                android:layout_width="fill_parent"
+			                
+			                android:verticalSpacing="0dp"
+			                android:horizontalSpacing="2.0dp"
+			                
+			                android:numColumns="6"
+			                android:columnWidth="40dp"
+			                />
+	         
+	 <LinearLayout
+	        
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="10dp"
+		  
+		  android:orientation="horizontal">
+	       <TextView 
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				          android:layout_weight="0.8"
+				          
+				          android:layout_gravity="center_vertical|left"
+				          android:gravity="center_vertical|left"
+				          android:background="@drawable/choose_tv_bg"
+				          android:paddingLeft="10dp"
+				          
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:text="@string/fast3_repetition_tv"/>
+	          <TextView 
+	                      android:id="@+id/fast3_middle_reight_tv1"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				           android:layout_gravity="center_vertical|center"
+				          android:layout_weight="0.2"
+				          android:gravity="center_vertical|left"
+				          android:paddingLeft="5dp"
+				       
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:text="@string/fast3_middle_reight_tv1"/>
+	           
+	     </LinearLayout>
+	          <com.mitenotc.ui.ui_utils.MGridView
+	                       
+	                        android:id="@+id/eth_three_mgv"
+			                android:layout_height="120dip"
+			                android:layout_width="fill_parent"
+			                
+			                android:verticalSpacing="5.0dp"
+			                android:horizontalSpacing="5.0dp"
+			                
+			                android:numColumns="3"
+			                
+			                android:columnWidth="100dp"/>
+	     
+	     
+	     </LinearLayout>
+	    
+
+</RelativeLayout>

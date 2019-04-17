@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+ <LinearLayout 
+        
+	    android:id="@+id/fast3_title_Layout" 
+        android:layout_alignParentTop="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="0dp"
+	    android:background="@drawable/no_top_effect"
+	    android:orientation="horizontal">
+  <RelativeLayout 
+            android:id="@+id/basetitle_leftlayout"
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_weight="0.9"
+		    android:gravity="center"
+		    android:orientation="horizontal">
+	    <RelativeLayout 
+	        android:visibility="invisible"
+	        android:id="@+id/fast3_expect_Rlyout"
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center|left"
+		    android:orientation="horizontal">
+			<TextView 
+			    android:id="@+id/fast3_expect_tv"
+			    android:layout_width="wrap_content"
+			    android:layout_height="40dp"
+		       android:layout_centerVertical="true"
+			    android:gravity="center_vertical|left"
+			    android:paddingLeft="4dp"
+			    android:textColor="@color/award_info_tv_title_color"
+			    android:text="@string/fast3_tv_1"
+			    />
+			  <TextView
+		       android:id="@+id/drop_down_d"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_toRightOf="@id/fast3_expect_tv"
+		       android:layout_centerVertical="true"
+		       android:button="@null"
+		       android:checked="true"
+		       android:gravity="center"
+		       android:drawableRight="@drawable/pl_title_bg_history_selector"
+		       android:drawablePadding="2dp"
+		        />
+	</RelativeLayout>
+	 <LinearLayout
+         android:id="@+id/baseAwait_layout"
+         android:layout_width="match_parent"
+	     android:layout_height="wrap_content">
+    <CheckBox 
+        android:id="@+id/fast3_await_cb"
+   	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/time"
+        android:drawablePadding="3.0dp"
+	    android:text="@string/fast3_tv_2"
+        android:button="@null"
+        android:textColor="@color/award_info_tv_title_color"
+        
+        android:lines="1"
+        android:textSize="14.0sp" />
+    </LinearLayout>
+   </RelativeLayout>
+   <LinearLayout
+         android:id="@+id/baseTitle_reightLayout"
+         android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:layout_gravity="center"
+	     android:layout_alignParentRight="true"
+         android:layout_weight="1" 
+	     android:gravity="center"
+	     android:orientation="vertical">
+	<TextView 
+	    android:id="@+id/fast3_distance_tv"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="0.5"
+	    android:gravity="center"
+        android:text="@string/fast3_tv_4"
+        android:textColor="@color/award_info_tv_title_color"
+      />
+	<TextView 
+	     android:id="@+id/fast3_time_tv"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:layout_weight="0.5"
+	     android:gravity="center"
+	     android:textColor="@color/fast3_text_color"
+	     android:text="--:--"
+	    />
+	 </LinearLayout>
+</LinearLayout>
+  
+	<!-- 底部    清空  确定 -->
+
+   <LinearLayout
+       android:id="@+id/ssp_bottom_ll"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="bottom|center_vertical"
+       android:layout_margin="5dp"
+       android:background="@color/white"
+       android:orientation="horizontal" >
+
+      <Button
+          android:id="@+id/clear_gv_btn"
+          android:tag="white"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1.4"
+          android:padding="2dp"
+          
+          android:drawableLeft="@drawable/clear"
+          android:background="@color/white"
+          android:textColor="@color/login_color_4"
+          android:gravity="center_vertical|center_horizontal"
+          android:text="@string/bet_Ssp_gv_tv"
+          android:textSize="16.0dp"
+          />
+          
+<!--   android:background="@drawable/btn_white_or_gray_selector"       
+       android:background="@drawable/btn_bg_orange_selector"
+               android:textColor="@color/white" -->
+      
+      <TextView 
+          android:id="@+id/inall_inform_tv"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+      
+           android:paddingBottom="4.0dip"
+           android:paddingLeft="1.0dip"
+           android:paddingRight="1.0dip"
+           android:paddingTop="4.0dip"
+          
+          android:gravity="center"
+          android:text="@string/zwl_inform_tv"
+          android:textSize="14sp"
+          />
+
+      <Button
+          android:id="@+id/affirm_next_btn"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1.4"
+          
+          android:textColor="@color/red"
+          android:drawableLeft="@drawable/next"
+          android:background="@color/white"
+          android:gravity="center_vertical|center_horizontal"
+          android:padding="2dp"
+          
+          android:text="@string/is_positive"
+          android:textSize="16.0dp" />
+<!--
+android:background="@drawable/btn_white_or_gray_selector"          
+android:background="@drawable/btn_bg_red_selector"
+              android:textColor="@color/white" -->
+    
+   </LinearLayout>  
+     <!-- history    历史信息布局   -->
+  <RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_above="@id/ssp_bottom_ll"
+    android:layout_below="@id/fast3_title_Layout"
+    android:background="@drawable/dot_moddle_repeat">
+      <RelativeLayout
+           
+	    android:id="@+id/acquiesce_in_el"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:layout_marginBottom="47dp"
+	    android:layout_marginTop="65dp" >
+          <TextView 
+              android:id="@+id/nomsg_tv"
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/bet_hsmsg_tv"
+		    android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/award_info_tv_title_color"
+            android:textSize="13sp"
+		     />
+          <Button 
+            android:id="@+id/again_get_hmsg_btn"
+	        android:layout_width="120dp"
+		    android:layout_height="30dp" 
+		    android:layout_centerInParent="true"
+		    android:layout_marginTop="19dp"
+		    
+		    android:paddingTop="6dp"
+		    android:paddingBottom="6dp"
+		    
+		    android:layout_below="@id/nomsg_tv"
+		    android:background="@drawable/btn_bg_red_selector"
+		    
+		    android:text="@string/bet_hsmsg_btn"
+		    android:textColor="@color/white"
+		    android:textSize="14sp"
+		    android:gravity="center_vertical|center_horizontal"
+            />
+          
+          
+      </RelativeLayout>
+     <View 
+       android:layout_height="0.3dp"
+       android:layout_width="fill_parent"
+       android:background="@drawable/dot_top_repeat"
+       />
+   <RelativeLayout
+	    android:id="@+id/have_hmsg_rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:background="@drawable/dot_moddle_repeat">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/Pond_ssp_bg_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_ssp_bg"
+        
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        
+        
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/award_info_tv_title_color"
+        android:text="@string/ssp_bg_inform_tv" />
+    
+        <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/basebuy_ll_history" 
+        android:layout_below="@id/Pond_ssp_bg_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dp"
+        />
+    
+    <ListView
+        android:id="@+id/history_msg_listView" 
+        android:layout_below="@id/Pond_ssp_bg_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginBottom="10.0dp"/>
+    
+      </RelativeLayout>
+   <View 
+       android:id="@+id/basetop_line"
+       android:layout_height="0.3dp"
+       android:layout_width="fill_parent"
+       android:background="@drawable/dot_down_repeat"
+       />
+    </RelativeLayout>
+           <!-- 自定义控件 -->
+	<com.mitenotc.ui.ui_utils.DrawerLayout 
+		     android:id="@+id/ssp_bat_main_drawwerLayout"
+		     android:layout_above="@id/ssp_bottom_ll"
+		     android:layout_below="@id/fast3_title_Layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    >
+	</com.mitenotc.ui.ui_utils.DrawerLayout>
+</RelativeLayout>

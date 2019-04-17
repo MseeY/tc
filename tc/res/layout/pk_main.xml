@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+       <View 
+       android:id="@+id/basetop_line"
+       android:layout_height="0.3dp"
+       android:layout_width="fill_parent"
+       android:background="@color/black"
+       />
+     <!--   快三    摇一摇布局  -->
+	 <RelativeLayout 
+			     android:id="@+id/reLayout"
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     
+			     android:layout_marginTop="10.0dp">
+			     		  <TextView 
+				          android:id="@+id/drag_code_tv"
+				          android:layout_width="wrap_content"
+				          android:layout_height="wrap_content"
+				        
+				          android:text="@string/fast3_show_tv"
+				          android:layout_alignParentLeft="true"
+				          android:layout_centerVertical="true"
+				          android:paddingTop="4dp"
+				          android:paddingBottom="4dp"
+				          android:paddingLeft="5dp"
+				          android:paddingRight="15dp"
+				          android:textSize="14sp"
+				          android:gravity="center"
+				          android:textColor="@color/white"
+				          android:background="@drawable/shape_blueshake_reightbg"/>
+				     <Button
+				          android:id="@+id/common_btn"
+				           android:layout_alignParentRight="true"
+				           android:layout_centerVertical="true"
+				          android:layout_width="wrap_content"
+				          android:layout_height="wrap_content"
+				          android:text="@string/zwl_dballcommon_tv_1"
+				          android:gravity="center"
+				          android:paddingTop="5dp"
+				          android:paddingBottom="5dp"
+				          android:paddingLeft="10dp"
+				          android:paddingRight="5dp"
+				          android:textSize="14sp"
+				          android:textColor="@color/white"
+				          android:drawablePadding="3dp"
+				          android:drawableLeft="@drawable/shake_121"
+				          android:background="@drawable/shape_blueshake_leftbg"
+				          />
+				    <!--  bg_shape_blueshake_bg -->
+ </RelativeLayout>
+	
+    <ScrollView
+        android:layout_below="@id/reLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:scrollbarFadeDuration="1000"
+        android:scrollbarSize="1.0dip"
+        android:soundEffectsEnabled="false"
+          android:layout_marginTop="6dp"
+        android:scrollbars="vertical" >
+	<LinearLayout
+	      android:id="@+id/fast3_pl_contentLayout"
+	      android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:orientation="vertical">
+	</LinearLayout>
+		  
+
+</ScrollView>
+
+
+	
+			
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/dialog_title_tv_color">
+ <!-- 注册第一步 获取验证码 -->
+ <RelativeLayout 
+     android:id="@+id/reLayout"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" 
+     
+     android:layout_marginTop="40dip"
+     android:layout_marginLeft="21.0dp"
+     android:layout_marginRight="21.0dp"
+     
+     android:focusable="true" 
+     android:focusableInTouchMode="true" 
+    
+     android:gravity="center_vertical|center_horizontal">
+
+
+        <EditText
+            android:id="@+id/zwl_ed_phonenumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@drawable/ed_bg"
+            android:padding="10dip"
+            android:hint="@string/register_Toast_text"
+            android:inputType="number"
+            android:textColorHint="#999999"
+            android:textColor="#000000"
+            android:maxLength="11"
+            android:lines="1"
+            android:textSize="14.0dp" />
+
+
+    <Button
+        android:id="@+id/zwl_gain_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="15dip"
+		android:padding="10dip"
+        android:gravity="center"
+        android:background="@drawable/btn_bg_orange_selector"
+        android:layout_below="@id/zwl_ed_phonenumber"
+        
+        android:text="@string/register_gain_validation"
+        android:textColor="@android:color/white"
+        style="@style/textaddFont"
+        android:textSize="16.0dp" 
+        android:lines="1"/>
+   <LinearLayout 
+       android:id="@+id/linear_havetwo_tv"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       
+        android:layout_below="@id/zwl_gain_button"
+        android:layout_alignRight="@id/zwl_gain_button"
+        android:layout_alignParentRight="true"
+       android:gravity="center_vertical|right"
+       android:orientation="horizontal">
+       
+       
+    <TextView
+        android:id="@+id/i_have_verify_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_i_have_verify"
+        android:layout_marginRight="10dip"
+        android:paddingTop="13dip"
+        android:textColor="@color/blue"
+        android:textSize="14.0sp"/>
+    
+    <TextView
+        android:id="@+id/zwl_follow_gain_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="13dip"
+        android:text="@string/register_gain_validation0"
+        android:textColor="@color/blue"
+        android:textSize="14.0sp"/>
+       
+   </LinearLayout>
+
+
+  
+      <CheckBox
+        android:id="@+id/zwl_agree_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+            
+        android:layout_marginTop="10dp"
+        
+        android:layout_alignLeft="@id/zwl_gain_button"
+        android:layout_below="@id/linear_havetwo_tv"
+        android:drawableLeft="@drawable/checkbox_checked"
+        android:background="@null"
+        android:button="@null"
+        android:drawablePadding="5.0dp"
+        android:textColor="@color/award_info_tv_title_second_color"
+        android:text="@string/register_agree_text"
+        
+        android:checked="true"
+        android:lines="1"
+        android:textSize="14.0sp" />
+       </RelativeLayout>
+       
+ <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="27.50dp"
+        android:layout_marginRight="26.0dp"
+        android:layout_below="@id/reLayout"
+        android:layout_alignLeft="@id/reLayout">
+   <ImageView
+           android:id="@+id/img1"
+           android:layout_width="18dip"
+           android:layout_height="18dip"
+           android:background="@drawable/character_emphasis"/>
+   <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img1"
+       
+        android:paddingLeft="5.0dp"
+        android:paddingRight="5.0dp"
+      
+        android:textColor="#999999"
+        android:text="@string/register_gain_validation1"
+        android:lineSpacingMultiplier="1.1"
+        android:textSize="13.0dp"/>
+   </RelativeLayout>
+    
+ 
+    
+</RelativeLayout>

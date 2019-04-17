@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_title_tv_color" >
+    <RelativeLayout 
+        android:id="@+id/reLayout1"
+        android:layout_width="fill_parent"
+		android:layout_height="30dp"
+		
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="10.0dp"
+		
+	    android:background="@drawable/bg_shape_whit_circular"
+		android:gravity="center">
+			<CheckBox
+		        android:id="@+id/show_bet_ratio"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"    
+		            
+		        android:gravity="center"
+		        android:layout_marginLeft="8dp"
+		        android:layout_alignParentLeft="true"
+		        android:drawableLeft="@drawable/checkbox_bg2"
+		        android:drawablePadding="5.0dp"
+		        android:textColor="@color/award_info_tv_title_second_color"
+		        android:text="@string/any9_chbx_text"
+		        android:background="@null"
+		        android:button="@null"
+		        
+		        android:checked="false"
+		        android:lines="1"
+		        android:textSize="14.0sp" />
+    	   <TextView 
+		          android:id="@+id/any9_show_time_tv"
+		          android:layout_toRightOf="@id/show_bet_ratio"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_alignParentRight="true"
+		          android:gravity="center_vertical|right"
+		          android:layout_marginRight="1dp"
+		          
+		          android:textColor="@color/award_info_tv_title_color"
+		          android:text="@string/any9_time_text"
+		          android:textSize="14.0dp"/>
+    </RelativeLayout>
+       <!--   排列三 顶部    -->
+	 <RelativeLayout 
+			     android:id="@+id/reLayout"
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:layout_below="@id/reLayout1"
+			     
+			     android:layout_marginTop="10.0dp"
+			     android:layout_marginLeft="10.0dp"
+			     android:layout_marginRight="10.0dp"
+			     >
+				     <Button
+				          android:id="@+id/yaoyiyao_common_btn"
+				          android:layout_width="wrap_content"
+				          android:layout_height="wrap_content"
+				          android:text="@string/zwl_dballcommon_tv_1"
+				         
+				          
+				          android:paddingLeft="5.0dp"
+				          android:paddingRight="5.0dp"
+				          android:paddingTop="3.0dp"
+				          android:paddingBottom="3.0dp"
+				          android:textSize="13.0dp"
+				          android:textColor="@color/white"
+				          android:drawableLeft="@drawable/shake"
+				          android:background="@drawable/bg_shape_circular"
+				          />
+				     
+				     <TextView 
+				         android:id="@+id/arrange_top_playmethod_tv"
+				          android:layout_width="fill_parent"
+				          android:layout_height="wrap_content"
+				          android:layout_toRightOf="@id/yaoyiyao_common_btn"
+				          android:text="@string/any9_sharek_reight_text"
+				          
+				          android:gravity="right|center_horizontal"
+				       
+				          android:textSize="14.0dp"
+				          android:textColor="@color/award_info_tv_title_color"
+				          android:layout_alignBaseline="@id/yaoyiyao_common_btn"/>
+		           
+ </RelativeLayout>
+
+	 <ListView
+	     android:id="@+id/anyChoose_nine_lv"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     
+	     android:layout_marginTop="10.0dp"
+		 android:layout_marginLeft="10.0dp"
+		 android:layout_marginRight="10.0dp"
+			
+	     android:layout_below="@+id/reLayout">
+	 </ListView>
+	
+</RelativeLayout>
